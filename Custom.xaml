@@ -231,8 +231,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1</sys:String>
-<sys:String x:Key="VersionID">250317:2d26c911</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/Dungeons:%E5%A5%87%E5%8E%84%E6%95%99%E4%B8%BB</sys:String>
+<sys:String x:Key="VersionID">250324:3222c5b</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -277,32 +277,33 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Single_Obsidian_Pillar.png/350px-Single_Obsidian_Pillar.png?format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/IllagerDefeat.png/350px-IllagerDefeat.png?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Single_Obsidian_Pillar.png/350px-Single_Obsidian_Pillar.png?format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/IllagerDefeat.png/350px-IllagerDefeat.png?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="黑曜石柱" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="奇厄教主" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">黑曜石柱</Paragraph>
+<Paragraph Style="{StaticResource H2}">奇厄教主</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>是一个由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3" Margin="0,0,0,-8">黑曜石</local:MyTextButton></Underline>组成的地物。</Paragraph></ListItem>
+<ListItem><Paragraph>奇厄教主是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Dungeons" Margin="0,0,0,-8">Minecraft Dungeons</local:MyTextButton></Underline>中的大反派，灾厄村民帝国的首领，也是支配之球的持有者。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>在玩家第一次进入<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>时自然生成，当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E9%BE%99" Margin="0,0,0,-8">末影龙</local:MyTextButton></Underline>重生时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>也会重置。</Paragraph></ListItem>
+<ListItem><Paragraph>奇厄教主主要有两种攻击方式，以及一种辅助攻击方式。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性</Paragraph><List>
-<ListItem><Paragraph>每个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3" Margin="0,0,0,-8">黑曜石</local:MyTextButton></Underline>、一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9" Margin="0,0,0,-8">基岩</local:MyTextButton></Underline>和顶上的一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>水晶组成，截面近似为圆形。</Paragraph></ListItem>
-<ListItem><Paragraph>共有10根<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>在围绕<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8" Margin="0,0,0,-8">返回传送门</local:MyTextButton></Underline>半径为43个方块的圆上以随机顺序生成。</Paragraph></ListItem>
-<ListItem><Paragraph>每个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>的半径和高度各不相同。</Paragraph></ListItem>
-<ListItem><Paragraph>高度为79和82的柱顶有73个铁栏杆构成的笼子围绕<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>水晶，防止被箭射到。</Paragraph></ListItem>
+<ListItem><Paragraph>它是游戏中生命值第二低的Boss。</Paragraph></ListItem>
+<ListItem><Paragraph>奇厄教主经常会朝玩家发射三个紫色的光球，随后会瞬移离开，并再次发射光球。</Paragraph></ListItem>
+<ListItem><Paragraph>光球击中玩家后会造成少量伤害。</Paragraph></ListItem>
+<ListItem><Paragraph>奇厄教主偶尔会召唤10-20个围绕玩家一圈的卫道士或20个横穿画面的一排掠夺者，少数情况下（天启难度）会召唤红石傀儡。</Paragraph></ListItem>
+<ListItem><Paragraph>与附魔师一样，奇厄教主也能附魔并强化生物。</Paragraph></ListItem>
 </List>
 
-<Paragraph>图为一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1">黑曜石柱</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为被玩家击败的奇厄教主。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -454,9 +455,9 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新预发布版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新预发布版 - 1.21.5-pre2" Info="预发布版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.5-pre2" Type="Clickable" />
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新发布候选版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.5-rc1" Info="发布候选版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.5-rc1" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
      HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
