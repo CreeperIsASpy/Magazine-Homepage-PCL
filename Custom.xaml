@@ -231,8 +231,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/Dungeons:%E5%A5%87%E5%8E%84%E6%95%99%E4%B8%BB</sys:String>
-<sys:String x:Key="VersionID">250324:3222c5b</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0</sys:String>
+<sys:String x:Key="VersionID">250331:34a9fb4</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -277,33 +277,41 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/IllagerDefeat.png/350px-IllagerDefeat.png?format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/The_End.png/350px-The_End.png?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/IllagerDefeat.png/350px-IllagerDefeat.png?format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/The_End.png/350px-The_End.png?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="奇厄教主" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="末地" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">奇厄教主</Paragraph>
+<Paragraph Style="{StaticResource H2}">末地</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph>奇厄教主是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Dungeons" Margin="0,0,0,-8">Minecraft Dungeons</local:MyTextButton></Underline>中的大反派，灾厄村民帝国的首领，也是支配之球的持有者。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>是类似于外太空的黑暗<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%BB%B4%E5%BA%A6" Margin="0,0,0,-8">维度</local:MyTextButton></Underline>，飘浮在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%99%9A%E7%A9%BA" Margin="0,0,0,-8">虚空</local:MyTextButton></Underline>之中。</Paragraph></ListItem>
 <!-- end_intro -->
 
-</List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph>奇厄教主主要有两种攻击方式，以及一种辅助攻击方式。</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">进入方式</Paragraph><List><!-- intro_2 -->
+<ListItem><Paragraph>要在生存模式下进入<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>必须在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%A6%81%E5%A1%9E" Margin="0,0,0,-8">要塞</local:MyTextButton></Underline>里找到并激活<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>传送门。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>在进入激活的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>传送门时会被立刻传送到<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
+<BlockUIContainer>
+<StackPanel>
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/03/31/67ea6c289ec24.jpeg"/>
+<TextBlock Text="……一张梗图，很好笑吧！" Style="{StaticResource imgTitle}" />
+</StackPanel>
+</BlockUIContainer>
 <Paragraph Style="{StaticResource H3}">特性</Paragraph><List>
-<ListItem><Paragraph>它是游戏中生命值第二低的Boss。</Paragraph></ListItem>
-<ListItem><Paragraph>奇厄教主经常会朝玩家发射三个紫色的光球，随后会瞬移离开，并再次发射光球。</Paragraph></ListItem>
-<ListItem><Paragraph>光球击中玩家后会造成少量伤害。</Paragraph></ListItem>
-<ListItem><Paragraph>奇厄教主偶尔会召唤10-20个围绕玩家一圈的卫道士或20个横穿画面的一排掠夺者，少数情况下（天启难度）会召唤红石傀儡。</Paragraph></ListItem>
-<ListItem><Paragraph>与附魔师一样，奇厄教主也能附魔并强化生物。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>由一个大岛屿和远处的许多小外岛构成，它们主要由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>石组成。</Paragraph></ListItem>
+<ListItem><Paragraph>中央岛屿和外岛之间的缺口是一个长约1000格的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%99%9A%E7%A9%BA" Margin="0,0,0,-8">虚空</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>的天空和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%99%9A%E7%A9%BA" Margin="0,0,0,-8">虚空</local:MyTextButton></Underline>都是没有图案的静止黑暗。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>没有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%98%BC%E5%A4%9C%E6%9B%B4%E6%9B%BF" Margin="0,0,0,-8">昼夜更替</local:MyTextButton></Underline>，与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E7%95%8C" Margin="0,0,0,-8">下界</local:MyTextButton></Underline>一样；取而代之的是恒久不变的暗淡光芒。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E4%BA%BA" Margin="0,0,0,-8">末影人</local:MyTextButton></Underline>自然生成在整个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>的几乎任何地方；<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E9%BE%99" Margin="0,0,0,-8">末影龙</local:MyTextButton></Underline>只能在主岛上自然生成一次；<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BD%9C%E5%BD%B1%E8%B4%9D" Margin="0,0,0,-8">潜影贝</local:MyTextButton></Underline>伴随着外部岛屿的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>城和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>船随结构一起生成。</Paragraph></ListItem>
 </List>
 
-<Paragraph>图为被玩家击败的奇厄教主。</Paragraph>
+
+<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0">末地</local:MyTextButton></Underline>的中央岛屿。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -316,7 +324,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-3-17" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-3-31" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -454,10 +462,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新发布候选版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.5-rc1" Info="发布候选版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.5-rc1" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.5" Info="正式版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.5" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
      HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
