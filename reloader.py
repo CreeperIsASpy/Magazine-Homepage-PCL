@@ -79,16 +79,26 @@ def get_topic():
     return list(get_link_txt(str(obj.find('div', class_="weekly-content"))).keys())[0]
 
 
+def validate_template(template):
+    # 查找未转义的独立 % 符号（非占位符）
+    standalone_percent = re.findall(r"(?<!%)%(?!\()", template)
+    if standalone_percent:
+        print(f"发现未转义的 % 符号: {len(standalone_percent)} 处")
+
+    # 查找占位符
+    placeholders = re.findall(r"%\((\w+)\)s", template)
+    print(f"发现占位符：{len(placeholders)} 处")
+
+
 def update():
     now = datetime.datetime.now()
-    content_text = '''<StackPanel Margin="0,-10,0,0"
+    content_text = '''<!-- "The Magazine Homepage for PCL2" made by CreeperIsASpy. Copyright 2025 CreeperIsASpy, all rights reserved. (CC BY-NC-SA 4.0).-->
+<!-- 由 仿生猫梦见苦力怕 制作该 "PCL2 杂志主页"。@仿生猫梦见苦力怕 / CreeperIsASpy 版权所有，保留所有权利。（使用CC BY-NC-SA 4.0 授权代码部分内容）。-->
+
+<StackPanel Margin="0,-10,0,0"
 xmlns:sys="clr-namespace:System;assembly=mscorlib"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
-<!--Animations Starts-->
-<StackPanel.Triggers>
-
-</StackPanel.Triggers>
 <StackPanel.Resources>
 <!--Styles Starts-->
 <Style x:Key="TabControlStyle" TargetType="{x:Type TabControl}">
@@ -226,35 +236,17 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
 <Setter Property="IsSelectionEnabled" Value="False"/>
 <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
 <Setter Property="Margin" Value="0"/>
-</Style><Style TargetType="FlowDocument" >
+</Style>
+<Style TargetType="FlowDocument" >
 <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
 <Setter Property="FontSize" Value="14"/>
 <Setter Property="TextAlignment" Value="Left"/>
-</Style><Style TargetType="StackPanel" x:Key="ContentStack" >
-<Setter Property="Margin" Value="20,40,20,20"/>
-</Style><Style TargetType="local:MyCard" x:Key="Card" >
-<Setter Property="Margin" Value="0,5"/>
 </Style>
-<Style TargetType="TextBox" x:Key="InlineCode">
-    <Setter Property="FontSize" Value="14" />
-    <Setter Property="IsReadOnly" Value="True" />
-    <Setter Property="Margin" Value="2,0,2,-4" />
-    <Setter Property="FontFamily" Value="Consolas"/>
-    <Setter Property="Height" Value="18"/>
-    <Setter Property="Template">
-        <Setter.Value>
-            <ControlTemplate TargetType="TextBox">
-                <Border Background="{DynamicResource ColorBrush6}" Opacity="0.9"
-                    BorderBrush="{DynamicResource ColorBrush4}" BorderThickness="0"
-                    CornerRadius="5" Padding="4,0.2">
-                    <ScrollViewer x:Name="PART_ContentHost" Focusable="false"
-                        HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" />
-                </Border>
-                <ControlTemplate.Triggers>
-                </ControlTemplate.Triggers>
-            </ControlTemplate>
-        </Setter.Value>
-    </Setter>
+<Style TargetType="StackPanel" x:Key="ContentStack" >
+<Setter Property="Margin" Value="20,20,20,20"/>
+</Style>
+<Style TargetType="local:MyCard" x:Key="Card" >
+<Setter Property="Margin" Value="0,5"/>
 </Style>
 <Style TargetType="Image" x:Key="InnerImage" >
 <Setter Property="MaxHeight" Value="500"/>
@@ -288,26 +280,20 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
 <Setter Property="FontWeight" Value="Bold"/>
 <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
 </Style>
-<Style TargetType="local:MyTextButton" x:Key="TextButtonH2" >
-<Setter Property="FontSize" Value="22"/>
-<Setter Property="FontWeight" Value="Bold"/>
-<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
-</Style>
 <Style TargetType="Paragraph" x:Key="H3" >
 <Setter Property="FontSize" Value="18"/>
 <Setter Property="Margin" Value="0,5,0,5"/>
 <Setter Property="FontWeight" Value="Bold"/>
 <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
 </Style>
-<Style TargetType="Paragraph" x:Key="H4" >
-<Setter Property="FontSize" Value="16"/>
-<Setter Property="Margin" Value="0,3,0,5"/>
-<Setter Property="FontWeight" Value="Bold"/>
-<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
-</Style>
 <Style TargetType="Paragraph" x:Key="H5" >
 <Setter Property="FontSize" Value="15"/>
 <Setter Property="Margin" Value="0,3,0,5"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style>
+<Style TargetType="Paragraph" x:Key="H7" >
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="Margin" Value="0,2,0,2"/>
 <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
 </Style>
 <Style TargetType="Border" x:Key="Quote" >
@@ -331,17 +317,18 @@ M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-2
 <sys:String x:Key="CreeperIcon">
 M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
 </sys:String>
-<sys:String x:Key="thanks">
-鸣谢|一些对主页开发有帮助的人: \n
-土星仙鹤 @ QQ(2480379448) 主页初版的首个测试者! \n
-ess的大清要活了 ~喵 @ QQ(1837750594) 带我接触了自定义主页,没有他我可能到现在还不知道主页是什么! \n
-最亮的信标 @ Github(Nattiden) 提供主页模板,本主页使用他的NewsHomepage为基础开发! \n
-Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \n
-主页群的各位 @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕! \n
-凌云 @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激! \n
-排列没啥顺序，个个我都非常非常非常谢谢你们!
-</sys:String>
+<sys:String x:Key="thanks" xml:space="preserve">鸣谢|一些对主页开发有帮助的人:
+土星仙鹤                                     @ QQ(2480379448) 主页初版的首个测试者!
+ess的大清要活了 ~喵                   @ QQ(1837750594) 带我接触了自定义主页,没有他我可能到现在还不知道主页是什么!
+最亮的信标                                  @ Github(Nattiden) 提供主页模板,本主页使用他的NewsHomepage为基础开发!
+Mfn233                                       @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励!
+主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
+凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
+排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
 <sys:String x:Key="WikiPage">%(WikiPage)s</sys:String>
+<sys:String x:Key="VersionID">%(version)s</sys:String>
+<BitmapImage x:Key="Img" UriSource="%(img)s"/>
+<sys:String x:Key="Topic">%(topic)s</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -370,48 +357,48 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <local:MyCard CanSwap="False" IsSwaped="false" Margin="0,-2,0,5">
 <Border Margin="0,0,0,0" Padding="2,8" BorderThickness="1" Background="{DynamicResource ColorBrush5}" CornerRadius="5" VerticalAlignment="Top" BorderBrush="{DynamicResource ColorBrush3}" Opacity="0.7">
     <Grid Margin="10,0,0,0">
-        <TextBlock x:Name="NewsHint" FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#FF000000">
-                🖼️ 欢迎使用杂志主页
+        <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#FF000000">
+                📚 欢迎使用杂志主页
     </TextBlock>
-        <TextBlock x:Name="Hint2" FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#00000000">
-                🖼️ 欢迎使用杂志主页
+        <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#00000000">
+                📚 欢迎使用杂志主页
     </TextBlock>
     </Grid>
 </Border>
 </local:MyCard>
+
 <TabControl Style="{StaticResource TabControlStyle}" FontFamily="Microsoft YaHei UI" FontSize="17">
     <TabItem Header="中文 Minecraft Wiki 摘录 - 本周页面" Style="{StaticResource TabItemStyle}">
 <local:MyCard>
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="{StaticResource Img}" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="{StaticResource Img}" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="苍白垂须" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="{StaticResource Topic}" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">苍白垂须</Paragraph>
+    <Paragraph Style="{StaticResource H2}">
+        <Run FontSize="22" FontWeight="Bold" Foreground="{DynamicResource ColorBrush3}" Text="{StaticResource Topic}"/>
+    </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>是一种生成于苍白之园生物群系的方块。</Paragraph></ListItem>
+%(intro)s
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>会自然生成于苍白之园生物群系中<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>的树干和树叶下方。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>也可以通过与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%81%E6%B5%AA%E5%95%86%E4%BA%BA" Margin="0,0,0,-8">流浪商人</local:MyTextButton></Underline>交易获得。</Paragraph></ListItem>
+%(intro_2)s
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph>没有被<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%89%AA%E5%88%80" Margin="0,0,0,-8">剪刀</local:MyTextButton></Underline>或具有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>的工具挖掘破坏时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>被破坏后不会掉落。</Paragraph></ListItem>
-<ListItem><Paragraph>当放置在苍白橡木原木、苍白橡木、去皮苍白橡木原木、去皮苍白橡木[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>]或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>树叶下方时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>每<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%BB" Margin="0,0,0,-8">刻</local:MyTextButton></Underline>有1⁄500的概率发出特殊的环境音效。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>不会自然生长。</Paragraph></ListItem>
-<ListItem><Paragraph>对<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>使用骨粉会使其向下生长一格。</Paragraph></ListItem>
+%(body)s
 </List>
 
-<Paragraph>图为苍白之园中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB">苍白垂须</local:MyTextButton></Underline>。</Paragraph>
+
+%(alt)s
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -435,70 +422,97 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://www.helloimg.com/i/2024/12/15/675ebe72302be.jpg" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://www.helloimg.com/i/2025/01/23/67920e6cec001.png" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://www.helloimg.com/i/2024/12/15/675ebe72302be.jpg" Opacity="0" Stretch="Fill"/>
+<Image Source="https://www.helloimg.com/i/2025/01/23/67920e6cec001.png" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="废弃矿井" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="望远镜" />
 </Border><FlowDocumentScrollViewer>
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">结构寻访：废弃矿井</Paragraph>
-<Paragraph Style="{StaticResource H5}">昔人已乘黄鹤去，此地空余黄鹤楼。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">当你四处跑图时，每隔一段时间，你就会偶然发现先人的足迹。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在你考古时发现的陶片，通向下界的废弃传送门，以及久已灭绝物种的巨大化石，无不揭示了你所探索世界的绵长历史。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但与这些看来时代久远的文物不同，其中的一些显得更为接近我们所生活的年代。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">这当中最好的例子便是废弃矿井——它会偶然在深洞中出现。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">它清楚地证明了先人尝试榨干主世界资源的企图，这可能就是钻石难以找到的原因吧！</Paragraph>
+<Paragraph Style="{StaticResource H7}">Taking Inventory: Spyglass</Paragraph>
+<Paragraph Style="{StaticResource H2}">背包盘点：望远镜</Paragraph>
+<Paragraph Style="{StaticResource H7}">What's on the horizon?</Paragraph>
+<Paragraph Style="{StaticResource H5}">地平线上的是什么？</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some things in Minecraft, like seeds, are very small. Other things just look small because they’re far away. Until recently it was literally impossible to tell the difference.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">Minecraft 中有一些物品本身就十分细小，比如种子；还有一些物体只是因为距离较远才看起来小。在不久前，你是无法确切看出这类物体的具体分别的。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Luckily, in the first part of the Caves and Cliffs update, we added an item that can help. It’s the spyglass, and it’s our item of the week.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">好在，《洞穴与山崖》第一部分的更新带来了一样新鲜玩意，大大改变了这种情况。它就是望远镜，我们的本周物品。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spyglasses make far-away things larger so you can see them more clearly. You can zoom in on anything, allowing you to see if that green blob on the horizon is a birch tree or a rapidly-approaching creeper. Useful!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">望远镜可以让远在天边的物体看起来更大更清晰。你可以透过它看向任何物体，这样就可以看清地平线上的一个绿色小点是何方神圣了——也许不过是一棵白桦，也许会是一只拔腿向你跑来的苦力怕。非常有用！</Paragraph>
 <BlockUIContainer>
-<StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6f7b24e.png"/>
-<TextBlock Text="游戏中的废弃矿井" Style="{StaticResource imgTitle}" />
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67920e6c4cbbe.png"/>
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0" Foreground="black">第一个废弃矿井的出现始于2011年6月的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%92%E9%99%A9%E6%9B%B4%E6%96%B0" Margin="0">冒险更新</local:MyTextButton></Underline>。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">它易于辨认——主体为由3x3隧道构成的密集网络，布有橡木和铁轨，且穿插着大量的蜘蛛网。其在与峡谷相交时最容易被发现。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">矿物资源和战利品使它们成为玩家们探索的好去处：</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在废弃矿井的墙壁上，你会常常看见矿工们遗忘的矿物，这使得探索废弃矿井成为初期快速积攒铁锭、铜锭和金锭等基础资源的方法之一。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但这还不是全部，那些神秘的矿工们还留下了许多满载着食物、火把、铁路设施和其他好东西的运输矿车。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但也请在探索时保持警惕，因为废弃矿井中的黑暗环境造就了一个怪物刷新的绝佳地点。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">不仅有一般的亡灵生物和苦力怕，你还会找到在废弃矿井中找到一种特殊的&quot;洞穴蜘蛛&quot;</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">这个体型更小的蜘蛛种群不仅更难以击中，还在攻击时造成负面的状态效果。千万要远离。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’re probably wondering how to get one. Well, you’re going to need to make it. Get yourself some copper ingots, by smelting raw copper, and then vertically combine two of them in a crafting bench with a shard of amethyst to act as a lens. If you get the recipe right, a spyglass will be yours.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">你可能会好奇这宝贝该上哪找呢？嗨，自己动手丰衣足食嘛。首先你需要烧炼粗铜来获得一些铜锭，然后在工作台中把它们垂直摆放，最后添上一块紫水晶碎片作镜片。配方弄对了，你的专属望远镜就诞生啦。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Interestingly, the spyglass actually has a slightly different effect depending on what field-of-view (FOV) your game is set to on the options screen. By default, Java edition has a FOV of 70° and Bedrock edition has a slightly-more-zoomed-in FOV of 60°, but that can be changed to whatever you want. Whatever it’s set to, a spyglass will give you a tenth of it, creating a zoom effect.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">有趣的是，望远镜的实际效果依选项屏幕中设定的游戏视场角（FOV）会有所不同。默认情况下，Java 版的视场角为 70°；基岩版则窄一些，为 60°，这个数值可自行更改。但无论如何，望远镜总是会提供十分之一视场角的缩放效果。</Paragraph>
 <BlockUIContainer>
-<StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6faa984.png"/>
-<TextBlock Text="现实中的矿巷 —— 图片版权协议: EwkaC // CC BY-SA 4.0" Style="{StaticResource imgTitle}" />
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67920e6cca513.png"/>
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0" Foreground="black">在真实世界中，人类已经为了获取资源而建造了数千年的矿井。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">最早的地下矿井仅仅像是经过人工扩张的自然洞穴。但罗马人大幅度改进了相关的工艺水准——他们开凿了通往矿井的运水槽，这样，他们不仅可以用水定位矿脉，还能清除矿渣和残骸。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在矿业术语中，“矿井”指将人和物带上地面的垂直隧道，通常使用某种升降机。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">而游戏中的横向隧道则叫做“矿巷”或“坑道”，就像在游戏中一样，它们通常由木结构支撑起来以减少发生坍塌事故的风险。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">当今，你可能会以为采矿工业已经高度机器化并由机器人完成——在一些地方的确如此。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但在大多数地方，采矿的工作仍依赖于人们在恶劣和危险的条件下辛勤工作的成果。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">采矿对环境的负面影响也是一个日益严重的问题，有人担心生活所需的最重要的一些资源正因而逐渐枯竭。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在游戏中，供你游玩的世界是无限的——如果你在一个地方挖完了所有煤矿，你大可以直接换个地方继续挖。地球上？我们不可能再那样“奢侈”了……</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the real world, no-one’s exactly sure who invented the spyglass.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现实世界中的望远镜是谁发明的？答案无人知晓。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver"> The earliest written record we have is from a patent application filed by spectacle-maker Hans Lippershey in the Netherlands in 1608, which wasn’t granted because another inventor filed a similar patent a few weeks later, and so the judge figured that everyone knew about it already.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现存最早的文字记载是荷兰眼镜商 Hans Lippershey 于 1608 年提交的专利申请，但由于几星期后有发明者也提交了相似的专利申请<Run Text="[1]" FontSize="10" BaselineAlignment="Superscript"/>，Hans Lippershey 因此没有获得专利权。最后法官决定消除事端一视同仁，裁定望远镜的制作方法已经人尽皆知了。<Run Text="[2]" FontSize="10" BaselineAlignment="Superscript"/></Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Nonetheless, word of Lippershey’s patent application spread across Europe and reached astronomer Galileo Galilei, who refined the design substantially in the next few years – taking it from 3x magnification to 8x, and then an impressive 23x. With this 23x telescope, he discovered the moons of Jupiter, the phases of Venus, and the rotation of the Sun.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">尽管如此，Lippershey 的专利申请还是传遍了欧洲，也传到了天文学家伽利略的耳朵里。他在几年间大幅改进了望远镜的设计，从 3 倍变焦增加到 8 倍变焦，而后又增加到惊人的 23 倍。靠着这架望远镜，他发现了木星的卫星、金星的相位以及太阳的自转。</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67921077812df.png"/>
+</StackPanel>
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Why did we name it “spyglass”? Because Minecraft dev Felix Jones wanted to be a pirate!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">为什么我们要叫它&quot;spyglass&quot;<Run Text="[3]" FontSize="10" BaselineAlignment="Superscript"/>？因为 Minecraft 开发者 Felix Jones 就想着当个海盗！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Above: an example of how stained glass caused rendering issues when looking through the spyglass. Poor sheep!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">上图：透过望远镜看向染色玻璃时引发渲染漏洞的例子。好惨一只羊！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, our telescopes are much more powerful. So powerful, in fact, that we need to blast them into space because our dusty atmosphere limits what we can see. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">如今的望远镜则更强大了。强到什么程度呢？我们要把它发射进太空来执行观测了，因为我们星球的大气满是尘埃，限制了能获取到的信息。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">On 25 December 2021, the most advanced space telescope ever built was launched aboard a rocket from French Guiana.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">2021 年 12 月 25 日，有史以来最先进的望远镜在法属圭亚那搭乘火箭升空。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">The <Underline><local:MyTextButton EventData="https://www.jwst.nasa.gov/" EventType="打开网页" FontSize="10" Foreground="silver" Text="James Webb Space Telescope"/></Underline>, as it’s known, will send back images of stars up to 13.3 billion light-years from Earth – right on the edge of the visible Universe.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">据了解，<Underline><local:MyTextButton EventData="https://www.jwst.nasa.gov/" EventType="打开网页" Text="詹姆斯·韦布太空望远镜"/></Underline>（James Webb Space Telescope）将传回距离地球最远可达 133 亿光年的恒星图像——这已经是我们能看到的最深的宇宙了。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">No one’s ever explored what’s beyond the atmosphere of the Overworld in Minecraft. So point your spyglass upward when night falls, and let us know what you see.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">还没人探索过 Minecraft 主世界的大气层外有些什么。那么，试着在夜幕降临时把望远镜对准那片星辰大海吧，也请告诉我们你的发现。</Paragraph>
+<Paragraph Style="{StaticResource H5}" Foreground="silver">译注：</Paragraph>
+<Paragraph Margin="0,0" Foreground="silver">[1]：这里应该是指荷兰人 Jacob Metius（1571 后 - 1628）。</Paragraph>
+<Paragraph Margin="0,0" Foreground="silver">[2]：当时主张专利权的可能有多个科学家或制造商，最后并没有个人或组织获得望远镜的专利权。</Paragraph>
+<Paragraph Margin="0,0" Foreground="silver">[3]：&quot;spyglass&quot;一般指海盗用的单筒望远镜。</Paragraph>
+<Paragraph Margin="0,0" Foreground="silver">[4]：此处使用了“光行程”作为空间距离衡量方式，但由于宇宙的时空弯曲，这种衡量方式并不准确，其<Underline><local:MyTextButton EventData="https://zh.m.wikipedia.org/wiki%2F%25E5%2590%258C%25E7%25A7%25BB%25E8%25B7%259D%25E9%259B%25A2" EventType="打开网页" FontSize="10" Foreground="silver" Text="同移距离"/></Underline>应为约32 × 10^9光年。</Paragraph>
+<Paragraph Style="{StaticResource H5}" Foreground="Red">！提请注意：本文涉及天文学专业知识。鉴于本文原作者及译者均非天文学专业人士，因此无法为文章内容的准确性作任何担保，敬请广大读者在阅读时自行辨别文中信息的准确性，望有识之士不吝指正为感。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
-<Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
-<Grid.ColumnDefinitions >
-<ColumnDefinition Width="45"/>
-<ColumnDefinition />
+
+<StackPanel Margin="0,0,0,20">
+<Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="64"/>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="64"/>
+<ColumnDefinition Width="*"/>
 </Grid.ColumnDefinitions>
-<Path Grid.Column="0" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+<Grid.RowDefinitions>
+<RowDefinition Height="42"/>
+<RowDefinition />
+</Grid.RowDefinitions>
+<Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
                     Stretch="Uniform"
                     Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
-<TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Grid.Column="1" Text="(MCBBS)橄榄Chan" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+<Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+<TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="Duncan Geere" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2024-11-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: 2022-2-17" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
-<local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页" Margin="0,0,0,12"
-    EventData="https://www.minecraft.net/en-us/article/mineshaft" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+<local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/taking-inventory--spyglass" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+</StackPanel>
+
 <StackPanel Margin="16,0,23,20" VerticalAlignment="bottom">
     <Grid>
       <Grid.ColumnDefinitions>
@@ -507,6 +521,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
       </Grid.ColumnDefinitions>
       <local:MyComboBox x:Name="jumpbox" Height="30" SelectedIndex="0">
         <local:MyComboBoxItem Content="古迹废墟"/>
+        <local:MyComboBoxItem Content="废弃矿井"/>
       </local:MyComboBox>
         <local:MyButton HorizontalAlignment="Center" Width="92"
             Grid.Column="1" Text="打开→" EventType="打开帮助"
@@ -517,15 +532,23 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </local:MyCard>
 </TabItem>
 <TabItem Header="其他" Style="{StaticResource TabItemStyle}">
-<!-- NewsCard -->
-<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
-<StackPanel Margin="8,35,8,15">
-<local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" />
-</StackPanel>
+<StackPanel>
+<local:MyCard CanSwap="False" IsSwaped="false" Margin="0,0,0,10">
+<Border Margin="0,0,0,0" Padding="2,8" BorderThickness="1" Background="{DynamicResource ColorBrush5}" CornerRadius="5" VerticalAlignment="Top" BorderBrush="{DynamicResource ColorBrush3}" Opacity="0.7">
+    <Grid Margin="10,0,0,0">
+        <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#FF000000">
+                ⚠️ &quot;最新版本&quot; 板块为每周更新时同步，并不一定为最新！
+    </TextBlock>
+        <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#00000000">
+                ⚠️ &quot;最新版本&quot; 板块为每周更新时同步，并不一定为最新！
+    </TextBlock>
+    </Grid>
+</Border>
 </local:MyCard>
+<!-- NewsCard -->
+%(NewsCard)s
 <!-- end_NewsCard -->
+</StackPanel>
 </TabItem>
 </TabControl>
 <local:MyCard Margin="0,10,0,14">
@@ -535,7 +558,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="250106:eb03ad9" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="{StaticResource VersionID}" ToolTip="当前版本号(非git), 点击复制" EventType="复制文本" EventData="{StaticResource VersionID}"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
@@ -571,19 +594,31 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </Border>
 </local:MyCard>
 </StackPanel>'''
+    validate_template(content_text)
+    content_text = re.sub(r"(?<!%)%(?!\()", "%%", content_text)
+    test = "{%(datetime)s} \n %(WikiPage)s \n %(topic)s \n %(intro)s \n %(intro_2)s \n %(body)s \n %(alt)s \n %(img)s \n %(NewsCard)s \n %(version)s"
+    meta = {
+        'WikiPage': get_wiki_page(),
+        'version': get_version(),
+        'img': gs(),
+        'topic': get_topic(),
+        'intro': gr()[0],
+        'intro_2': gr()[1],
+        'body': '\n'.join(gr()[2:-1]),
+        'alt': get_img_alt(),
+        'datetime': f'最后更新: {now.strftime("%Y-%m-%d")}',
+        'NewsCard': get_news_card()
+    }
+    for k, v in meta.items():
+        meta[k] = str(v)
+
+#   content_text = re.sub(r'}', "}}", re.sub(r'\{', '{{', content_text))
+    content_text = content_text.replace("}", "}}").replace("{", "{{")
+#   output = re.sub(r'}}', "}", re.sub(r'\{\{', '{', (content_text % meta)))
+    output = (content_text % meta).replace("}}", "}").replace("{{", "{")
+    print(output)
     with open("Custom.xaml", "w", encoding='UTF-8') as f:
-        f.write(content_text % {
-            'datetime': f'最后更新: {now.strftime("%Y-%m-%d")}',
-            'WikiPage': get_wiki_page(),
-            'topic': get_topic(),
-            'intro': gr()[0],                       # 内容的第一句
-            'intro_2': gr()[1],                     # 内容的第二句
-            'body': '\n'.join(gr()[2:-1]),          # 内容剩余部分
-            'alt': get_img_alt(),
-            'img': gs(),
-            'NewsCard': get_news_card(),
-            'version': get_version()
-        })
+        f.write(output)
 
 
 def print_out():
@@ -598,4 +633,4 @@ def print_out():
     print(f'$VID:     {get_version()}')
 
 
-print_out()
+update()
