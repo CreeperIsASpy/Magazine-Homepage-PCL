@@ -7,15 +7,12 @@ import struct
 import requests
 from bs4 import BeautifulSoup
 
-def get_origin():
-    response = requests.get("https://zh.minecraft.wiki").text
+response = requests.get("https://zh.minecraft.wiki").text
+if response.text:
+    print(response.text)
     obj = BeautifulSoup(response, 'html.parser')
-    while not response or not obj:
-        time.sleep(20)
-        response = requests.get("https://zh.minecraft.wiki").text
-        obj = BeautifulSoup(response, 'html.parser')
-
-get_origin()
+elif not response.text:
+    exit(1)
 
 
 def while_delete(del_txts, txt, replacement=''):
