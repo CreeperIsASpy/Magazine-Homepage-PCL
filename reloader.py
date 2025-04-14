@@ -8,7 +8,11 @@ import requests
 from bs4 import BeautifulSoup
 
 response = requests.get("https://zh.minecraft.wiki").text
-obj = BeautifulSoup(response, 'html.parser')
+if response.text:
+    print(response.text)
+    obj = BeautifulSoup(response, 'html.parser')
+elif not response.text:
+    exit(1)
 
 
 def while_delete(del_txts, txt, replacement=''):
