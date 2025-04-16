@@ -8,10 +8,10 @@ import requests
 from bs4 import BeautifulSoup
 
 response = requests.get("https://zh.minecraft.wiki").text
-if response.text:
-    print(response.text)
+if response:
+    print(response)
     obj = BeautifulSoup(response, 'html.parser')
-elif not response.text:
+elif not response:
     exit(1)
 
 
