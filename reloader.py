@@ -7,11 +7,16 @@ import struct
 import requests
 from bs4 import BeautifulSoup
 
-response = requests.get("https://zh.minecraft.wiki").text
-if response:
-    print(response)
-    obj = BeautifulSoup(response, 'html.parser')
-elif not response:
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+}
+response = requests.get("https://zh.minecraft.wiki", headers=headers)
+if response.status_code != 200:
+    print(f"Error: Failed to fetch page, status code {response.status_code}")
+    exit(1)
+if response.text:
+    obj = BeautifulSoup(response.text, 'html.parser')
+elif not response.text:
     exit(1)
 
 
