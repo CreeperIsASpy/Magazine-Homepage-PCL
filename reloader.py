@@ -11,17 +11,6 @@ VERSION = "0.0"
 headers = {
     'User-Agent':
         f'PCL2 Magazine Homepage Bot/{VERSION}',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-    'Cache-Control': 'no-cache',
-    'DNT': '1',
-    'Pragma': 'no-cache',
-    'Referer': 'https://zh.minecraft.wiki/',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-    'Upgrade-Insecure-Requests': '1'
 }
 response = requests.get("https://zh.minecraft.wiki", headers=headers, timeout=30)
 
