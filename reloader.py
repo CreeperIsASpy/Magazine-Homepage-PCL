@@ -23,7 +23,7 @@ def get_resp():
                             headers=headers, timeout=30)
     meta = json.loads(response.text)
 
-    print(repr(response.status_code))
+    print("status code: " + repr(response.status_code))
 
     if not str(response.status_code).startswith("2"):
         print(f"Error: Failed to fetch page, status code {response.status_code}")
