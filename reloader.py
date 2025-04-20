@@ -25,7 +25,8 @@ headers = {
 }
 response = requests.get("https://zh.minecraft.wiki", headers=headers, timeout=30)
 
-if response.status_code != 200:
+print(response.status_code)
+if not str(response.status_code).startswith("2"):
     print(f"Error: Failed to fetch page, status code {response.status_code}")
     exit(1)
 if response.text:
