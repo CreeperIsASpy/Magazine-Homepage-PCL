@@ -2,6 +2,7 @@ import datetime
 import hashlib
 import re
 import time
+import json
 import struct
 
 import requests
@@ -12,17 +13,15 @@ headers = {
     'User-Agent':
         f'PCL2 Magazine Homepage Bot/{VERSION}',
 }
-response = requests.get("https://zh.minecraft.wiki", headers=headers, timeout=30)
+response = requests.get("https://zh.minecraft.wiki/api.php?action=parse&format=json&page=Minecraft_Wiki",
+                        headers=headers, timeout=30)
+meta = json.loads(response.text)
 
 print(response.status_code)
 if not str(response.status_code).startswith("2"):
     print(f"Error: Failed to fetch page, status code {response.status_code}")
     exit(1)
-if response.text:
-    obj = BeautifulSoup(response.text, 'html.parser')
-    print(response.text[:100])
-elif not response.text:
-    exit(1)
+obj = BeautifulSoup(meta["parse"]["text"]["*"], 'html.parser')
 
 
 def while_delete(del_txts, txt, replacement=''):
