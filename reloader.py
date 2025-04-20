@@ -4,7 +4,6 @@ import re
 import time
 import struct
 
-from curl_cffi import requests
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,7 +20,7 @@ headers = {
     'Sec-Fetch-Site': 'same-origin',
     'Upgrade-Insecure-Requests': '1'
 }
-response = requests.get(url="https://zh.minecraft.wiki", headers=headers, timeout=30)
+response = requests.get("https://zh.minecraft.wiki", headers=headers, timeout=30)
 
 if response.status_code != 200:
     print(f"Error: Failed to fetch page, status code {response.status_code}")
