@@ -4,14 +4,25 @@ import re
 import time
 import struct
 
-import cloudscraper
+from curl_cffi import requests
 import requests
 from bs4 import BeautifulSoup
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Cache-Control': 'no-cache',
+    'DNT': '1',
+    'Pragma': 'no-cache',
+    'Referer': 'https://zh.minecraft.wiki/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Upgrade-Insecure-Requests': '1'
 }
-response = cloudscraper.create_scraper().get("https://zh.minecraft.wiki", headers=headers, timeout=30)
+response = requests.get(url="https://zh.minecraft.wiki", headers=headers, timeout=30)
+
 if response.status_code != 200:
     print(f"Error: Failed to fetch page, status code {response.status_code}")
     exit(1)
@@ -622,9 +633,9 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
     for k, v in meta.items():
         meta[k] = str(v)
 
-#   content_text = re.sub(r'}', "}}", re.sub(r'\{', '{{', content_text))
+    #   content_text = re.sub(r'}', "}}", re.sub(r'\{', '{{', content_text))
     content_text = content_text.replace("}", "}}").replace("{", "{{")
-#   output = re.sub(r'}}', "}", re.sub(r'\{\{', '{', (content_text % meta)))
+    #   output = re.sub(r'}}', "}", re.sub(r'\{\{', '{', (content_text % meta)))
     output = (content_text % meta).replace("}}", "}").replace("{{", "{")
     print(output)
     with open("Custom.xaml", "w", encoding='UTF-8') as f:
