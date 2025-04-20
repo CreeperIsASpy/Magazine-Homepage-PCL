@@ -20,6 +20,7 @@ if not str(response.status_code).startswith("2"):
     exit(1)
 if response.text:
     obj = BeautifulSoup(response.text, 'html.parser')
+    print(response.text[:100])
 elif not response.text:
     exit(1)
 
