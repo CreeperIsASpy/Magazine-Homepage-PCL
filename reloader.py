@@ -443,67 +443,62 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://www.helloimg.com/i/2025/01/23/67920e6cec001.png" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://www.helloimg.com/i/2025/04/21/68062e0edcfaf.jpg" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://www.helloimg.com/i/2025/01/23/67920e6cec001.png" Opacity="0" Stretch="Fill"/>
+<Image Source="https://www.helloimg.com/i/2025/04/21/68062e0edcfaf.jpg" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="望远镜" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="末影人" />
 </Border><FlowDocumentScrollViewer>
 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">Taking Inventory: Spyglass</Paragraph>
-<Paragraph Style="{StaticResource H2}">背包盘点：望远镜</Paragraph>
-<Paragraph Style="{StaticResource H7}">What's on the horizon?</Paragraph>
-<Paragraph Style="{StaticResource H5}">地平线上的是什么？</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some things in Minecraft, like seeds, are very small. Other things just look small because they’re far away. Until recently it was literally impossible to tell the difference.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">Minecraft 中有一些物品本身就十分细小，比如种子；还有一些物体只是因为距离较远才看起来小。在不久前，你是无法确切看出这类物体的具体分别的。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Luckily, in the first part of the Caves and Cliffs update, we added an item that can help. It’s the spyglass, and it’s our item of the week.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">好在，《洞穴与山崖》第一部分的更新带来了一样新鲜玩意，大大改变了这种情况。它就是望远镜，我们的本周物品。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spyglasses make far-away things larger so you can see them more clearly. You can zoom in on anything, allowing you to see if that green blob on the horizon is a birch tree or a rapidly-approaching creeper. Useful!</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">望远镜可以让远在天边的物体看起来更大更清晰。你可以透过它看向任何物体，这样就可以看清地平线上的一个绿色小点是何方神圣了——也许不过是一棵白桦，也许会是一只拔腿向你跑来的苦力怕。非常有用！</Paragraph>
+<Paragraph Style="{StaticResource H7}">Mob Menagerie: Enderman</Paragraph>
+<Paragraph Style="{StaticResource H2}">生物圈栏：末影人</Paragraph>
+<Paragraph Style="{StaticResource H7}">A tall dark stranger that doesn’t like being stared at.</Paragraph>
+<Paragraph Style="{StaticResource H5}">个子高、肤色深、讨厌被人盯着的怪人</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Quick – what are the top three weirdest mobs in Minecraft?</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">一秒内，你能想到《我的世界》三大奇怪的生物是哪些么？</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Here’s my list. Number three – the strider, happily wading around its lava pools. Number two – the mooshroom, an unholy hybrid of moo and shroom. But topping the list, at number one, is our mob of the month – the creepy, otherworldly, block-rearranging, Enderman.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在我心中，排名第三的是喜欢到处“玩岩浆”的炽足兽，第二是由哞哞叫的牛和蘑菇“杂交”而成的奇异生物 —— 哞菇，第一则是我们的本月生物 —— 令人毛骨悚然、远离世俗喧嚣、喜欢乱挪方块的末影人。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Endermen were added to Minecraft alongside melons, glass panes and iron bars in the Adventure Update, released in September 2011.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">2011年11月，《我的世界》“冒险更新”版本发布，末影人被加入游戏，随之加入的还有西瓜、玻璃板和铁栏杆。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Originally they had green eyes and emitted smoke as they moved around, but those were changed to the now-familiar pink eyes and portal particles on release.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">起初，末影人有双绿色的眼睛，移动时周围会烟雾弥漫。后来，末影人迎来大变样，眼睛变成了粉红色，突然出现时，会出现传送门粒子。</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
-<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67920e6c4cbbe.png"/>
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/04/21/68062e0da2e29.jpg"/>
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’re probably wondering how to get one. Well, you’re going to need to make it. Get yourself some copper ingots, by smelting raw copper, and then vertically combine two of them in a crafting bench with a shard of amethyst to act as a lens. If you get the recipe right, a spyglass will be yours.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">你可能会好奇这宝贝该上哪找呢？嗨，自己动手丰衣足食嘛。首先你需要烧炼粗铜来获得一些铜锭，然后在工作台中把它们垂直摆放，最后添上一块紫水晶碎片作镜片。配方弄对了，你的专属望远镜就诞生啦。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Interestingly, the spyglass actually has a slightly different effect depending on what field-of-view (FOV) your game is set to on the options screen. By default, Java edition has a FOV of 70° and Bedrock edition has a slightly-more-zoomed-in FOV of 60°, but that can be changed to whatever you want. Whatever it’s set to, a spyglass will give you a tenth of it, creating a zoom effect.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">有趣的是，望远镜的实际效果依选项屏幕中设定的游戏视场角（FOV）会有所不同。默认情况下，Java 版的视场角为 70°；基岩版则窄一些，为 60°，这个数值可自行更改。但无论如何，望远镜总是会提供十分之一视场角的缩放效果。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Finding an Enderman should be easy. They’re the only mob that spawns naturally in all three of the game’s dimensions – the Overworld, the Nether, and the End. But actually they’re quite rare in the first two of those. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">末影人一点也不难找。它是主世界、下界、末地三个维度都会生成的唯一一种怪物。前两个维度中，末影人应该很少出现。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">My advice for finding one in the Overworld is to head somewhere where the terrain is relatively flat so you can see a good distance, then pillar up beyond the range of skeleton bows and wait for night time.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">要想在主世界找到末影人，建议去一些地形平坦的地方，这样能一目千里，再原地往上搭几格，骷髅便攻击不到你，然后静静等待夜晚到来即可。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver"> Once the sun sets, begin to look out in all directions. Eventually, you’ll spot one – shuffling around, perhaps with a block in its hands.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">夕阳西下，夜幕降临，便要开始眼观四方了。最后，你肯定能发现一只末影人 —— 它穿梭于地方之间，手里或许还拿着一个方块。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But be careful with that crosshair. Endermen really don’t like it when you look directly at their face. If you do, they’ll start screaming and shaking, and as soon as you look away it’ll begin teleporting towards you and begin to attack. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但要注意你屏幕上的十字准心，末影人可不会喜欢有人直勾勾地盯着它们的脸。你敢这样做，末影人便会抽泣，颤抖，随后朝你瞬移过来，向你发起攻击。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">They’ll also teleport in a couple of other situations. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在其他一些情况下，末影人也会瞬移。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">This means that you’ll need a melee weapon to take one down. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">如果你将投掷物扔向末影人，它便会在投掷物击中的前一刻迅速躲开。所以，要想击杀末影人，必须用近战武器。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Also, Endermen don’t really like liquids or bright sunlight – if they come into contact with either, they’ll begin teleporting randomly, often ending up in caves below the surface where they lurk until it’s dark again. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">同时，末影人也不喜欢和液体接触，更不喜欢在明媚的阳光下逗留 —— 遇到以上任何一种情况，末影人便会传送到任意地点，最终会躲到地表下的洞穴内，直到黑夜降临，才会再次出现在地面。</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
-<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67920e6cca513.png"/>
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/04/21/68062e10eb1f6.png"/>
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the real world, no-one’s exactly sure who invented the spyglass.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">现实世界中的望远镜是谁发明的？答案无人知晓。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver"> The earliest written record we have is from a patent application filed by spectacle-maker Hans Lippershey in the Netherlands in 1608, which wasn’t granted because another inventor filed a similar patent a few weeks later, and so the judge figured that everyone knew about it already.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">现存最早的文字记载是荷兰眼镜商 Hans Lippershey 于 1608 年提交的专利申请，但由于几星期后有发明者也提交了相似的专利申请<Run Text="[1]" FontSize="10" BaselineAlignment="Superscript"/>，Hans Lippershey 因此没有获得专利权。最后法官决定消除事端一视同仁，裁定望远镜的制作方法已经人尽皆知了。<Run Text="[2]" FontSize="10" BaselineAlignment="Superscript"/></Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Nonetheless, word of Lippershey’s patent application spread across Europe and reached astronomer Galileo Galilei, who refined the design substantially in the next few years – taking it from 3x magnification to 8x, and then an impressive 23x. With this 23x telescope, he discovered the moons of Jupiter, the phases of Venus, and the rotation of the Sun.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">尽管如此，Lippershey 的专利申请还是传遍了欧洲，也传到了天文学家伽利略的耳朵里。他在几年间大幅改进了望远镜的设计，从 3 倍变焦增加到 8 倍变焦，而后又增加到惊人的 23 倍。靠着这架望远镜，他发现了木星的卫星、金星的相位以及太阳的自转。</Paragraph>
-<BlockUIContainer>
-<StackPanel Margin="0,4,0,4">
-<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2025/01/23/67921077812df.png"/>
-</StackPanel>
-</BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Why did we name it “spyglass”? Because Minecraft dev Felix Jones wanted to be a pirate!</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">为什么我们要叫它&quot;spyglass&quot;<Run Text="[3]" FontSize="10" BaselineAlignment="Superscript"/>？因为 Minecraft 开发者 Felix Jones 就想着当个海盗！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Above: an example of how stained glass caused rendering issues when looking through the spyglass. Poor sheep!</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">上图：透过望远镜看向染色玻璃时引发渲染漏洞的例子。好惨一只羊！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, our telescopes are much more powerful. So powerful, in fact, that we need to blast them into space because our dusty atmosphere limits what we can see. </Paragraph>
-<Paragraph Margin="0,0" Foreground="black">如今的望远镜则更强大了。强到什么程度呢？我们要把它发射进太空来执行观测了，因为我们星球的大气满是尘埃，限制了能获取到的信息。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">On 25 December 2021, the most advanced space telescope ever built was launched aboard a rocket from French Guiana.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">2021 年 12 月 25 日，有史以来最先进的望远镜在法属圭亚那搭乘火箭升空。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">The <Underline><local:MyTextButton EventData="https://www.jwst.nasa.gov/" EventType="打开网页" FontSize="10" Foreground="silver" Text="James Webb Space Telescope"/></Underline>, as it’s known, will send back images of stars up to 13.3 billion light-years from Earth – right on the edge of the visible Universe.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">据了解，<Underline><local:MyTextButton EventData="https://www.jwst.nasa.gov/" EventType="打开网页" Text="詹姆斯·韦布太空望远镜"/></Underline>（James Webb Space Telescope）将传回距离地球最远可达 133 亿光年的恒星图像——这已经是我们能看到的最深的宇宙了。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">No one’s ever explored what’s beyond the atmosphere of the Overworld in Minecraft. So point your spyglass upward when night falls, and let us know what you see.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">还没人探索过 Minecraft 主世界的大气层外有些什么。那么，试着在夜幕降临时把望远镜对准那片星辰大海吧，也请告诉我们你的发现。</Paragraph>
-<Paragraph Style="{StaticResource H5}" Foreground="silver">译注：</Paragraph>
-<Paragraph Margin="0,0" Foreground="silver">[1]：这里应该是指荷兰人 Jacob Metius（1571 后 - 1628）。</Paragraph>
-<Paragraph Margin="0,0" Foreground="silver">[2]：当时主张专利权的可能有多个科学家或制造商，最后并没有个人或组织获得望远镜的专利权。</Paragraph>
-<Paragraph Margin="0,0" Foreground="silver">[3]：&quot;spyglass&quot;一般指海盗用的单筒望远镜。</Paragraph>
-<Paragraph Margin="0,0" Foreground="silver">[4]：此处使用了“光行程”作为空间距离衡量方式，但由于宇宙的时空弯曲，这种衡量方式并不准确，其<Underline><local:MyTextButton EventData="https://zh.m.wikipedia.org/wiki%2F%25E5%2590%258C%25E7%25A7%25BB%25E8%25B7%259D%25E9%259B%25A2" EventType="打开网页" FontSize="10" Foreground="silver" Text="同移距离"/></Underline>应为约32 × 10^9光年。</Paragraph>
-<Paragraph Style="{StaticResource H5}" Foreground="Red">！提请注意：本文涉及天文学专业知识。鉴于本文原作者及译者均非天文学专业人士，因此无法为文章内容的准确性作任何担保，敬请广大读者在阅读时自行辨别文中信息的准确性，望有识之士不吝指正为感。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You don’t have to fight Endermen, you know. These strange, tall beings will happily ignore you if you ignore them and their habit of quietly moving blocks around from one place to another. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">众所周知，你完全不需要与末影人搏斗。你不看这位身材高挑的怪家伙，它压根不会盯上你，而是自顾自悄悄拿起一个方块运到另一处。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But if you want to complete the game you will need to end a few, so here are a few useful things to know.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但若想通关游戏的话，你可能要“亲密接触”一些末影人了，下面是一些实用提示：</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">First, Endermen hit hard – about twice as hard as a zombie. They also have twice the health of a zombie, meaning that you’ll want to be prepared before taking one on. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">第一，末影人攻击伤害可不低，大概有僵尸的两倍，血量也是僵尸的两倍。因此，与末影人斗智斗勇前，要准备充分。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Second, Endermen are tall enough that they won’t fit under a two-block high ceiling. You can often hide below a tree and attack one without it being able to hit back very effectively. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">第二，末影人个子高，进不去2格高的地方。通常，你可以躲在一棵树下，然后用你的武器反击，这样一点也不用担心末影人会反击了。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Finally, when ended an Enderman, they will drop any block that they’re holding as an item, and will also sometimes drop an Ender pearl – a strange object that grants the holder the Endermen’s power of teleportation, as well as access to the End dimension. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">最后，当你击杀了末影人，地上会掉落一些它们手上拿着的方块，有时也会掉落一个末影珍珠。末影珍珠是一种奇异物品，能让玩家拥有末影人的瞬移能力，更能解锁末地维度。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">That’s where you’ll find the Ender Dragon – the closest thing that Minecraft has to a final boss. So get some practice in on the Endermen, and good luck – you’ll no doubt need it. </Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在末地，你便会见到《我的世界》最终BOSS —— 末影龙。因此，记得多在末影人上做点功课，未来肯定会派上用场。祝你好运！</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 
@@ -522,16 +517,16 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
                     Stretch="Uniform"
                     Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
-<TextBlock Grid.Column="1" Text="(MCBBS)橄榄Chan" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="Duncan Geere" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2024-11-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
-<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: 2022-2-17" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-04-21" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: 2025-04-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/taking-inventory--spyglass" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/enderman" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
 
 <StackPanel Margin="16,0,23,20" VerticalAlignment="bottom">
