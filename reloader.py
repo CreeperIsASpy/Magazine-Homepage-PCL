@@ -106,20 +106,6 @@ def get_news_card():
     return resp
 
 
-def gr():
-    origin = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)").text)
-    result = origin.lstrip("\n特色条目").strip().split("。")
-    result = [i.strip("\n") for i in result]
-#   print(result)
-    result = [f"<ListItem><Paragraph>{i}。</Paragraph></ListItem>" for i in result]
-    links = get_link_txt(str(
-        obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)")))
-    for k, v in links.items():
-        result = [i.replace(k, link_to_xaml((k, v))) if k in i else i for i in result]
-    result.pop()
-    return result
-
-
 def get_link_txt(txt):
     raw_links = re.findall(r'<a href=".*?" title=".*?"', txt, re.S)
     links = {}
@@ -134,6 +120,68 @@ def link_to_xaml(lk):
     xaml = f'''<Underline><local:MyTextButton EventType="打开网页" \
 EventData="{lk[1]}" Margin="0,0,0,-8">{lk[0]}</local:MyTextButton></Underline>'''
     return xaml
+
+
+def gr():
+    origin = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)").text)
+    result = origin.lstrip("\n特色条目").strip().split("。")
+    result = [i.strip("\n") for i in result]
+#   print(result)
+    result = [f"<ListItem><Paragraph>{i}。</Paragraph></ListItem>" for i in result]
+    
+    # 获取原始HTML内容
+    html_content = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)"))
+    
+    # 提取所有链接
+    links = get_link_txt(html_content)
+    
+    # 按照键的长度降序排序，确保先替换长的复合词
+    sorted_links = sorted(links.items(), key=lambda x: len(x[0]), reverse=True)
+    
+    # 处理每个段落
+    for i, item in enumerate(result):
+        # 提取段落文本内容（不包含ListItem和Paragraph标签）
+        paragraph_text = re.search(r'<ListItem><Paragraph>(.*?)</Paragraph></ListItem>', item)
+        if paragraph_text:
+            text_content = paragraph_text.group(1)
+            
+            # 创建一个标记数组，记录哪些位置已经被替换过
+            text_length = len(text_content)
+            replaced = [False] * text_length
+            
+            # 对每个链接进行替换，按长度降序处理
+            for key, url in sorted_links:
+                # 查找所有匹配位置
+                start_pos = 0
+                while True:
+                    pos = text_content.find(key, start_pos)
+                    if pos == -1:
+                        break
+                        
+                    # 检查这个位置是否已经被替换过
+                    if not any(replaced[pos:pos+len(key)]):
+                        # 标记这些位置为已替换
+                        for j in range(pos, pos+len(key)):
+                            if j < text_length:
+                                replaced[j] = True
+                                
+                        # 替换文本
+                        before = text_content[:pos]
+                        after = text_content[pos+len(key):]
+                        text_content = before + link_to_xaml((key, url)) + after
+                        
+                        # 更新标记数组以适应新的文本长度
+                        new_length = len(text_content)
+                        replaced = replaced[:pos] + [True] * len(link_to_xaml((key, url))) + replaced[pos+len(key):]
+                        
+                    # 移动到下一个可能的位置
+                    start_pos = pos + 1
+            
+            # 重新组装段落
+            result[i] = f"<ListItem><Paragraph>{text_content}</Paragraph></ListItem>"
+    
+    result.pop()
+    return result
 
 
 def gs():
