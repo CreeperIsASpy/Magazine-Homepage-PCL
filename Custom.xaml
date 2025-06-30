@@ -231,10 +231,10 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82</sys:String>
-<sys:String x:Key="VersionID">250629:18789d9</sys:String>
-<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Horse_attached_to_happy_ghast.png/350px-Horse_attached_to_happy_ghast.png?bc5d8"/>
-<sys:String x:Key="Topic">快乐恶魂</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0</sys:String>
+<sys:String x:Key="VersionID">250630:cb6aaf0</sys:String>
+<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Farmland_Hydration.png/350px-Farmland_Hydration.png?e9b9b"/>
+<sys:String x:Key="Topic">耕地</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -292,23 +292,19 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
     </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>是一种可被玩家骑乘的友好生物。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>是一种可以用来种植与生长<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%9C%E4%BD%9C%E7%89%A9" Margin="0,0,0,-8">农作物</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph>幼年形态的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>被称为小恶魂。</Paragraph></ListItem>
+<ListItem><Paragraph>对着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B3%A5%E5%9C%9F" Margin="0,0,0,-8">泥土</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%89%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">草方块</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9C%9F%E5%BE%84" Margin="0,0,0,-8">土径</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%84" Margin="0,0,0,-8">锄</local:MyTextButton></Underline>可将其犁成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%B1%E6%B0%B4%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">失水恶魂</local:MyTextButton></Underline>被放置在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%B4" Margin="0,0,0,-8">水</local:MyTextButton></Underline>中大约20分钟后，会转变成小恶魂。</Paragraph></ListItem>
-<ListItem><Paragraph>小恶魂会在生成24000游戏刻（20分）后成长为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>，对其喂食<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%AA%E7%90%83" Margin="0,0,0,-8">雪球</local:MyTextButton></Underline>可以加快生长进度。</Paragraph></ListItem>
-<ListItem><Paragraph>玩家可对<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>使用挽具，使其可被骑乘。</Paragraph></ListItem>
-<ListItem><Paragraph>挽具被装备在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>上时，其镜框会在无乘客时抬起，而在有乘客时落回眼前。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>最多可以承载4名玩家，但只有第一个骑乘的玩家可以控制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph>按下潜行可以脱离乘坐，这时玩家会站在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>的上表面。</Paragraph></ListItem>
-<ListItem><Paragraph>此时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>的全身会具有与方块类似的碰撞箱，能够为实体提供支撑。</Paragraph></ListItem>
-<ListItem><Paragraph>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8B%B4%E7%BB%B3" Margin="0,0,0,-8">拴绳</local:MyTextButton></Underline>将<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%88%B9" Margin="0,0,0,-8">船</local:MyTextButton></Underline>等实体拴在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>上时，会有四条类似<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8B%B4%E7%BB%B3" Margin="0,0,0,-8">拴绳</local:MyTextButton></Underline>的线从<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>下方的四个角连接到被拴住的实体上。</Paragraph></ListItem>
-<ListItem><Paragraph>如果<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>装备了挽具，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BF%AB%E4%B9%90%E6%81%B6%E9%AD%82" Margin="0,0,0,-8">快乐恶魂</local:MyTextButton></Underline>身上还会出现特殊的纹理。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>还会自然生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%9C%E7%94%B0" Margin="0,0,0,-8">农田</local:MyTextButton></Underline>里以及<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9E%97%E5%9C%B0%E5%BA%9C%E9%82%B8" Margin="0,0,0,-8">林地府邸</local:MyTextButton></Underline>的“小麦农场”和“瓜房”两种房间里。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>是游戏中一些<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%9C%E4%BD%9C%E7%89%A9" Margin="0,0,0,-8">农作物</local:MyTextButton></Underline>生长所必需的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>，如小麦植株、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%83%E8%96%AF" Margin="0,0,0,-8">马铃薯</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%83%A1%E8%90%9D%E5%8D%9C" Margin="0,0,0,-8">胡萝卜</local:MyTextButton></Underline>等。</Paragraph></ListItem>
+<ListItem><Paragraph>除此以外，一些植物也能种植在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>上面。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline>默认是干的，能够被附近的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%B4" Margin="0,0,0,-8">水</local:MyTextButton></Underline>或雨湿润。</Paragraph></ListItem>
+<ListItem><Paragraph>在一定的条件下，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%80%95%E5%9C%B0" Margin="0,0,0,-8">耕地</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>会“退化”为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B3%A5%E5%9C%9F" Margin="0,0,0,-8">泥土</local:MyTextButton></Underline>，无论它的湿润程度如何。</Paragraph></ListItem>
 </List>
 </FlowDocument>
 </FlowDocumentScrollViewer>
@@ -322,7 +318,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-06-29" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-06-30" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
