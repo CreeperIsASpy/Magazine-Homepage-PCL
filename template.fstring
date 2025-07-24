@@ -321,7 +321,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 </local:MyCard>
     </TabItem>
 <TabItem Header="Minecraft官方博文 - 识海漫谈" Style="{StaticResource TabItemStyle}">
-<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
+<local:MyCard Title="最新博文" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="生物圈栏：末影人（最新博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
@@ -331,12 +331,9 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="背包盘点：望远镜（历史博文）" Info="更新于2024-11-23，由 橄榄Chen（原MCBBS）翻译。"
     EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h望远镜.json" Type="Clickable" />
-</StackPanel>
-</local:MyCard>
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：废弃矿井（历史博文）" Info="更新于2024-11-23，自译博文。"
     EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h废弃矿井.json" Type="Clickable" />
-</StackPanel>
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：古迹废墟（历史博文）" Info="更新于2024-11-14，自译博文。"
     EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h古迹废墟.json" Type="Clickable" />
