@@ -150,7 +150,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <TextBlock Style="{StaticResource TitleBlock}" Text="古迹废墟" />
 </Border><FlowDocumentScrollViewer>
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">古迹废墟</Paragraph>
+<Paragraph Style="{StaticResource H2}">结构寻访：古迹废墟</Paragraph>
 <Paragraph Style="{StaticResource H5}">瓦砾中讲述了什么样的故事?</Paragraph>
 <Paragraph Margin="0,0">游戏中主世界的存在时间显然比你能够想象到的要长得多，这并不是空穴来风，你至少得相信证据！</Paragraph>
 <Paragraph Margin="0,0">巨型生物的化石被证实属于久已灭绝的物种, 遍布四处的煤矿脉表明远古丛林曾给地表披上绿装--可这还不是全部!</Paragraph>
