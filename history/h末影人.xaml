@@ -1,3 +1,116 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+<StackPanel.Resources>
+<!--Styles Starts-->
+<Style TargetType="FlowDocumentScrollViewer">
+<Setter Property="IsSelectionEnabled" Value="False"/>
+<Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+<Setter Property="Margin" Value="0"/>
+</Style>
+<Style TargetType="FlowDocument" >
+<Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="TextAlignment" Value="Left"/>
+</Style>
+<Style TargetType="StackPanel" x:Key="ContentStack" >
+<Setter Property="Margin" Value="20,20,20,20"/>
+</Style>
+<Style TargetType="local:MyCard" x:Key="Card" >
+<Setter Property="Margin" Value="0,5"/>
+</Style>
+<Style TargetType="Image" x:Key="InnerImage" >
+<Setter Property="MaxHeight" Value="500"/>
+<Setter Property="HorizontalAlignment" Value="Center"/>
+</Style>
+<Style TargetType="TextBlock" >
+<Setter Property="TextWrapping" Value="Wrap"/>
+<Setter Property="HorizontalAlignment" Value="Left"/>
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="Foreground" Value="Black"/>
+</Style>
+<Style TargetType="List" >
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+<Setter Property="Margin" Value="20,0,0,0"/>
+<Setter Property="MarkerStyle" Value="1"/>
+<Setter Property="Padding" Value="0"/>
+</Style>
+<Style TargetType="ListItem" >
+<Setter Property="Foreground" Value="Black"/>
+<Setter Property="LineHeight" Value="22"/>
+</Style
+><Style TargetType="Paragraph" x:Key="H1" >
+<Setter Property="FontSize" Value="24"/>
+<Setter Property="Margin" Value="0,10,0,10"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+</Style>
+<Style TargetType="Paragraph" x:Key="H2" >
+<Setter Property="FontSize" Value="22"/>
+<Setter Property="Margin" Value="0,10,0,5"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+</Style>
+<Style TargetType="Paragraph" x:Key="H3" >
+<Setter Property="FontSize" Value="18"/>
+<Setter Property="Margin" Value="0,5,0,5"/>
+<Setter Property="FontWeight" Value="Bold"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style>
+<Style TargetType="Paragraph" x:Key="H5" >
+<Setter Property="FontSize" Value="15"/>
+<Setter Property="Margin" Value="0,3,0,5"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style>
+<Style TargetType="Paragraph" x:Key="H7" >
+<Setter Property="FontSize" Value="14"/>
+<Setter Property="Margin" Value="0,2,0,2"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+</Style>
+<Style TargetType="Border" x:Key="Quote" >
+<Setter Property="BorderThickness" Value="5,0,0,0"/>
+<Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+<Setter Property="Padding" Value="10,5"/>
+<Setter Property="Margin" Value="0,5"/>
+</Style>
+<Style x:Key="imgTitle" TargetType="TextBlock">
+  <Setter Property="FontSize" Value="14" />
+  <Setter Property="Foreground" Value="#FF777777" />
+  <Setter Property="HorizontalAlignment" Value="Center" />
+  <Setter Property="Margin" Value="0,0,0,15" />
+</Style>
+<sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+<sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+<Style TargetType="Border" x:Key="HeadImageBorder" >
+<Setter Property="HorizontalAlignment" Value="Center"/>
+<Setter Property="BorderThickness" Value="4"/>
+<Setter Property="VerticalAlignment" Value="Top"/>
+<Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+<Setter Property="CornerRadius" Value="7"/>
+<Setter Property="MaxHeight" Value="140"/>
+</Style><Style TargetType="Border" x:Key="TitleBorder" >
+<Setter Property="Margin" Value="0,-20,-1,10"/>
+<Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+<Setter Property="Width" Value="170"/>
+<Setter Property="Height" Value="30"/>
+<Setter Property="CornerRadius" Value="7"/>
+<Setter Property="BorderThickness" Value="0,0,0,2"/>
+<Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+</Style><Style TargetType="TextBlock" x:Key="TitleBlock" >
+<Setter Property="HorizontalAlignment" Value="Center"/>
+<Setter Property="TextAlignment" Value="Center"/>
+<Setter Property="VerticalAlignment" Value="Center"/>
+<Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+<Setter Property="Width" Value="180"/>
+<Setter Property="TextWrapping" Value="Wrap"/>
+<Setter Property="FontSize" Value="18"/>
+</Style>
+</StackPanel.Resources>
 <local:MyCard CanSwap="False" IsSwaped="false" Margin="0,0,0,6">
 <Border Margin="0,0,0,0" Padding="2,8" BorderThickness="1" Background="{DynamicResource ColorBrush5}" CornerRadius="5" VerticalAlignment="Top" BorderBrush="{DynamicResource ColorBrush3}" Opacity="0.7">
     <Grid Margin="10,0,0,0">
@@ -22,6 +135,7 @@
     </Grid>
 </Border>
 </local:MyCard>
+<local:MyCard>
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
@@ -109,4 +223,7 @@
 </Grid>
 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
     EventData="https://www.minecraft.net/zh-hans/article/enderman" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+</StackPanel>
+</StackPanel>
+</local:MyCard>
 </StackPanel>

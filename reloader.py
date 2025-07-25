@@ -102,8 +102,23 @@ def while_delete(del_txts, txt, replacement=''):
 
 
 def get_news_card():
-    resp = str(requests.get("https://news.bugjump.net/apis/versions/latest-card").text)
-    return resp
+    response = requests.get("https://news.bugjump.net/apis/versions/latest-card")
+    if response.status_code != 200:
+        _404 = f"""<local:MyCard>
+<StackPanel Style="{{StaticResource ContentStack}}">
+<Border Style="{{StaticResource HeadImageBorder}}">
+<local:MyImage Source="https://http.cat/{response.status_code}.jpg" Stretch="UniformToFill" VerticalAlignment="Center"/>
+</Border>
+<Border Style="{{StaticResource TitleBorder}}">
+<TextBlock Style="{{StaticResource TitleBlock}}" Text="{response.status_code}" />
+</Border>
+<TextBlock TextWrapping="Wrap" Text="新闻主页API 出错啦！可以去提醒一下……"
+    HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16" Foreground="{{DynamicResource ColorBrush4}}" Margin="8,8,8,8"/>
+</StackPanel>
+</local:MyCard>"""
+
+    result = str(response.text)
+    return result
 
 
 def get_link_txt(txt):
@@ -123,11 +138,14 @@ EventData="{lk[1]}" Margin="0,0,0,-8">{lk[0]}</local:MyTextButton></Underline>''
 
 
 def gr():
+    # 这个函数做的非常精密，我虽然觉得很屎山，但是一改就炸……
+    # 别骂了别骂了
+
     origin = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)").text)
     result = origin.lstrip("\n特色条目").strip().split("。")
     result = [i.strip("\n") for i in result]
     #   print(result)
-    result = [f"<ListItem><Paragraph>{i}。</Paragraph></ListItem>" for i in result]
+    result = [f"""<ListItem><Paragraph Foreground="{{DynamicResource ColorBrush1}}">{i}。</Paragraph></ListItem>""" for i in result]
 
     # 获取原始HTML内容
     html_content = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)"))
@@ -141,7 +159,8 @@ def gr():
     # 处理每个段落
     for i, item in enumerate(result):
         # 提取段落文本内容（不包含ListItem和Paragraph标签）
-        paragraph_text = re.search(r'<ListItem><Paragraph>(.*?)</Paragraph></ListItem>', item)
+        paragraph_text = re.search(
+            r'<ListItem><Paragraph Foreground="\{DynamicResource ColorBrush1}">(.*?)</Paragraph></ListItem>', item)
         if paragraph_text:
             text_content = paragraph_text.group(1)
 
@@ -178,7 +197,7 @@ def gr():
                     start_pos = pos + 1
 
             # 重新组装段落
-            result[i] = f"<ListItem><Paragraph>{text_content}</Paragraph></ListItem>"
+            result[i] = f"""<ListItem><Paragraph Foreground="{{DynamicResource ColorBrush1}}">{text_content}</Paragraph></ListItem>"""
 
     result.pop()
     return result

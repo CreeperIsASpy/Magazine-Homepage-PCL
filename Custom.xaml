@@ -232,7 +232,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
 <sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87</sys:String>
-<sys:String x:Key="VersionID">250724:6d69f59</sys:String>
+<sys:String x:Key="VersionID">250725:526e621</sys:String>
 <BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.19.10.22_PatchNotes.png/350px-Bedrock_1.19.10.22_PatchNotes.png?dff8c"/>
 <sys:String x:Key="Topic">紫水晶碎片</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
@@ -285,26 +285,27 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 </Border>
 <Border Style="{StaticResource TitleBorder}">
 <TextBlock Style="{StaticResource TitleBlock}" Text="{StaticResource Topic}" />
-</Border><FlowDocumentScrollViewer >
+</Border>
+<FlowDocumentScrollViewer>
 <FlowDocument>
     <Paragraph Style="{StaticResource H2}">
         <Run FontSize="22" FontWeight="Bold" Foreground="{DynamicResource ColorBrush3}" Text="{StaticResource Topic}"/>
     </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>是从<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>中掉落的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9F%BF%E7%89%A9" Margin="0,0,0,-8">矿物</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>是从<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>中掉落的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9F%BF%E7%89%A9" Margin="0,0,0,-8">矿物</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph>使用不带<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>魔咒的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%95%90" Margin="0,0,0,-8">镐</local:MyTextButton></Underline>挖掘<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>能获得4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">使用不带<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>魔咒的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%95%90" Margin="0,0,0,-8">镐</local:MyTextButton></Underline>挖掘<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>能获得4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%95%90" Margin="0,0,0,-8">镐</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%97%B6%E8%BF%90" Margin="0,0,0,-8">时运</local:MyTextButton></Underline>魔咒有概率使掉落数量翻倍。</Paragraph></ListItem>
-<ListItem><Paragraph>使用其他方法破坏<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>只能获得2个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>也可以在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%9C%E5%8F%A4%E5%9F%8E%E5%B8%82" Margin="0,0,0,-8">远古城市</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>交叉口的箱子中找到。</Paragraph></ListItem>
-<ListItem><Paragraph>当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%82%A6%E7%81%B5" Margin="0,0,0,-8">悦灵</local:MyTextButton></Underline>在跳舞时获得1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>，其所在的位置会生成另一只<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%82%A6%E7%81%B5" Margin="0,0,0,-8">悦灵</local:MyTextButton></Underline>，并发出爱心粒子和紫水晶音效。</Paragraph></ListItem>
-<ListItem><Paragraph>作为合成材料，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>可用于合成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E5%9D%97" Margin="0,0,0,-8">紫水晶块</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%A1%E9%A2%91%E5%B9%BD%E5%8C%BF%E6%84%9F%E6%B5%8B%E4%BD%93" Margin="0,0,0,-8">校频幽匿感测体</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%9B%E8%BF%9C%E9%95%9C" Margin="0,0,0,-8">望远镜</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%81%AE%E5%85%89%E7%8E%BB%E7%92%83" Margin="0,0,0,-8">遮光玻璃</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%95%90" Margin="0,0,0,-8">镐</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%97%B6%E8%BF%90" Margin="0,0,0,-8">时运</local:MyTextButton></Underline>魔咒有概率使掉落数量翻倍。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">使用其他方法破坏<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%B0%87" Margin="0,0,0,-8">紫水晶簇</local:MyTextButton></Underline>只能获得2个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>也可以在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%9C%E5%8F%A4%E5%9F%8E%E5%B8%82" Margin="0,0,0,-8">远古城市</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>交叉口的箱子中找到。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%82%A6%E7%81%B5" Margin="0,0,0,-8">悦灵</local:MyTextButton></Underline>在跳舞时获得1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>，其所在的位置会生成另一只<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%82%A6%E7%81%B5" Margin="0,0,0,-8">悦灵</local:MyTextButton></Underline>，并发出爱心粒子和紫水晶音效。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">作为合成材料，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87" Margin="0,0,0,-8">紫水晶碎片</local:MyTextButton></Underline>可用于合成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E5%9D%97" Margin="0,0,0,-8">紫水晶块</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%A1%E9%A2%91%E5%B9%BD%E5%8C%BF%E6%84%9F%E6%B5%8B%E4%BD%93" Margin="0,0,0,-8">校频幽匿感测体</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%9B%E8%BF%9C%E9%95%9C" Margin="0,0,0,-8">望远镜</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%81%AE%E5%85%89%E7%8E%BB%E7%92%83" Margin="0,0,0,-8">遮光玻璃</local:MyTextButton></Underline>。</Paragraph></ListItem>
 </List>
 </FlowDocument>
 </FlowDocumentScrollViewer>
@@ -318,32 +319,29 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-07-24" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-07-25" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
 </local:MyCard>
     </TabItem>
 <TabItem Header="Minecraft官方博文 - 识海漫谈" Style="{StaticResource TabItemStyle}">
-<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
+<local:MyCard Title="最新博文" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="生物圈栏：末影人（最新博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h末影人.json" Type="Clickable" />
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h末影人.json" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="背包盘点：望远镜（历史博文）" Info="更新于2024-11-23，由 橄榄Chen（原MCBBS）翻译。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h望远镜.json" Type="Clickable" />
-</StackPanel>
-</local:MyCard>
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h望远镜.json" Type="Clickable" />
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：废弃矿井（历史博文）" Info="更新于2024-11-23，自译博文。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h废弃矿井.json" Type="Clickable" />
-</StackPanel>
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h废弃矿井.json" Type="Clickable" />
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：古迹废墟（历史博文）" Info="更新于2024-11-14，自译博文。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/h古迹废墟.json" Type="Clickable" />
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h古迹废墟.json" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 </TabItem>
