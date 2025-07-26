@@ -325,8 +325,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyCard Title="最新博文" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
-    Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="生物圈栏：末影人（最新博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h末影人.json" Type="Clickable" />
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="背包盘点：打火石（最新博文）" Info="更新于2025-7-26，由 6281x块Judoge（MineBBS）翻译。"
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h打火石.json" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
@@ -338,6 +338,9 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：古迹废墟（历史博文）" Info="更新于2024-11-14，自译博文。"
     EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h古迹废墟.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="生物圈栏：末影人（历史博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h末影人.json" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 </TabItem>

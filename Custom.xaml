@@ -232,7 +232,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
 <sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E7%B4%AB%E6%B0%B4%E6%99%B6%E7%A2%8E%E7%89%87</sys:String>
-<sys:String x:Key="VersionID">250725:526e621</sys:String>
+<sys:String x:Key="VersionID">250726:d760363</sys:String>
 <BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.19.10.22_PatchNotes.png/350px-Bedrock_1.19.10.22_PatchNotes.png?dff8c"/>
 <sys:String x:Key="Topic">紫水晶碎片</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
@@ -319,7 +319,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-07-25" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-07-26" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -329,8 +329,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyCard Title="最新博文" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
-    Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="生物圈栏：末影人（最新博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
-    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h末影人.json" Type="Clickable" />
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="背包盘点：打火石（最新博文）" Info="更新于2025-7-26，由 6281x块Judoge（MineBBS）翻译。"
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h打火石.json" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
@@ -342,6 +342,9 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
     Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="结构寻访：古迹废墟（历史博文）" Info="更新于2024-11-14，自译博文。"
     EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h古迹废墟.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="历史博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="生物圈栏：末影人（历史博文）" Info="更新于2025-04-21，由 Glorydark（MineBBS）翻译。"
+    EventType="打开帮助" EventData="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/history/h末影人.json" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 </TabItem>
