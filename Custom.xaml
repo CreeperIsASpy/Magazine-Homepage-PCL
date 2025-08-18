@@ -231,10 +231,10 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97</sys:String>
-<sys:String x:Key="VersionID">250817:f44f6c7</sys:String>
-<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/CaveFossil.png/350px-CaveFossil.png?c79c4"/>
-<sys:String x:Key="Topic">骨块</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3</sys:String>
+<sys:String x:Key="VersionID">250818:bd07672</sys:String>
+<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Sunrise.png/350px-Sunrise.png?7b755"/>
+<sys:String x:Key="Topic">太阳</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -293,19 +293,20 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
     </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>是一种用于存储<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>的方块。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft" Margin="0,0,0,-8">Minecraft</local:MyTextButton></Underline>主<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">世界</local:MyTextButton></Underline>中提供光照的一个主要天体。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>会作为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%8C%96%E7%9F%B3" Margin="0,0,0,-8">化石</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E7%95%8C%E5%8C%96%E7%9F%B3" Margin="0,0,0,-8">下界化石</local:MyTextButton></Underline>的一部分生成，前者出现于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0" Margin="0,0,0,-8">沙漠</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%BC%E6%B3%BD" Margin="0,0,0,-8">沼泽</local:MyTextButton></Underline>生物群系，后者出现于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%81%B5%E9%AD%82%E6%B2%99%E5%B3%A1%E8%B0%B7" Margin="0,0,0,-8">灵魂沙峡谷</local:MyTextButton></Underline>生物群系。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%88%E4%BA%AE" Margin="0,0,0,-8">月亮</local:MyTextButton></Underline>从东方升起，西方落下。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>还会生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>中生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%B7%E9%AB%85" Margin="0,0,0,-8">骷髅</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%88%B7%E6%80%AA%E7%AC%BC" Margin="0,0,0,-8">试炼刷怪笼</local:MyTextButton></Underline>旁。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">9个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>可以合成为1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>，1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>也可以分解为9个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">挖掘<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>的合适工具是镐。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>需要木镐或品质更好的镐来挖掘，否则挖掘时间将延长且不会掉落。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E5%9D%97" Margin="0,0,0,-8">骨块</local:MyTextButton></Underline>可以朝向任意水平或垂直方向，这取决于玩家放置它们时的方向。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>新建一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">世界</local:MyTextButton></Underline>时，时间被会设置为拂晓，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>开始从地平线上升起。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">随着时间流逝，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>渐渐划过天空。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>落下后，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%88%E4%BA%AE" Margin="0,0,0,-8">月亮</local:MyTextButton></Underline>随之升起，白天结束。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">阳光是指在没有恶劣<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%A9%E6%B0%94" Margin="0,0,0,-8">天气</local:MyTextButton></Underline>时，将直接暴露在天空下的、不被光照不透明方块遮挡的方块照亮的光。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">随着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>的升起落下，暴露在阳光下的方块会根据<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>的入射角改变<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>，造成拂晓时<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>逐渐升高、黄昏时<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>逐渐降低的效果。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">如果一个位置的上方有散射天空光照的方块，随着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>越深入地下，来自阳光的天空光照会渐渐降低。</Paragraph></ListItem>
 </List>
 </FlowDocument>
 </FlowDocumentScrollViewer>
@@ -319,7 +320,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-08-17" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-08-18" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
