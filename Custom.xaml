@@ -231,10 +231,10 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3</sys:String>
-<sys:String x:Key="VersionID">250824:faa1f14</sys:String>
-<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Sunrise.png/350px-Sunrise.png?7b755"/>
-<sys:String x:Key="Topic">太阳</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC</sys:String>
+<sys:String x:Key="VersionID">250825:1e95e08</sys:String>
+<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Spawned_Zombie_Horse.png/350px-Spawned_Zombie_Horse.png?3d574"/>
+<sys:String x:Key="Topic">僵尸马</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -293,20 +293,20 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
     </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft" Margin="0,0,0,-8">Minecraft</local:MyTextButton></Underline>主<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">世界</local:MyTextButton></Underline>中提供光照的一个主要天体。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>是一种未使用的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>的变种。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%88%E4%BA%AE" Margin="0,0,0,-8">月亮</local:MyTextButton></Underline>从东方升起，西方落下。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>不会自然生成，但是可以通过<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/summon" Margin="0,0,0,-8">命令/summon</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>刷怪蛋生成。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>新建一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">世界</local:MyTextButton></Underline>时，时间会被设置为拂晓，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>开始从地平线上升起。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">随着时间流逝，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>渐渐划过天空。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>落下后，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%88%E4%BA%AE" Margin="0,0,0,-8">月亮</local:MyTextButton></Underline>随之升起，白天结束。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">阳光是指在没有恶劣<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%A9%E6%B0%94" Margin="0,0,0,-8">天气</local:MyTextButton></Underline>时，将直接暴露在天空下的、不被光照不透明方块遮挡的方块照亮的光。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">随着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>的升起落下，暴露在阳光下的方块会根据<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A4%AA%E9%98%B3" Margin="0,0,0,-8">太阳</local:MyTextButton></Underline>的入射角改变<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>，造成拂晓时<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>逐渐升高、黄昏时<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%AE%E5%BA%A6#光照透明方块" Margin="0,0,0,-8">亮度</local:MyTextButton></Underline>逐渐降低的效果。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">如果一个位置的上方有散射天空光照的方块，随着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%A9%E5%AE%B6" Margin="0,0,0,-8">玩家</local:MyTextButton></Underline>越深入地下，来自阳光的天空光照会渐渐降低。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>中，使用命令可以召唤出已驯服的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BA%A1%E7%81%B5%E7%94%9F%E7%89%A9" Margin="0,0,0,-8">亡灵生物</local:MyTextButton></Underline>，看起来像<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>版本的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8" Margin="0,0,0,-8">僵尸</local:MyTextButton></Underline>，有着绿色的皮肤和全黑的眼睛，但不会在阳光下<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9D%80%E7%81%AB" Margin="0,0,0,-8">着火</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>与普通<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>行为类似，会漫无目的地四处游荡、时而嘶叫、摇尾巴以及低头吃草。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">不同的是，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>无法喂食和繁殖。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>中，被驯服和上<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9E%8D" Margin="0,0,0,-8">鞍</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>可以用作运输工具，虽然它们不能穿过一格宽的缝隙。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E9%A9%AC" Margin="0,0,0,-8">僵尸马</local:MyTextButton></Underline>不可在水下骑乘。</Paragraph></ListItem>
 </List>
 </FlowDocument>
 </FlowDocumentScrollViewer>
@@ -320,7 +320,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-08-24" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-08-25" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -368,14 +368,14 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.8" Info="正式版"
-	EventType="打开帮助" EventData="https://pcl.mcnews.thestack.top/VersionDetail.json?ver=1.21.8" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
+	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=1.21.8" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w34b" Info="快照版"
-	EventType="打开帮助" EventData="https://pcl.mcnews.thestack.top/VersionDetail.json?ver=25w34b" Type="Clickable" />
+	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=25w34b" Type="Clickable" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
      HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
 <local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
 Logo="https://s21.ax1x.com/2025/07/11/pVQXQTx.png" Title="历史版本更新日志" Info="点击查看更多更新日志"
-EventType="打开帮助" EventData="https://pcl.mcnews.thestack.top/VersionArchiveList.json" Type="Clickable" />
+EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionArchiveList.json" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
