@@ -112,7 +112,7 @@ def get_news_card():
 <Border Style="{{StaticResource TitleBorder}}">
 <TextBlock Style="{{StaticResource TitleBlock}}" Text="{response.status_code}" />
 </Border>
-<TextBlock TextWrapping="Wrap" Text="新闻主页API 出错啦！可以去提醒一下……"
+<TextBlock TextWrapping="Wrap" Text="杂志主页API 出错啦！可以去提醒一下……"
     HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16" Foreground="{{DynamicResource ColorBrush4}}" Margin="8,8,8,8"/>
 </StackPanel>
 </local:MyCard>"""
@@ -139,6 +139,7 @@ EventData="{lk[1]}" Margin="0,0,0,-8">{lk[0]}</local:MyTextButton></Underline>''
 
 def gr():
     # 这个函数做的非常精密，我虽然觉得很屎山，但是一改就炸……
+    # 循环嵌套层级比我脑子还乱，千万不要改！
     # 别骂了别骂了
 
     origin = str(obj.select_one("div.mp-inline-sections > div.mp-left > div:nth-child(5)").text)
@@ -245,7 +246,6 @@ def update():
 
     #   validate_template(content_text) 防止出现 f-string 问题
     content_text = re.sub(r"(?<!%)%(?!\()", "%%", content_text)
-    #   test = "{%(datetime)s} \n %(WikiPage)s \n %(topic)s \n %(intro)s \n %(intro_2)s \n %(body)s \n %(alt)s \n %(img)s \n %(NewsCard)s \n %(version)s"
     meta = {
         'WikiPage': get_wiki_page(),
         'version': get_version(),

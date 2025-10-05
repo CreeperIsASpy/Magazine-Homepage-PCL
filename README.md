@@ -18,7 +18,7 @@
    Next, scroll down and find the `Homepages` card and choose the `presets` selection.
    After that, select `Megazine Homepage` in the combobox below.
    Finally, reboot the launcher, you'll see the *brand new* Homepage!
-2. Use Online Update Mode
+2. Use Online Update Mode  
    First, follow the instructions 1 to 3 in `Use presets` section.
    Then, choose the `Online` selection.
    Next, enter `https://pclhomeplazaoss.lingyunawa.top:27000/d/Homepages/Ext1nguisher/Custom.xaml` in the entry.
