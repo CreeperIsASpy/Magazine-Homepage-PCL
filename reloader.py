@@ -103,6 +103,7 @@ def while_delete(del_txts, txt, replacement=''):
 
 def get_news_card():
     response = requests.get("https://news.bugjump.net/apis/versions/latest-card")
+    print(f"已经请求新闻主页 API，状态码：{response.status_code}，请求{'成功' if (response.status_code == 200) else '失败'}！")
     if response.status_code != 200:
         _404 = f"""<local:MyCard>
 <StackPanel Style="{{StaticResource ContentStack}}">
@@ -112,10 +113,11 @@ def get_news_card():
 <Border Style="{{StaticResource TitleBorder}}">
 <TextBlock Style="{{StaticResource TitleBlock}}" Text="{response.status_code}" />
 </Border>
-<TextBlock TextWrapping="Wrap" Text="杂志主页API 出错啦！可以去提醒一下……"
+<TextBlock TextWrapping="Wrap" Text="新闻主页API 出错啦！可以去提醒一下……"
     HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16" Foreground="{{DynamicResource ColorBrush4}}" Margin="8,8,8,8"/>
 </StackPanel>
 </local:MyCard>"""
+        return _404
 
     result = str(response.text)
     return result
