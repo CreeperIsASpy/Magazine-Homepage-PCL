@@ -231,10 +231,10 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1</sys:String>
-<sys:String x:Key="VersionID">251011:fde24d6</sys:String>
-<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Fall_Drop_2025_copper_golem_oxidation_stages.jpeg/350px-Fall_Drop_2025_copper_golem_oxidation_stages.jpeg?30aaa"/>
-<sys:String x:Key="Topic">铜傀儡</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90</sys:String>
+<sys:String x:Key="VersionID">251020:bfc265b</sys:String>
+<BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.100.23_PatchNotes.png/350px-Bedrock_1.21.100.23_PatchNotes.png?dc76f"/>
+<sys:String x:Key="Topic">铜箱子</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -293,19 +293,19 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
     </Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>是一种可以帮助玩家将<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>的物品分类到普通<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%99%B7%E9%98%B1%E7%AE%B1" Margin="0,0,0,-8">陷阱箱</local:MyTextButton></Underline>的友好生物。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>的铜质变种。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">将<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%95%E5%88%BB%E5%8D%97%E7%93%9C" Margin="0,0,0,-8">雕刻南瓜</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%8D%97%E7%93%9C%E7%81%AF" Margin="0,0,0,-8">南瓜灯</local:MyTextButton></Underline>放置在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>的任意一面，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>就会在放置<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%95%E5%88%BB%E5%8D%97%E7%93%9C" Margin="0,0,0,-8">雕刻南瓜</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%8D%97%E7%93%9C%E7%81%AF" Margin="0,0,0,-8">南瓜灯</local:MyTextButton></Underline>的位置上生成。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">将<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%95%E5%88%BB%E5%8D%97%E7%93%9C" Margin="0,0,0,-8">雕刻南瓜</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%8D%97%E7%93%9C%E7%81%AF" Margin="0,0,0,-8">南瓜灯</local:MyTextButton></Underline>放在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>的任意一面时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>会转变为未涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">对未涂蜡且未氧化的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1%E5%83%8F" Margin="0,0,0,-8">铜傀儡像</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%A7" Margin="0,0,0,-8">斧</local:MyTextButton></Underline>也会生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">未手持物品时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>会尝试搜寻并打开最近的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>，从中收集物品并拿在手上，每次最多可以收集16个相同物品。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">手持物品时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>会尝试搜寻并打开最近的普通<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%99%B7%E9%98%B1%E7%AE%B1" Margin="0,0,0,-8">陷阱箱</local:MyTextButton></Underline>，将手持的物品放入其中。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">未涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>受氧化机制影响，存在斑驳、锈蚀和氧化三个氧化阶段。</Paragraph></ListItem>
-<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>的氧化计时受游戏时间影响，每隔25200秒（420分）至27600秒（460分），<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>会进入下一氧化阶段。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>相同。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>可以使用8个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E9%94%AD" Margin="0,0,0,-8">铜锭</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}"><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>也可以与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%84%BE" Margin="0,0,0,-8">蜜脾</local:MyTextButton></Underline>合成为对应的涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">将任意<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度、无论是否涂蜡的两个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>相邻放置时会合并成大型<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>，大型<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度与合并之前<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度最轻的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>相同，且合并之前存在任一未涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>都会使大型<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>变为未涂蜡变种。</Paragraph></ListItem>
+<ListItem><Paragraph Foreground="{DynamicResource ColorBrush1}">未持有物品的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%82%80%E5%84%A1" Margin="0,0,0,-8">铜傀儡</local:MyTextButton></Underline>会尝试搜寻并打开附近的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">铜箱子</local:MyTextButton></Underline>。</Paragraph></ListItem>
 </List>
 </FlowDocument>
 </FlowDocumentScrollViewer>
@@ -319,7 +319,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-10-11" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-10-20" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -363,18 +363,10 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 </Border>
 </local:MyCard>
 <!-- NewsCard -->
-<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
-<StackPanel Margin="8,38,8,15">
-<local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.10" Info="正式版"
-	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=1.21.10" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w41a" Info="快照版"
-	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=25w41a" Type="Clickable" />
-<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
-     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
-<local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
-Logo="https://tc-new.z.wiki/autoupload/f/XTxqEIEXt3ek2iMfNVy0xHr9SBDGMOz2CzLFKIoBJwSyl5f0KlZfm6UsKj-HyTuv/20250913/9NA0/300X300/pVQXQTx.png" Title="历史版本更新日志" Info="点击查看更多更新日志"
-EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionArchiveList.json" Type="Clickable" />
+<local:MyCard>
+<StackPanel Style="{StaticResource ContentStack}">
+<TextBlock TextWrapping="Wrap" Text="无法连接到新闻服务器！"
+    HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Foreground="{DynamicResource ColorBrush4}" Margin="8"/>
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -402,7 +394,7 @@ EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionArchiveLis
     </TextBlock>
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-8,0,0,10">
-    <local:MyIconTextButton HorizontalAlignment="Left" Text="Gitee" ToolTip="前往杂志主页 GitHub 页面" EventType="打开网页"
+    <local:MyIconTextButton HorizontalAlignment="Left" Text="GitHub" ToolTip="前往杂志主页 GitHub 页面" EventType="打开网页"
     EventData="https://github.com/CreeperIsASpy/Magazine-Homepage-PCL"
     LogoScale="1" Logo="M32 1.8c-17 0-31 13.8-31 31C1 46.4 9.9 58 22.3 62.2c1.6.3 2.1-.7 2.1-1.4s0-2.7-.1-5.4c-8.6 2-10.4-4.2-10.4-4.2c-1.4-3.5-3.5-4.5-3.5-4.5c-2.8-2 .1-2 .1-2c3.1.1 4.8 3.2 4.8 3.2c2.7 4.8 7.3 3.4 9 2.5c.3-2 1.1-3.4 2-4.2c-6.8-.7-14.1-3.4-14.1-15.2c0-3.4 1.3-6.1 3.2-8.2c-.3-.7-1.4-3.9.3-8.2c0 0 2.7-.8 8.6 3.2c2.5-.7 5.1-1.1 7.8-1.1s5.4.3 7.8 1.1c5.9-3.9 8.5-3.2 8.5-3.2c1.7 4.2.7 7.5.3 8.2c2 2.1 3.2 4.9 3.2 8.2c0 11.8-7.3 14.5-14.1 15.2c1.1 1 2.1 3 2.1 5.8c0 4.2-.1 7.5-.1 8.5c0 .8.6 1.7 2.1 1.4C54.1 57.8 63 46.3 63 32.6c-.1-17-14-30.8-31-30.8"/>
     <local:MyIconTextButton Text="CC BY-NC-SA 4.0" ToolTip="无特殊声明本主页文字内容使用该授权协议" EventType="打开网页"
