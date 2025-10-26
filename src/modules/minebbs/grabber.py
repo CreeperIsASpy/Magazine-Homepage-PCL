@@ -19,7 +19,7 @@ cf_scraper = cloudscraper.create_scraper()
 
 def request_with_header_origin(url, **kwargs) -> requests.Response:
     """发送带有浏览器请求头的请求"""
-    response = cf_scraper.get(url, headers=HEADERS, **kwargs)
+    response = cf_scraper.get(url, **kwargs)
     return response
 
 
