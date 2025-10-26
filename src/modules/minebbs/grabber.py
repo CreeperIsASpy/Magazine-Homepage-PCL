@@ -170,7 +170,12 @@ def grab_post_lists(NEWS_LIST_URL: str) -> tuple[list, bool]:
 
     # 确认是否有内容
     if req.status_code != 200:
-        print(f"请求失败，状态码：{req.status_code}")
+        print(f"[DEBUG] Debugging Information")
+        print(f"请求失败")
+        print(f"URL：{NEWS_LIST_URL}")
+        print(f"状态码：{req.status_code}")
+        print(f"响应内容：{req.text}")
+        print(f"响应头部：{req.headers}")
         return (None, False)
 
     # 提取博文数据
@@ -186,11 +191,6 @@ def grab_post_lists(NEWS_LIST_URL: str) -> tuple[list, bool]:
     filtered_posts = filter_posts_by_title(cleaned_posts, "DEEP DIVES")
 
     return (filtered_posts, True)
-
-
-from bs4 import BeautifulSoup
-import re
-import requests
 
 
 def get_last_page_number():
