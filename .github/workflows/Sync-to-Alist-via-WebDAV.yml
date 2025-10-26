@@ -46,7 +46,7 @@ jobs:
       # Sync all files to Alist WebDAV (sync the entire repo)
       - name: Sync all files to Alist
         run: |
-          rclone copy ./ alist_webdav:/ --checksum --size-only --retries 3  # Force update every time
+          rclone copy ./output/ alist_webdav:/ --checksum --size-only --retries 3  # Force update every time
 
       # Optionally, clean up rclone configuration (for security)
       - name: Clean up rclone config
