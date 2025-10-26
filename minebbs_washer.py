@@ -36,7 +36,7 @@ def extract_detailed_content(html_content):
     return '\n'.join(content_parts)
 
 
-# 提取纯文本版本
+# 提取纯文本版本（修改后的版本）
 def extract_clean_text(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
 
@@ -50,6 +50,22 @@ def extract_clean_text(html_content):
     for script in message_body(["script", "style"]):
         script.decompose()
 
+    # 提取图片并创建占位符
+    image_counter = 1
+    image_placeholders = {}
+
+    # 查找所有图片
+    img_tags = message_body.find_all('img')
+    for img in img_tags:
+        src = img.get('data-src') or img.get('src')
+        if src and not src.startswith('data:'):
+            # 创建占位符
+            placeholder = f'%(img{image_counter})s'
+            image_placeholders[placeholder] = src
+            # 替换图片为占位符文本
+            img.replace_with(f' [{placeholder}] ')
+            image_counter += 1
+
     # 获取纯文本
     text = message_body.get_text()
 
@@ -58,7 +74,7 @@ def extract_clean_text(html_content):
     chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
     text = '\n'.join(chunk for chunk in chunks if chunk)
 
-    return text
+    return text, image_placeholders
 
 
 def extract_main_content(html_content):
@@ -173,5 +189,8 @@ if __name__ == '__main__':
     if posts:
         post = posts[0]  # 只获取最新的一篇
         content = request_with_header(post.get('url'))
-        print(clean_extracted_text(extract_clean_text(content)))
+        # 修改调用方式，因为现在 extract_clean_text 返回两个值
+        clean_text, image_dict = extract_clean_text(content)
+        print(clean_extracted_text(clean_text))
+        print("图片占位符映射:", image_dict)
         print(extract_article_images(content))
