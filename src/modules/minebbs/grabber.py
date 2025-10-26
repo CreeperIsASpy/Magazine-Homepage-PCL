@@ -166,7 +166,7 @@ def grab_post_lists(NEWS_LIST_URL: str) -> tuple[list, bool]:
     """
     主函数：提取、清理并排序博文数据
     """
-    req = requests.get(NEWS_LIST_URL, headers=HEADERS)
+    req = request_with_header_origin(NEWS_LIST_URL)
 
     # 确认是否有内容
     if req.status_code != 200:
