@@ -1,15 +1,16 @@
-from minebbs_grabber import grab_post_lists, request_with_header
-from bs4 import BeautifulSoup
 import re
 
-posts = grab_post_lists()
+from bs4 import BeautifulSoup
 
+from .grabber import grab_post_lists, request_with_header
+
+# --- #
 
 def extract_detailed_content(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
 
     # 查找主要内容容器
-    message_body = soup.find('article', class_='message-body')
+    message_body = soup.find("article", class_="message-body")
 
     if not message_body:
         return "未找到正文内容"
@@ -18,14 +19,14 @@ def extract_detailed_content(html_content):
     content_parts = []
 
     # 提取标题和简介
-    header = message_body.find('div', style=lambda x: x and 'text-align:center' in x)
+    header = message_body.find("div", style=lambda x: x and "text-align:center" in x)
     if header:
         content_parts.append("标题部分:")
         content_parts.append(header.get_text(strip=True))
         content_parts.append("")
 
     # 提取主要内容段落
-    paragraphs = message_body.find_all('div', class_='bbWrapper')
+    paragraphs = message_body.find_all("div", class_="bbWrapper")
     for i, para in enumerate(paragraphs):
         text = para.get_text(strip=True)
         if text and len(text) > 10:  # 过滤掉太短的文本
@@ -33,15 +34,15 @@ def extract_detailed_content(html_content):
             content_parts.append(text)
             content_parts.append("")
 
-    return '\n'.join(content_parts)
+    return "\n".join(content_parts)
 
 
 # 提取纯文本版本（修改后的版本）
 def extract_clean_text(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
 
     # 找到文章主体
-    message_body = soup.find('article', class_='message-body')
+    message_body = soup.find("article", class_="message-body")
 
     if not message_body:
         return "未找到正文内容"
@@ -55,15 +56,15 @@ def extract_clean_text(html_content):
     image_placeholders = {}
 
     # 查找所有图片
-    img_tags = message_body.find_all('img')
+    img_tags = message_body.find_all("img")
     for img in img_tags:
-        src = img.get('data-src') or img.get('src')
-        if src and not src.startswith('data:'):
+        src = img.get("data-src") or img.get("src")
+        if src and not src.startswith("data:"):
             # 创建占位符
-            placeholder = f'%(img{image_counter})s'
+            placeholder = f"%(img{image_counter})s"
             image_placeholders[placeholder] = src
             # 替换图片为占位符文本
-            img.replace_with(f' [{placeholder}] ')
+            img.replace_with(f" [{placeholder}] ")
             image_counter += 1
 
     # 获取纯文本
@@ -72,34 +73,34 @@ def extract_clean_text(html_content):
     # 清理文本
     lines = (line.strip() for line in text.splitlines())
     chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-    text = '\n'.join(chunk for chunk in chunks if chunk)
+    text = "\n".join(chunk for chunk in chunks if chunk)
 
     return text, image_placeholders
 
 
 def extract_main_content(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
 
     # 查找包含文章内容的区域
     # 根据HTML结构，主要内容在message-body类中
-    message_body = soup.find('article', class_='message-body')
+    message_body = soup.find("article", class_="message-body")
 
     if not message_body:
         return "未找到正文内容"
 
     # 提取文本内容，清理多余的空格和换行
-    content = message_body.get_text(separator='\n', strip=True)
+    content = message_body.get_text(separator="\n", strip=True)
 
     # 进一步清理：移除过多的空行
-    content = re.sub(r'\n\s*\n', '\n\n', content)
-    content = re.findall(r'\|([^|]+)\|', content)[0]
+    content = re.sub(r"\n\s*\n", "\n\n", content)
+    content = re.findall(r"\|([^|]+)\|", content)[0]
 
     return content
 
 
 def clean_extracted_text(text):
     # 按行分割文本
-    lines = text.split('\n')
+    lines = text.split("\n")
     cleaned_lines = []
 
     # 标记是否已经开始正文内容
@@ -124,9 +125,9 @@ def clean_extracted_text(text):
         # 处理翻译信息行，提取所需信息
         if "译自" in line:
             # 提取作者、日期和标题
-            author = extract_pattern(line, r'译自([^0-9]+)')
-            date = extract_pattern(line, r'(\d{4} 年 \d{1,2} 月 \d{1,2} 日)')
-            title = extract_pattern(line, r'发布的 (.+)】')
+            author = extract_pattern(line, r"译自([^0-9]+)")
+            date = extract_pattern(line, r"(\d{4} 年 \d{1,2} 月 \d{1,2} 日)")
+            title = extract_pattern(line, r"发布的 (.+)】")
 
             # 重新构建该行
             if author and date and title:
@@ -136,7 +137,7 @@ def clean_extracted_text(text):
         if line and content_started:
             cleaned_lines.append(line)
 
-    return '\n'.join(cleaned_lines)
+    return "\n".join(cleaned_lines)
 
 
 def extract_pattern(text, pattern):
@@ -149,31 +150,31 @@ def extract_article_images(html_content):
     """
     专门提取文章正文中的图片（更精确的提取）
     """
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
     image_urls = []
 
     # 找到文章正文区域
-    article_body = soup.find('article', class_='message-body')
+    article_body = soup.find("article", class_="message-body")
     if not article_body:
         # 如果没有找到特定的文章区域，则在整个页面中查找
         article_body = soup
 
     # 在正文区域查找图片
     # 1. 查找带有特定类的图片容器
-    image_wrappers = article_body.find_all('div', class_='bbImageWrapper')
+    image_wrappers = article_body.find_all("div", class_="bbImageWrapper")
     for wrapper in image_wrappers:
-        img = wrapper.find('img')
+        img = wrapper.find("img")
         if img:
-            src = img.get('data-src') or img.get('src')
-            if src and not src.startswith('data:'):
+            src = img.get("data-src") or img.get("src")
+            if src and not src.startswith("data:"):
                 image_urls.append(src)
 
     # 2. 查找所有图片标签（备用方法）
     if not image_urls:
-        img_tags = article_body.find_all('img')
+        img_tags = article_body.find_all("img")
         for img in img_tags:
-            src = img.get('data-src') or img.get('src')
-            if src and not src.startswith('data:'):
+            src = img.get("data-src") or img.get("src")
+            if src and not src.startswith("data:"):
                 image_urls.append(src)
 
     # 去掉作者头像
@@ -183,14 +184,3 @@ def extract_article_images(html_content):
 
     # 去重
     return list(set(image_urls))
-
-
-if __name__ == '__main__':
-    if posts:
-        post = posts[0]  # 只获取最新的一篇
-        content = request_with_header(post.get('url'))
-        # 修改调用方式，因为现在 extract_clean_text 返回两个值
-        clean_text, image_dict = extract_clean_text(content)
-        print(clean_extracted_text(clean_text))
-        print("图片占位符映射:", image_dict)
-        print(extract_article_images(content))
