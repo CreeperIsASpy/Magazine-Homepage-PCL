@@ -3,6 +3,7 @@
 from datetime import datetime
 
 import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 
 HEADERS = {
@@ -13,10 +14,12 @@ HEADERS = {
     "Referer": "https://minebbs.com/",
 }
 
+cf_scraper = cloudscraper.create_scraper()
+
 
 def request_with_header_origin(url, **kwargs) -> requests.Response:
     """发送带有浏览器请求头的请求"""
-    response = requests.get(url, headers=HEADERS, **kwargs)
+    response = cf_scraper.get(url, headers=HEADERS, **kwargs)
     return response
 
 
