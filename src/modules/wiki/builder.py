@@ -42,7 +42,7 @@ class WikiXamlGenerator:
             ini_path (str): 用于存储版本信息的ini文件的路径。
         """
         self.req_headers = {"User-Agent": f"PCL2MagazineHomepageBot/{self.VERSION}"}
-        self.template_path = template_path or "assets/templates/main.fstring.xml"
+        self.template_path = template_path or "main.fstring.xaml"
         self.output_path = output_path or "output/Custom.xaml"
         self.ini_path = ini_path or "output/Custom.xaml.ini"
         self.dom_content: Optional[BeautifulSoup] = None
@@ -295,27 +295,24 @@ class WikiXamlGenerator:
                 featured_article_element
             )
 
-            # 步骤 3: 准备模板元数据字典
-            meta = {
-                "WikiPage": main_link,
-                "version": self._generate_version_id(),
-                "img": self._get_featured_image_url(),
-                "topic": title,
-                "intro": parsed_items[0] if len(parsed_items) > 0 else "",
-                "intro_2": parsed_items[1] if len(parsed_items) > 1 else "",
-                "body": "\n".join(parsed_items[2:]) if len(parsed_items) > 2 else "",
-                "datetime": f'最后更新: {now.strftime("%Y-%m-%d")}',
-                "NewsCard": self._fetch_news_card(),
-                "Latest_DeepDives": latest_deepdives,
-                "Previous_DeepDives": previous_deepdives,
-            }
-
-            # 步骤 4: 读取模板并填充内容
+            # 步骤 3: 读取模板并填充内容
             print("正在读取模板文件...")
             template_content = get_template(self.template_path)
-            final_output = template_content.format(meta)
+            final_output = template_content.format(
+                WikiPage = main_link,
+                version = self._generate_version_id(),
+                img = self._get_featured_image_url(),
+                topic = title,
+                intro = parsed_items[0] if len(parsed_items) > 0 else "",
+                intro_2 = parsed_items[1] if len(parsed_items) > 1 else "",
+                body = "\n".join(parsed_items[2:]) if len(parsed_items) > 2 else "",
+                datetime = f'最后更新：{now.strftime("%Y-%m-%d")}',
+                NewsCard = self._fetch_news_card(),
+                Latest_DeepDives = latest_deepdives,
+                Previous_DeepDives = previous_deepdives,
+            )
 
-            # 步骤 5: 将结果写入输出文件
+            # 步骤 4: 将结果写入输出文件
             with open(self.output_path, "w", encoding="UTF-8") as f:
                 f.write(final_output)
 

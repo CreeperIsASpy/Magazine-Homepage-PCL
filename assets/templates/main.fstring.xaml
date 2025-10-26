@@ -60,7 +60,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
                                 <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
                             </Trigger>
                             <Trigger Property="IsEnabled" Value="False">
-                                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{{DynamicResource {{x:Static SystemColors.GrayTextBrushKey}}}}"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -226,7 +226,7 @@ ess的大清要活了 ~喵                   @ QQ(1837750594) 带我接触了自
 最亮的信标                                  @ Github(Nattiden) 提供主页模板,本主页使用他的NewsHomepage为基础开发!
 Mfn233                                       @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励!
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
-凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
+凌云                                            @ Github(MoYuan-CN) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
         <sys:String x:Key="WikiPage">{WikiPage}</sys:String>
         <sys:String x:Key="VersionID">{version}</sys:String>

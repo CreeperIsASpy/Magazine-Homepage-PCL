@@ -5,9 +5,11 @@ from src.modules.minebbs.grabber import grab_all
 from src.modules.minebbs.builder import run
 from src.utils.get_template import get_template
 
-HistoryOutput = Path(__file__) / "output" / "history"
+HistoryOutput = Path(__file__).parent / "output" / "history"
 
 if __name__ == "__main__":
+    HistoryOutput.mkdir(parents=True, exist_ok=True)
+
     latest_post = ""
     previous_post = ""
 
@@ -22,19 +24,24 @@ if __name__ == "__main__":
             or "minecraft-net-deep-dives-unknown"
         )
         with open(
-            HistoryOutput / filename + ".xaml", "w", encoding="utf-8"
+            HistoryOutput / (filename + ".xaml"), "w", encoding="utf-8"
         ) as xamlFile:
             xamlFile.write(built_content)
         with open(
-            HistoryOutput / filename + ".json", "w", encoding="utf-8"
+            HistoryOutput / (filename + ".json"), "w", encoding="utf-8"
         ) as jsonFile:
             jsonFile.write(built_content)
 
         # 制作主页入口点
         template = get_template("deepdives_link.fstring.xaml")
         title = (
-            post.get("title").replace("[Minecraft.net | DEEP DIVES]", "").strip()
-            + f"（{'最新' if index==0 else '历史'}博文）",
+            (post.get("title").strip() + f"（{'最新' if index==0 else '历史'}博文）",)[
+                0
+            ]
+            .split("]")[-1]
+            .replace(":", "：")
+            .replace(": ", "：")
+            .strip()
         )
         _date = post.get("publish_time_display")
         _author = post.get("author")
