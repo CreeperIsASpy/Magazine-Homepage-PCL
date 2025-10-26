@@ -1,4 +1,4 @@
-name: Update Custom.xaml Daily
+name: Update Custom.xaml (Debug)
 
 on:
     push:
@@ -37,7 +37,7 @@ jobs:
 
             # 打包产物（/output 文件夹）
             - name: Archive Custom.xaml
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                   name: Output Artifact
                   path: output
