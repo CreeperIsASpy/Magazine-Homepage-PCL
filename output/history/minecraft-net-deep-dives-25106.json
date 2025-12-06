@@ -1,0 +1,202 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-header.jpg" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-header.jpg" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="群系漫游：虚空" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">​​</Paragraph>
+<Paragraph Style="{StaticResource H2}">AROUND THE BLOCK: THE VOID</Paragraph>
+<Paragraph Style="{StaticResource H2}">群系漫游：虚空</Paragraph>
+<Paragraph Style="{StaticResource H7}">The emptiness at the heart of us all</Paragraph>
+<Paragraph Style="{StaticResource H5}">我们内心的那片虚无​</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">​​Wow. We did it. Over the last four years, we’ve written about almost every single biome in the game. What a long, strange trip it’s been! I'm not gonna lie – my feet hurt a little!​哇。我们真的做到了。过去的四年以来，我们已经写遍了游戏中的几乎每一个生物群系。多么漫长而又奇特的旅途啊！坦白地说，我的脚都有些痛了！​​We’ve explored plains, sunflower plains, badlands, eroded badlands, meadows, mushroom fields, savannas and windswept savannas . We’ve roamed through forests, birch forests, dark forests, flower forests, windswept forests, cherry groves, jungles, sparse jungles, bamboo jungles, wooded badlands, and taigas of all kinds – snowy, old-growth, and even old-growth pine .​我们探索过平原、向日葵平原、恶地、风蚀恶地、草甸、蘑菇岛、热带草原和风袭热带草原。我们漫游了森林、桦木森林、黑森林、繁花森林、风袭森林、樱花树林、丛林、稀疏丛林、竹林、疏林恶地以及各种各样的针叶林 – 积雪针叶林、原始云杉针叶林，甚至还有原始松木针叶林。​​We’ve waded through swamps, mangrove swamps, rivers, frozen rivers, beaches, snowy beaches, and stony shores . We’ve sailed across warm oceans, lukewarm oceans, deep lukewarm oceans, cold oceans, deep cold oceans, and skidded out of control across the surface of frozen oceans .​我们跋涉过沼泽、红树林沼泽、河流、冻河、沙滩、积雪沙滩和石岸。我们远航至暖水海洋、温水海洋、温水深海、冷水海洋、冷水深海，甚至还曾在冻洋的冰面上失控地滑行。​​We’ve experienced temperature extremes in deserts, desert lakes, tundras, ice spikes, snowy slopes, jagged peaks, windswept hills, and frozen peaks, and spelunked through lush caves, dripstone caves, and the deep dark .​我们感受过沙漠、沙漠湖泊、冻原、冰刺之地、积雪山坡、尖峭山峰、风袭丘陵还有冰封山峰的极端气温，也曾在繁茂洞穴、溶洞，以及深暗之域的深处无言徜徉。​​We’ve even crossed dimensions – popping through an obsidian portal to the Nether wastes, basalt deltas, soul sand valleys, crimson forest, and warped forest, and journeying to the End highlands and small End islands .​我们甚至跨越了维度的限制 – 穿过神秘的黑曜石传送门闯入下界，游历下界荒地、玄武岩三角洲、灵魂沙峡谷、绯红森林和诡异森林，还曾旅行至末地高地和末地小型岛屿。​​So, where is left to go?​所以，还剩哪里没有去过呢？​​Well, we don’t rule out bringing this column back occasionally in the future as Mojang Studios’ top cartographers keeps discovering new biomes in new updates. But in the meantime, there’s only one place left to explore. I’m talking about the space below the world – the chasm where you’ll find yourself falling if you somehow break your way through bedrock, through the bottom of the Nether, or if you take a wrong step in the End. A place with no blocks, no light, no plants or animals, and no hope of escape. The void.​好吧，我们并不排除未来会偶尔让这个栏目回归，因为 Mojang Studios 的顶级制图师总是能在新的更新中发现新的生物群系。但此时此刻，我们只剩一个地方可供探索了。我说的是世界下方之地 – 当你以某种方式突破基岩，穿过下界的最底部，或是在末地不慎失足，便会坠入此地，一个没有方块，没有光，没有动植物，更无逃生希望的深渊。亦即虚空。​​​</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel1.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel2.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel3.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">​​It’s in this silence, this absence, that our curiosity meets its limits. The void is a reminder of the uncharted, the unknown that lies beyond the edges of every map, which watches, waits, and welcomes us with open arms.​正是在这种死寂，这种虚无中，我们的好奇心才会抵达极限。虚空提醒着我们未知的世界，那世界就在每张地图的边缘之外，它注视着我们，等待着我们，张开双臂欢迎我们。​​​</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel4.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel5.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/void-carousel6.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">​The void is the end of Around The Block. But perhaps it’s where a new adventure begins?​虚空即为群系漫游的终点。亦或者，也是全新冒险开始之地?​​​​</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">官网  2024 年 04 月 04 日 The Void；原作者 Duncan Geere】​【本文排版借助了：SPXXKLP v3.0.2</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Powered by SPXXKLP 3.0.2 with love</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Converted at 2024-04-05 13:13 +0800​</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/around-the-block-the-void" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>

@@ -1,0 +1,182 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minebbs.com/data/attachments/21/21255-5e04a05e13a5135d40f7c4987edae4bc.jpg?hash=RD0lmCO4cW" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minebbs.com/data/attachments/21/21255-5e04a05e13a5135d40f7c4987edae4bc.jpg?hash=RD0lmCO4cW" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="官方原文点我" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">BLOCK OF THE WEEK: SOUL SOIL</Paragraph>
+<Paragraph Style="{StaticResource H2}">You’ll nether grow plants in that 你会在它上面种上植物</Paragraph>
+<Paragraph Style="{StaticResource H2}">官方原文点我</Paragraph>
+<Paragraph Style="{StaticResource H7}">(可能翻译的不太好，欢迎各位下方回复并反馈！)​Seasoned Minecraft players will be well aware of soul sand – the screaming brown block that lives in the fiery caverns of the Nether. Not sounding familiar? Have a read of the Block of the Week column on the subject that my erstwhile colleague Marsh wrote a couple of years back.</Paragraph>
+<Paragraph Style="{StaticResource H5}">我的世界老玩家们会清楚地意识到下界炽热的洞穴中十分引人注目的棕色方块 --- 灵魂沙 的存在。如果你仍感觉不熟悉的话，请读一读几年前我曾经的同事Marsh在Block of the Week专栏中所写的相关文章。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the Nether update, released in June 2020, we totally rebooted Minecraft’s warmest dimension to add a bunch of new biomes. The new biomes include the Warped Forest and Basalt Delta, but it also includes the Soul Sand Valley where you can find oodles of soul sand, obviously, but also a new block – soul soil, which also happens to be our block of the week.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在去年6月发布的下界更新版本中，我们重新改造了我的世界中最炽热的一个维度，并且往其中添加了大量的新群落。新的群落包含绯红森林,扭曲森林,当然也包括存在大量灵魂沙、灵魂土的灵魂沙峡谷！而新的灵魂土方块正好是这次的本周方块！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​Soul soil and soul sand have some similarities and differences. They’re both brown, for starters. They’re both found in the Nether. They both create soul fire when they catch alight, and can be used to craft soul torches and soul campfires. They can also both be used to summon a Wither, which is a terrible idea. Under no circumstances should you place four soul soil blocks in a t-shape and then put three wither skulls on top.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">灵魂土和灵魂沙存在一些相似之处，同时也有着不同。对于新手玩家来说，他们可能只知道这两个方块都是棕色的。它们都可以在下界找到。它们也都可以在遇到阳光的时候出现灵魂火、都可以用来制作灵魂火把和灵魂营火。它们还可以用来生成凋零，当然这无非是一个糟糕的决定哈。无论在任何的情况下，你都需要以字母T的形状放置四个灵魂土，然后再在最上方的三个方块上放置三个凋零头颅。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But! There are differences too. Soul soil has a bit more internal structure, making it easier to walk across. You won’t slow down when you’re on top of it. It also doesn’t create bubble columns underwater like soul sand does. So what does it do? Well, it’s a key component of basalt – when lava flows on top of soul soil and is cooled by blue ice, it’ll turn into basalt. Nifty! Especially if you need a lot of basalt in a hurry.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但是，它们存在不同之处！灵魂土拥有更多的内置结构，使得玩家更容易走过去。你并不会因走在它的上面而被减速。当然，它也不会像灵魂沙一样能够在水下形成气泡柱。那么它有什么用途呢？告诉你，灵魂土是玄武岩重要的组成部分。当岩浆流过灵魂土时，被蓝冰冷却时，它就会变成玄武岩了。尤其是在你需要大量玄武岩的时候，它会对你来说十分有用！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">So how do you get some? Well, the easiest way is to track down a soul sand valley biome and dig it up with a shovel. But in a pinch you can also craft a soul campfire with some soul sand and then break it. It’ll drop soul soil, thanks to the way that the soul fire ash fertilises the sand.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">所以，怎样才能获取到它呢？当然，最简单的方式就是去探寻灵魂沙峡谷群落，并且用你的铲子去收集它们。但在急需的时候，你也可以用灵魂沙制作一个灵魂营火，然后破坏掉。它也会掉落灵魂土，当然这要归功于灵魂营火的灰烬使沙子更加肥沃。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img2)s] ​</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the real world, the closest thing we have to soul soil is peat. Peat is made up of partly-decayed vegetation and other organic matter, and accumulates in huge peat bogs that once covered large areas of land. It’s useful stuff – very good for growing plants in, a handy fuel, and it’s also the most effective natural carbon store on the planet.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在现实世界中，最接近灵魂土的是泥炭。泥炭是部分腐蚀的植被和其他的有机物组成的。并且常大量出现在巨大的泥炭沼泽中，曾经它覆盖在大片土地上。它是一个对于种植植物来说非常有用的东西，同时也是一种方便的燃料，并且它也是地球上最有效的天然碳的储存。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But all that decaying vegetation gives off flammable gases (called marsh gas), and sometimes those gases ignite, creating blue-ish flames, depending on what the gas is made of. This, not surprisingly, terrified people travelling through marshlands at night – who gave it all kinds of names, most popularly will-o’-the-wisp.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但所有这些腐烂的植被会释放出易燃气体(沼气)，有时这些气体会燃烧，从而产生蓝色的火焰，当然这取决于气体由什么组成。夜晚穿越沼泽地的人们被吓坏了，于是他们给它起了各种各样的名字，最常见的名字是"鬼火"，但这其实并不为奇。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In Minecraft, there are no will-o’-the-wisps, so if you’re exploring a Soul Sand Valley and you see something approaching through the darkness, then it’s probably a good idea to turn around and run. You never know what it might be...</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在“我的世界”中，没有什么所说的"鬼火"，所以如果你在探索某个灵魂沙峡谷，你忽然察觉有什么东西在黑暗中向你逼近，那么立刻转身逃跑可能是个好主意。你永远不知道它会是什么..。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">【Glorydark 译自BLOCK OF THE WEEK: SOUL SOIL；原作者 Duncan Geere】</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/you’ll-nether-grow-plants-in-that-你会在它上面种上植物" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>

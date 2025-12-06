@@ -1,0 +1,192 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minebbs.com/data/attachments/83/83354-df5c793622c94ec368184dbec86dd208.jpg?hash=31x5NiLJTs" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minebbs.com/data/attachments/83/83354-df5c793622c94ec368184dbec86dd208.jpg?hash=31x5NiLJTs" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">世界基石：试炼密室</Paragraph>
+<Paragraph Style="{StaticResource H2}">以毅力之“韧”，赴试炼之“考”​</Paragraph>
+<Paragraph Style="{StaticResource H2}">在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。</Paragraph>
+<Paragraph Style="{StaticResource H7}">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">Once you’ve got the basics set up in your Minecraft world – a place to live, a mine to gather resources, a farm for food, a huge statue of your face (y’know, just the essentials) – you’ll start looking for new challenges.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">有些玩家喜欢全面翻新自己的小窝，将其改造成一座城堡或宫殿；有些玩家喜欢游遍主世界，寻觅罕见的生物群系，收集各种植物和花卉；还有些玩家会深入下界，顶着炙热，冒着危险，寻得一个个宝藏。现在，棘巧试炼更新提供了个新选择 —— 前往试炼密室，挑战主世界的劲敌，检验自己的战斗技巧。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some players like to dramatically upgrade their living quarters, turning a hut into a castle or a palace. Some like to explore the Overworld, hunting out rare biomes and collecting plants and flowers. Some delve into the Nether, braving the heat for treasure. And now, courtesy of the Tricky Trials update, there’s a new option – hunting down a trial chamber and testing your combat skills against some of the toughest challenges that the Overworld has to offer.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">试炼密室位于主世界地下，但你无需一股脑挖来挖去。你可以到村庄找到一位制图师，与之交易，取得信任，便有几率交易获得试炼探险家地图，跟着地图指示，便能找到最近的试炼密室。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Trial chambers can be found underground, distributed roughly evenly throughout the Overworld. But you don’t need to go digging randomly to find one – there’s a smarter option. Track down a cartographer villager, and after earning their trust with a few early trades, there’s a good chance they’ll be persuaded to sell you a trial explorer map, which points the way to the nearest chamber.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">当你挖出一个由凝灰岩和铜块构成的未知结构，你便能确定，这就是试炼密室。进入密室，你会路过一个个房间。要当心，部分房间有试炼刷怪笼，没准备好战斗，就别贸然进入。带有不祥之兆效果，就要格外小心了，刷怪笼会在效果加持下升级，生成更难对付的敌对生物，而相应的，战利品也会更加丰厚。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’ll know you’ve found the chamber when you come across a structure made of tuff and copper. Make your way inside, and you’ll find a collection of rooms, some of which contain trial spawners and vaults. Be wary, and don’t approach until you’re ready for a fight. If you happen to have the Bad Omen effect on you, be extra careful, because it’ll upgrade the spawners to deliver a much harder challenge, albeit one that’ll deliver even better loot.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">试炼密室里有各种宝物，其中宝库里面的东西最为值钱，有稀有工具、武器和盔甲。每个房间还有零零散散的箱子，里面也有些资源，可以用于战后补给。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Speaking of loot, there are all kinds of goodies you’ll find in a trial chamber. The vaults are the main event, spawning rare tools, weapons, and armor. You’ll also come across a scattering of chests, barrels and pots containing resources to top you up between fights.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img2)s] ​</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现实中，比武审判并非虚构，曾一度存在于中世纪欧洲的法律，用来解决双方拒不认罪且无证人口供的争端。双方会进行比武，胜者将成为“正义的一方”。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Trial by combat is a real-world thing. It was used in law, mostly during the Middle Ages in Europe, to settle disputes in situations where neither side would confess and there was no witness available to establish the truth. The two sides would fight, and the winner of the fight was proclaimed to be correct.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">是不是觉得挺无厘头？你需要为指控赌上性命。然而，无论有理还是无理，只要拳头够硬，就能获胜，就能享有“正义”。到了16世纪，这种审判方式逐渐走下历史舞台，取而代之的是更加现代化的审判方式，即让中立法官和陪审团进行审判。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">If that doesn’t sound like a very good basis for law, you’d be right. The idea is that you need to be willing to stake your life in support of your accusation, but the reality is that the stronger person tends to win, whether they’re right or not. As such, it began to disappear in the 16th century in favour of more modern approaches like neutral judges and juries.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">因此，下次想弄清楚谁将苦力怕引到了你的小窝时，我们并不建议比武审判来决出“公平”，而是建议你原谅那些“熊孩子”，和他们一起挑战试炼密室。与危险的敌人战斗后，你们或许会成为挚友。而且，清空试炼密室的敌人后，你还可以把小窝搬到里面。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">So next time you’re trying to figure out which of your friends lured a creeper into your house while you were out mining, we can’t recommend you rely on trial by combat. Instead, forgive them both and go tackle a trial chamber together. With any luck, facing a collection of dangerous foes might just bring you all closer. Then once it’s cleared out, move your home into the trial chamber instead.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">译者：Glorydark</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译日期：2024年9月30日</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">原文：https://www.minecraft.net/zh-hans/article/trial-chamber</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/以毅力之“韧”，赴试炼之“考”​" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>

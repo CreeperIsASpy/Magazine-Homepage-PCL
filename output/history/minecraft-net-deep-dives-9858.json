@@ -1,0 +1,206 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minecraft.net/content/dam/games/minecraft/screenshots/coral-ingame.jpg" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/coral-ingame.jpg" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="寻觅珊瑚礁" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">本周方块：珊瑚</Paragraph>
+<Paragraph Style="{StaticResource H2}">BLOCK OF THE WEEK: CORAL</Paragraph>
+<Paragraph Style="{StaticResource H2}">寻觅珊瑚礁</Paragraph>
+<Paragraph Style="{StaticResource H7}">Cruising the reef​来和我一起游个泳吧，一同穿过“我的世界”里深邃而又宽阔的海洋。在你的右手边，有一群发光的鱿鱼正在黑暗中闪闪发光。就在你的正前方，一个被数个远古守卫者保护的巨大海底神庙正映入你的眼帘。在你的身后，是一群海带和海草。最后，当你经过你左手边的暗礁，你会发现我们的本周方块 - 美丽的粉色、黄色、红色珊瑚块。</Paragraph>
+<Paragraph Style="{StaticResource H5}">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Come and take a swim with me, through Minecraft’s deep and bountiful oceans. To your right: a nest of glow squid, twinkling in the darkness. Just ahead: an enormous ocean temple filled with ancient guardians. Behind: a forest of kelp and seagrass. And finally, as you pass the reef to your left-hand side, you’ll spot our block of the week – beautiful pink, yellow, red, and blue coral blocks.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">珊瑚在2018年发布的海洋更新中加入了“我的世界”的暖水海洋群系中，但它早已是玩家们向我们提出的恳求。开发者，也早在2009年游戏初步开发阶段，表达出想将其加入游戏的想法。然后，它在2012年的一个愚人的快照中（12marc40awesome）与“鱼方块”一同被提及。它也花费了一段相当长的时间来融入这个游戏，但现在，它已被加入游戏了，就在你的物品栏里呢！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Coral joined the briny depths of Minecraft’s oceans in the Update Aquatic, released in July 2018, but it had long been a request from players. The devs expressed interest in adding it to the game way back in 2009, very early in development. Then it was teased in 2012 in a fake snapshot, alongside “fish blocks”. It took a while longer before it actually made it into the game, but it’s here now.</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/coral-ingame.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/franchise/photography/places/coral-realworld.jpg"/><TextBlock Text="Image Credit: pakmat / CC BY-SA 2.0" Style="{StaticResource imgTitle}" />
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">珊瑚块一般自然生成与珊瑚礁，覆盖着暖水海洋群系中的海底。这些珊瑚礁有各种各样的形状和大小，珊瑚方块上覆盖着珊瑚，有时上面还可能是珊瑚扇和海泡菜呢。脑纹珊瑚的形成一般显得十分臃肿，而火珊瑚的形成却像一颗漂亮的、枝繁的树木。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Coral blocks spawn naturally in coral reefs, found covering on the seafloor in warm ocean biomes. These reefs come in a wide variety of shapes and sizes, with coral blocks topped with coral, and sometimes coral fans and sea pickles. Brain corals form in lumps, while fire corals create beautiful, branching trees.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">为了让珊瑚块存活，它们需要在水的浸润下生活 - 否则它们那光鲜亮丽的颜色将会成为过去。这也不是说，它需要大量充足的水才能生存 - 你可以将它放在一侧能接触到水的地方。这也意味着，你仍能将它用作一种建筑材料，当然前提是你拥有一个隐藏的灌溉系统来保持它们湿润。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In order for coral blocks to stay alive, they need to be immersed in water – otherwise their beautiful colours will fade to grey. It doesn’t need a lot of water though – you can get away with just one of its sides touching a water block. Which means that you can still use it as a building material if you have a hidden irrigation system keeping it damp.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在现实世界中，珊瑚礁也可以在温暖的海洋中找到 —— 珊瑚实际上是一种动物，与水母有远亲关系。这些动物生活在由一模一样的克隆体组成的群体中，每一种都被称为“水螅体”，大概有几厘米长，一端是嘴巴，另一端是坚硬的外骨骼。几个世纪后，这些外骨骼逐渐形成，形成了珊瑚礁。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the real world, coral reefs can also be found in warm oceans – and coral itself is actually an animal, distantly related to the jellyfish. The animals live in colonies made up of identical clones, each called a “polyp”, a few centimetres long with a mouth at one end and a hard exoskeleton at the other. Over centuries, these exoskeletons build up, and you get a reef.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">更奇怪的是，一种叫做虫黄藻的活藻类生长在大多数造礁珊瑚的体内。珊瑚为虫黄藻提供了一个安全的环境，以及生长所需的所有化学物质，而虫黄藻则为珊瑚提供了氧气和食物。这对他们俩来说，是一种互利共生的方式。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">It gets weirder – living algae called “zooxanthellae” grows inside the bodies of most reef-building corals. The coral gives the algae a protected environment, and all the chemicals it needs to grow, while the algae give the coral oxygen and food. It’s a win-win situation for both of them.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">然而，当珊瑚周围的海水温度过高时，珊瑚就会受到压力，它们的反应是将藻类从体内驱逐出去。这不仅使珊瑚呈现灰色/白色，或被漂白，而且如果持续时间过长，也会致使珊瑚死亡。不幸的是，随着气候变化使海洋变暖，这种情况发生得越来越频繁。1998年，世界上约16%的珊瑚礁死亡。在短短十年之内，预计世界上大约一半的珊瑚礁将会死亡。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">When the water around the coral gets too hot, however, the corals get stressed and they react by expelling the algae from their bodies. This not only makes the coral appear grey/white, or “bleached”, but it also kills the coral if it goes on too long. Unfortunately, as climate change warms our oceans, this is happening more and more often. In 1998, about 16% of the world’s reefs died. In just ten years, it’s expected that about half of the world’s coral reefs will be dead.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">原文链接: https://www.minecraft.net/en-us/article/block-week--coral</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">原文出自:Duncan Geere</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">发布日期: 2022年2月3日</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译者: Glorydark</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-06" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/block-of-the-week-coral" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>

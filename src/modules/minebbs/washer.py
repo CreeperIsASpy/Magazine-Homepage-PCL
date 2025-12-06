@@ -2,9 +2,8 @@ import re
 
 from bs4 import BeautifulSoup
 
-from .grabber import grab_post_lists, request_with_header
-
 # --- #
+
 
 def extract_detailed_content(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
@@ -43,9 +42,8 @@ def extract_clean_text(html_content):
 
     # 找到文章主体
     message_body = soup.find("article", class_="message-body")
-
     if not message_body:
-        return "未找到正文内容"
+        return
 
     # 移除脚本和样式标签
     for script in message_body(["script", "style"]):

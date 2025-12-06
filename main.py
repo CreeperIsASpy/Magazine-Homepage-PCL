@@ -15,8 +15,15 @@ if __name__ == "__main__":
 
     all_posts = grab_all()
 
+    first_post: int = -1  # 设个 flag
     for index, post in enumerate(all_posts):
         built_content = run(post)
+
+        if not built_content:
+            continue
+        else:
+            if first_post == -1:
+                first_post = index
 
         # 保存为 XAML 文件和 JSON 文件
         filename = (
@@ -35,9 +42,7 @@ if __name__ == "__main__":
         # 制作主页入口点
         template = get_template("deepdives_link.fstring.xaml")
         title = (
-            (post.get("title").strip() + f"（{'最新' if index==0 else '历史'}博文）",)[
-                0
-            ]
+            post.get("title").strip() + f"（{'最新' if first_post==index else '历史'}博文）"
             .split("]")[-1]
             .replace(":", "：")
             .replace(": ", "：")
@@ -47,7 +52,7 @@ if __name__ == "__main__":
         _author = post.get("author")
 
         built_template = template.format(
-            lamp_status="On" if index == 0 else "Off",
+            lamp_status="On" if first_post==index else "Off",
             title=title,
             info=f"更新于 {_date}，由 {_author} 翻译。",
             json_name=filename,

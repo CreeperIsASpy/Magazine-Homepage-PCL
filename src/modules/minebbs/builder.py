@@ -17,7 +17,6 @@ def convert_text_to_xaml(content_part, image_map) -> str:
     Returns:
         转换后的 XAML 格式字符串。
     """
-
     # --- 1. 分离内容与元数据 ---
     try:
         content_lines = content_part.strip().split("\n")
@@ -203,10 +202,12 @@ def convert_text_to_xaml(content_part, image_map) -> str:
     return final_xaml
 
 
-def run(post) -> str:
+def run(post) -> str | None:
     """
     主函数：将博文转换为 PCL XAML 格式
     """
     content = request_with_header(post.get("url"))
-    clean_text, image_dict = extract_clean_text(content)
+    clean_text, image_dict = extract_clean_text(content) or ("", {})
+    if not clean_text or not image_dict:
+        return
     return convert_text_to_xaml(clean_extracted_text(clean_text), image_dict)

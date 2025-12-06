@@ -1,0 +1,184 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minebbs.com/data/attachments/32/32299-2bb97861e5576e9234c58ca5bda37244.jpg?hash=K7l4YeVXbp" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minebbs.com/data/attachments/32/32299-2bb97861e5576e9234c58ca5bda37244.jpg?hash=K7l4YeVXbp" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="将一门语言、一种文化和许多方块联系在一起" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">玩乐之余，学习语言</Paragraph>
+<Paragraph Style="{StaticResource H2}">LEARNING LANGUAGES THROUGH PLAY</Paragraph>
+<Paragraph Style="{StaticResource H2}">将一门语言、一种文化和许多方块联系在一起</Paragraph>
+<Paragraph Style="{StaticResource H7}">Connecting language, culture, and blocks!​从数字责任到环境可持续发展，再到目睹许多能教会你关于全球公民权利的由方块建造的社会影响人物，全世界中有很多人都在使用《我的世界：教育版》来学习一些东西。但你可曾想过在《我的世界:教育版》中去探索各种各样的文化，甚至是学会一门语言呢?</Paragraph>
+<Paragraph Style="{StaticResource H5}">Many people around the world use Minecraft: Education Edition to learn things, from lessons in digital responsibility, to environmental sustainability, to meeting blocky versions of social impact leaders that can teach you about global citizenship. But did you know that you can use Minecraft: Education Edition to explore different cultures and even learn languages, too?</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">鉴于5月是美国亚太裔传统日，我们决定去带大家探索新普利茅斯市，并且去学习一些当地的语言,文化以及当地的风土人情。Whetu Paitai是新毛里求斯市部分的建造者以及Piki Studio的创始人。他说他的灵感来自他对于传递那些他所熟知且体验过的文化知识给他自己的孩子们的渴望。“我发现了创建一个沉浸式的世界的方法 - 尽管这一次不是我的世界中的内容，而是毛利文化的所在。”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Seeing as May is AAPIHM: Asian American and Pacific Islander Heritage Month, we thought we’d explore Ngā Motu (The Islands) and learn about the indigenous language, culture, and people of Aotearoa (New Zealand). Whetu Paitai, the creator of the Ngā Motu module and founder of Piki Studios, says the idea came from his desire to pass on the cultural knowledge he’d grown up with to his own children. “I saw the opportunity to create an immersive world – although this time it wasn’t the Minecraft universe, it was the Māori universe.”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​到达了两个并不遥远且临近新西兰的小岛屿后，你可以去探索一个传统的叫做a Pā的毛利人聚居地，并且去发现他们是如何打扮的、他们长的是怎样以及在典型的一天种所发生的一些活动是怎样。慢慢地你发现那儿的食物是如何长出来的、被储存的并且被烹饪的，同时了解所有关于早期毛利人的生活，从通过他们曾横跨大西洋的各种各样的轮船，再到探索他们为何有分开的睡觉和就餐的区域。你甚至可以在模块中开始学习毛利语。“所有的土著文化都包含众多方面”，Whetu Paitai说，“所有这些东西合在一起就是土著文化的本质。毛利语是新西兰的三种国语之一，这通常是很多人学习【毛利文化】的起点。”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Arriving at two small islands not far off the mainland of Aotearoa, you get to explore a traditional Māori settlement called a Pā, and discover how they were arranged, what they looked like, and what kinds of activities happened on a typical day. Find out how food was grown, stored, and cooked and learn all about the lives of the early Māori, from the types of water vessels they used to traverse the Pacific Ocean, to why they had separate structures for sleeping and eating. You can even begin to learn Te Reo Māori in the module, the Māori language! “All indigenous cultures are wrapped up with many facets,” says Whetu Paitai, “and all of those things together are what make that indigenous culture what it is. Te Reo Māori is [one of three] national languages of New Zealand and it’s usually the starting point for a lot of people for learning about [Māori culture].”</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在Ngā Motu模块中，您可以通过在与角色的对话中学习新单词的同时来学习蒂雷欧毛利语，参加游戏中的发音课程(当您答对时，会有一些非常漂亮的烟花冉冉升起！)和重复简单的会话短语。美国华盛顿学院中文助理教授大卫·赫尔说：“当你可以玩电子游戏时，你就会很难坐下来去练习写字”。尽管他承认成年后融入其中可能会很困难，但他还是表明:““任何时候都是学习语言的好时机”。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the Ngā Motu module, you can learn Te Reo Māori by discovering new words in conversation with characters, attending in-game pronunciation lessons (with some very rewarding fireworks when you get it right!) and by repeating simple conversational phrases used throughout. "Any time is good to learn a language," says David Hulll, an assistant professor of Chinese at Washington College in the United States, although he agrees that it can be difficult to fit it in as an adult. "It's hard to sit down and practice writing characters when you could be playing video games.”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img2)s] ​￼谁来告诉David在《我的世界》学习语言的好消息呢？这个模块教你如何用日语发布天气预报，你甚至可以去一个多雪的生物群落去报道暴风雪的情况或者建造一个精致的天气工作室来获得额外的学分！(免责声明:你可能不会得到额外的学分。但至少你会玩得开心。) 另一个模块是已被剑桥评估认可的，它通过带你进行一次史诗般的探索来传授给你英语口语、听力、写作和阅读，其中包含要结识的人物、要探索的世界和要破解的谜题！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Who is going to tell David the good news that learning languages in Minecraft ticks both boxes? This module teaches you how to present a weather report in Japanese, you can even travel to a snowy biome to report on the blizzards or build an elaborate weather studio for extra credit! (Disclaimer: you might not get extra credit. But at least you'll have fun.) Another module, approved by Cambridge Assessment, teaches English speaking, listening, writing, and reading by taking you on an epic quest packed with characters to meet, worlds to explore, and puzzles to crack!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">“我认为当我们谈论游戏和学习时，[我们谈论它们]就像它们是两个完全互不相干的东西，”Whetu Paitai说，“我认为去让更多人了解许多土著文化，特别是基于口述历史文化的一个重要思想是：游戏和学习不是互不相干的两件事，它们是同一件事。《我的世界》不仅仅是一款游戏，它也可以成为一个巨大的学习平台。”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">“I think when we’re talking about games and learning, [we’re talking about them] like they’re two really separate things,” says Whetu Paitai, “and I think one of the big philosophies that underpins a lot of indigenous cultures, especially ones that are based around oral history, is that things like games and learning are not two different worlds, they’re the same thing. Something like Minecraft isn’t just a game, it can also be one big learning platform.”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img3)s] ​“Lessons In Good Trouble”的创作者之一的Ken Shelton说，通过沉浸式互动学习，学生们能够分享故事、经历和对于他们文化被认同的成就感，所有这些都可以使学生在课堂上变得更加地自信和舒适，副校长Lena Francis Ngaei Kura Ote Rongo Meinders也同意这一点。“它增强了我们毛利学生的信心，因为它认可了毛利人在新西兰的独特地位[……]，我们对这一点一直非常重视。”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Through immersive and interactive learning, students are able to share "stories, experiences, and recognition of the accomplishments of others within their cultural identifiers" says Ken Shelton, one of the creators of "Lessons In Good Trouble”, all of which can empower a student to become more confident and comfortable in the classroom, and Deputy Principal Lena Francis Ngaei Kura Ote Rongo Meinders agrees. "It empowers our Māori students because it recognizes the unique place of Te Reo Māori here in New Zealand […] and we take that really seriously.”</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">如果你想在这个五月了解更多的毛利文化，或者自己学习毛利语，那么为什么不去探索Ngā Motu的沉浸式世界呢！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">If you want to learn more about Māori culture this May, or learn Te Reo Māori yourself, then why not explore the immersive world of Ngā Motu!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">原文链接: https://www.minecraft.net/zh-hans/article/learning-languages-through-play</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">原文作者: Staff</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">发布日期: 2022年5月18日</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译者: Glorydark</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/learning-languages-through-play" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>

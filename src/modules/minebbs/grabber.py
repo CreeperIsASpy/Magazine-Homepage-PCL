@@ -224,13 +224,14 @@ def grab_post_lists(NEWS_LIST_URL: str) -> tuple[list, bool]:
     # 过滤出含有 MINECRAFT | DEEP DIVES 字样的博文
     filtered_posts = filter_posts_by_title(cleaned_posts, "DEEP DIVES")
 
-    return (filtered_posts, True)
+    return filtered_posts, True
 
 
 def get_last_page_number():
-    url = "https://www.minebbs.com/forums/news/page-9999999999"
-    r = request_with_header_origin(url, allow_redirects=False)
-    final_url = r.headers.get("Location", "")
+    url = "https://www.minebbs.com/forums/news/page-9999999999"  # 请求更大的页码，会被重定向到最后一页。
+    r = request_with_header_origin(url)
+    final_url = r.url
+    print(f"当前最大 URL：{final_url}")
     # 提取页码
     if "page-" in final_url:
         return int(final_url.split("page-")[-1].rstrip("/"))
@@ -243,6 +244,8 @@ def grab_all():
 
     last_page = get_last_page_number()
     for count in range(1, last_page + 1):
+        print(f"current page: {count}")
+        print(f"current_posts: {sort_posts_by_time(all_posts)}")
         filtered_posts, should_continue = grab_post_lists(
             f"https://www.minebbs.com/forums/news/{f'page-{count}' if count > 1 else ''}"
         )
@@ -251,4 +254,5 @@ def grab_all():
         if not should_continue:
             raise Exception("意外获取到非 200 返回请求")
 
+    print(f"all_posts: {sort_posts_by_time(all_posts)}")
     return sort_posts_by_time(all_posts)

@@ -1,0 +1,203 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/igloo-ingame.jpg" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/igloo-ingame.jpg" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="主世界最冷的那片地方，雪花无止无休地漫天飞舞，整片大地犹如银装素裹，一片雪白。有时，雪原上也会涌现一些突兀的小疙瘩，那便是雪屋。当你踏入其中，或许会惊讶于其宾至如归的温暖。然而，这份如家般的温暖或许仅是为了掩盖可怕的真相。" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">块筑天工：雪屋​Building Blocks: Igloo​冰色之穹，宝藏尽在</Paragraph>
+<Paragraph Style="{StaticResource H2}">An icy dome filled with treasure!​</Paragraph>
+<Paragraph Style="{StaticResource H2}">主世界最冷的那片地方，雪花无止无休地漫天飞舞，整片大地犹如银装素裹，一片雪白。有时，雪原上也会涌现一些突兀的小疙瘩，那便是雪屋。当你踏入其中，或许会惊讶于其宾至如归的温暖。然而，这份如家般的温暖或许仅是为了掩盖可怕的真相。</Paragraph>
+<Paragraph Style="{StaticResource H7}">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">In the coldest parts of the Overworld, where snowflakes fall endlessly from the sky, covering the ground with a thick carpet of white, you’ll occasionally see a little bump in the landscape – an igloo. Investigate a little further, and you’ll find a remarkably homely interior. But sometimes that homely interior hides a terrible secret...</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">自2016年2月的战斗更新以来，雪屋便出现在雪原上。那次更新不只重新设计了游戏的战斗系统（如更新名称所描述的一样），更添加了一系列物品，如鞘翅、药水箭、末影城和紫颂果。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Igloos have been spotted in snow-covered biomes ever since the Combat Update, released in February 2016. As well as revamping the game’s combat system (hence the name), this update also added elytras, tipped arrows, end cities, and chorus fruit.</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/igloo-ingame.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">今天，我将重点谈谈雪屋，让我们一起回到正题吧。雪屋藏匿在雪原、积雪山坡、积雪针叶林群系中，它的外部几乎完全由雪方块构成，屋子里有一张床、一个熔炉、一个工作台、一张不错的地毯，当然还有一个用于照明的红石火把。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But we’re here today to talk about igloos, so let’s focus our attention there. You’ll find igloos in most snowy biomes – snowy plains, snowy slopes, and snowy taigas. The exterior is built almost entirely of snow blocks, but the inside is decked out with a bed, a furnace, a crafting table, a nice carpet, and a redstone torch to provide some light.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">话说你有没有掀开过雪屋的地毯？通常情况下，地毯下空无一物。但有时，你会发现一扇隐藏的活板门。打开它，顺着梯子往下探索，你会进入一个神秘的地下室。这里似乎进行着一项危险的实验：地下室中央摆放着一个酿造台，里面装着一瓶虚弱药水；旁边的箱子里藏着一颗金苹果。更令人惊讶的是，角落里还有一间监狱，关押着一个村民和一只僵尸村民。你能在僵尸村民吃掉你的脑子之前，用虚弱药水和金苹果将他变回原状吗？</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Have you ever looked under the carpet of an igloo? Sometimes you’ll find nothing. But sometimes you’ll discover a trapdoor which leads down into a secret basement. In the basement, you’ll find what can only be described as evidence of a dangerous experiment. There’s a brewing stand with a potion of weakness inside, a chest with a golden apple, and then a prison containing a villager and a zombie villager. Can you cure the zombie villager before it eats your brains?</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">当然，箱子里也会有一些其他物品——虽然通常没什么特别好的东西。熔炉里可能会放着几块煤炭和一些食物，偶尔还会有一颗金粒或一颗绿宝石。不过，真正的奖励其实是雪屋本身。它就像一个舒适的小窝，当你穿越雪原时，可以在这里稍作停留，度过一个温暖的夜晚。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">The chest will usually have some other goodies in it too – usually nothing too fancy. Some coal for the furnace maybe, some food, occasionally a gold nugget or an emerald. But really the reward here is a cosy place to spend the night when you’re exploring the Overworld’s snowy landscapes.</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/minecraftnet/franchise/photography/things/igloo-realworld.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">在《我的世界》外的现实中，“igloo”（雪屋）一词是指因纽特人用雪建造的房屋或庇护所。或许你会认为雪屋十分寒冷，但实际上，雪内部会滞留一部分空气，因而是一种非常好的绝缘体。即使外面温度低至零下45摄氏度，仅靠体温暖和起来的雪屋，内部温度也可以高达16摄氏度。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Outside of Minecraft, “igloo” is the word used by Inuit peoples to describe a house or shelter built out of snow. You might think that would be a chilly place to live, but actually the air trapped in the snow makes it a really good insulator. Even if the temperature outside is -45C, the temperature inside an igloo warmed by body heat alone can be as high as 16C.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">一般来说，只有居住在加拿大中部北极地区和格陵兰卡纳克地区的因纽特人才会建造雪屋，而其他因纽特人则用鲸骨和兽皮建造房屋，并用雪进行隔热。雪屋分为三种类型——最小的是一种临时庇护所，通常用于狩猎时短暂停留一两晚。中等大小的雪屋供家庭半永久性居住，常常与其他雪屋聚集在一起，形成小型群落。最大的雪屋则用于容纳多个家庭，最多可拥有五个房间，容纳多达二十人，通常还会预留一个大空间，用于举办特殊活动。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Traditionally, igloos were only used by the Inuit living in Canada’s Central Arctic region, and the Qaanaaq area of Greenland, while other Inuit built houses from whalebone and hides and just insulated them with snow. There are three types – the smallest is a temporary shelter, used for just one or two nights on a hunting trip. Medium-sized igloos were for families to live in on a semi-permanent basis, often in a cluster with others. Finally, the largest size were used to house multiple families, with up to five rooms and 20 people, often with a large space for special occasions.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">要建造一个雪屋，首先要用锯子从雪地上切出雪砖，并小心翼翼地堆叠成圆顶形状。如果操作无误，且使用了合适的雪，雪砖便会相互支撑，形成一个稳固的结构。若操作不当，或者用了不合适的雪，结构便会骤然坍塌，只能从头再来了。隧道是入口，用来阻挡寒风，等雪屋建成后，有时还会加热内部，使内壁的雪融化，然后其又会重新冻结成冰，因而更具耐用性。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">To make one, snow bricks are cut out of the ground with saws and stacked carefully into a dome shape. If done correctly, with the right kind of snow, the bricks lean on each other and support their own weight. If done incorrectly, with the wrong kind of snow, it all collapses. A tunnel is used as an entrance to keep the wind out, and sometimes the interior would be heated after construction to melt the inside and then allow it to refreeze into ice to add additional strength.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现在，你知道建造雪屋的方法了吧。之后，不管是游戏还是现实之中，当身处雪地之时，不妨建一个雪屋吧！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">So now you know how to build an igloo. Consider trying it out next time you find yourself in a snowy landscape – either inside of Minecraft, or out of it.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">原文：https://www.minecraft.net/en-us/article/igloo</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译：Glorydark</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">日期：2025年1月19日 16:14:49</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/an-icy-dome-filled-with-treasure!​" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>
