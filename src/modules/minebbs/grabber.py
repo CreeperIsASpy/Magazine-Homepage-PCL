@@ -3,29 +3,61 @@
 from datetime import datetime
 
 import requests
-import cloudscraper
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoap
+from playwright.sync_api import sync_playwright
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept-Encoding": "gzip, deflate, br, zstd",
     "Referer": "https://minebbs.com/",
 }
 
-cf_scraper = cloudscraper.create_scraper()
-
-
 def request_with_header_origin(url, **kwargs) -> requests.Response:
-    """发送带有浏览器请求头的请求"""
-    response = cf_scraper.get(url, **kwargs)
-    return response
+    """发送带有浏览器请求头的请求 (Playwright内核，返回 requests.Response 以兼容接口)"""
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        
+        # 移除 Accept-Encoding 让浏览器自己处理压缩，避免乱码
+        headers_copy = HEADERS.copy()
+        if "Accept-Encoding" in headers_copy:
+            del headers_copy["Accept-Encoding"]
+
+        context = browser.new_context(
+            user_agent=headers_copy.pop("User-Agent"),
+            extra_http_headers=headers_copy
+        )
+        
+        page = context.new_page()
+        
+        try:
+            # 简单的 kwargs 映射，防止报错
+            timeout = kwargs.get('timeout', 30000)
+            if isinstance(timeout, (int, float)) and timeout < 1000:
+                timeout *= 1000  # requests 是秒，playwright 是毫秒
+
+            pw_response = page.goto(url, wait_until="domcontentloaded", timeout=float(timeout))
+            
+            # 手动构造 requests.Response 对象
+            response = requests.Response()
+            if pw_response:
+                response.status_code = pw_response.status
+                response._content = pw_response.body() # 填充 content，requests 会自动处理 text
+                response.headers.update(pw_response.all_headers())
+                response.url = pw_response.url
+            
+            return response
+        finally:
+            browser.close()
 
 
 def request_with_header(url) -> str:
     """发送带有浏览器请求头的请求，返回文本"""
     response = request_with_header_origin(url)
+    
+    # 补丁：手动调用自动编码识别，确保 .text 能正确解码中文
+    response.encoding = response.apparent_encoding
+    
     return response.text
 
 
