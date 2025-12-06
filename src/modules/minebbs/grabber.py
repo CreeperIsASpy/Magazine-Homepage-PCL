@@ -3,7 +3,7 @@
 from datetime import datetime
 
 import requests
-from bs4 import BeautifulSoap
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 HEADERS = {
