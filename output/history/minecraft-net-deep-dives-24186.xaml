@@ -132,19 +132,22 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H2}">漫天粉色，尽显浪漫​</Paragraph>
 <Paragraph Style="{StaticResource H2}">在我看来，主世界众多群系都不及樱花树林群系。然而，找到一片樱花海并非易事 —— 你可以在山区的丘陵处碰碰机会。找到一片樱花树林时，你定想永居此处 —— 而其“圈粉无数”的关键便在于我们的本月方块 —— 樱花树叶。</Paragraph>
 <Paragraph Style="{StaticResource H7}">正如你的猜想，樱花树的枝叶被称为樱花树叶，其叶片大、外表粉红，只出现在樱花树林内 —— 当然你也可以收集些树苗，将粉色花海带回熟悉的家，让后院风景如画。</Paragraph>
-<Paragraph Style="{StaticResource H5}">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">In my opinion, there’s no place in the Overworld more glorious than a cherry grove biome. These stunning locations aren’t too easy to find – you’ll need to hunt them out in the foothills of mountainous regions. But when you find one, you’ll never want to leave – and that’s all thanks to our block of the month – cherry leaves.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">As you might have already guessed, cherry leaves are the leaves of a cherry tree. They’re big, and pink, and only generate naturally in those groves we were just talking about – though you can always grab a sapling and take it home to grow a cherry tree in your own backyard.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">自2023年6月足迹与故事更新，樱花树开始出现在主世界里。然而，早在十年前，Patrick Geuder就在为引入这一树种做准备，想必我的世界的“程序猿们”定是费了不少功夫。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">造成这一困扰的原因或许是它们独特的效果，与大部分树木相差甚远。站在樱花树叶一旁，鲜艳的粉红色花瓣便会从树上飘落，再看看地面遍布的粉红色花瓣，实在是最棒的人间天堂。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">These beautiful trees were added to the Overworld in the Trails & Tales update in June 2023, though developer Patrick Geuder had been planning and working on their implementation for about ten years before that. Guess they must be pretty complicated.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">That’s probably because they have a unique effect – unlike most other trees in Minecraft, bright pink blossoms will rain down from cherry leaves whenever you’re standing nearby. Combined with the pink flowers on the ground, there’s no more beautiful place to hang out.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">现实中，樱花树大多数时候并不是粉红的。一到春天，粉色樱花挂满枝头，景色十分壮观，我的世界的樱花树林群系便是定格了这一瞬间。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">虽然北半球大部分热带地区都有樱花树的身影，但要论哪个出名，还得是东亚的樱花树 —— 譬如在中国、韩国和日本 —— 每到三四月份，这些国家的樱花（被称作“sakura”）便会盛开，如雨水般尽数下落，无数的游客纷至沓来，看尽梦幻般的“粉色花海”。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">好在我的世界里没有季节之分，樱花永伴你我身旁。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Real-world cherry trees, for most of the year, aren’t pink at all. But during the spring they blossom spectacularly, and it’s this season that Minecraft’s cherry grove biome is emulating.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’ll find blossoming cherry trees in most of the temperate parts of the northern hemisphere, but they’re best known in East Asia – China, Korea and Japan – where the blossoms (called “sakura”) rain down upon tourists throughout March and April.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">There are no seasons in Minecraft, so luckily you can enjoy cherry blossoms year-round!</Paragraph>
@@ -172,7 +175,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

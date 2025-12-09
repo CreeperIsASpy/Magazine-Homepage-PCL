@@ -132,7 +132,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H2}">Pottery from the past​</Paragraph>
 <Paragraph Style="{StaticResource H2}">嗨，我是一名我的世界建筑内饰顾问。你的家是否有点单调？总感觉缺少了点东西？奇怪但又说不上来？请让我向你推荐我们本月的方块 —— 饰纹陶罐，有了这个装饰品，想必村民和流浪商人都将在你的家门口排起长队，就为了能看上那么一眼。</Paragraph>
 <Paragraph Style="{StaticResource H7}">2023年6月足迹与故事更新中，饰纹陶罐被加入到我的世界中。这并不是偶然，这一更新正是将考古学引入游戏 —— 因为你将需要一些考古学技能来制作最为精美的饰纹陶罐。</Paragraph>
-<Paragraph Style="{StaticResource H5}">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Hi there, Minecraft interior decoration consultant here. Is your home base a little bit drab? Is it missing something? A little bit of je ne sais quoi? Allow me to recommend our block of the month – the decorated pot – which will have villagers and wandering traders queuing up at your doors to witness its beauty.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Decorated pots began appearing in Minecraft in the Trails and Tales update, released in June 2023. This, not coincidentally, is the update that added archaeology to the game – because you’ll need some archaeology skills to make the most beautiful decorated pots.</Paragraph>
 <BlockUIContainer>
@@ -144,7 +145,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" Foreground="black">为何需要这类技能呢？这是因为制作饰纹陶罐需要陶片或红砖。红砖容易制作，但十分普通；而陶片难以获取，十分稀有 —— 你需要用一把刷子，不断寻找考古遗址 —— 但这种材料做出的陶罐绝对会养眼不少。两种方式均需要你消耗4块红砖，抑或是4块陶片。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">将足够的材料以钻石形状放入工作台的合成方块后，你就会得到一个饰纹陶罐。要注意的是，陶罐的侧面纹理和材料有关。放入1块陶片和3块红砖后，陶罐的一面将会被装饰。如果是2块陶片和2块红砖的话，两面将会被装饰，以此类推。当你放下陶罐后，有一面将会固定面向着你，放在方块合成底部的陶片或红砖将决定此面纹理，记得要用点心。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">一个陶罐制作好后，你可以把他放在家中的门面位置，然后做你的生意吧。你将一次又一次地注意到陶罐的存在，因而想起世界的美。你甚至还可以在上面放个花盆，往花盆里栽一朵花，就像是花被栽在一个大花盆里。不太想要这个陶罐了？那就挖掉它吧，当时制作陶罐的材料会全数掉落。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Why? Well, to make a decorated pot, you’ll need either pottery sherds or bricks. Bricks are easy to make, but plain. Pottery sherds are harder to acquire – you’ll need to grab a brush and hunt for archeological remains – but the results are much more beautiful. Either way, you’ll need four in total.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Place those four into a crafting grid in a diamond pattern and you’ll be rewarded with a decorated pot. But be careful! The side textures of the pot will correspond with what items you put where. If you have one sherd and three bricks, one face will be decorated. Two and two gives two decorated faces, and so on. The one you put in the bottom slot is the one that’ll face you when you place the pot down, so make that the prettiest</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Once you’ve made your pot, place it somewhere attractive in your home and go about your business. Every now and then you’ll notice it again and be reminded of the beauty of this world. You can even put a flowerpot on top with a flower in, making it look like the flower is inside the large pot. Isn’t that nice? Time to get rid of it? Just break it to drop the component parts you used to craft it.</Paragraph>
@@ -157,7 +159,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" Foreground="black">有一些最为著名的饰纹陶罐出自古希腊人之手，这些彩陶被称为红像陶罐 —— 以黑色打底，人物和其他细节则保留粘土的原色。这一创新之举迅速取代了之前的黑像陶罐。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">今天，陶瓷艺术几乎遍布世界各地。世界上几乎所有的陶瓷都是在大型工厂大规模生产的，但有些深厚的传统依旧，即手工制作小尺寸物品，用心和爱来装饰它们，并将这些美丽的作品代代相传。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">因此，准备弃坑一个世界、再次从零开始之前，要不将您最漂亮的纹饰陶罐交给附近的友好村民。他们一定会像你一样爱惜它们！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">In Earth’s history, cultures have been making pots and other ceramics for more than 25,000 years but decoration didn’t become common until perhaps 7,000-8,000 years ago, during the Neolithic era.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some of the best-known ancient decorated pots come from the “red-figure” pottery of the ancient Greeks – where the background is painted black while the figures and other details are left as the natural color of the clay. This innovation swiftly replaced the “black-figure” style that came before it.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, ceramic art is found all over the world in almost every culture. Nearly all of the world’s ceramics are mass-produced in large factories, but there’s still a strong tradition of hand-made, small-scale items that are decorated with care and love, and of passing beautiful pieces down the generations.</Paragraph>
@@ -187,7 +190,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

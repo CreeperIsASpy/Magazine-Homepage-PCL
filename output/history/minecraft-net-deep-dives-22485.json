@@ -131,10 +131,12 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H7}">本月方块: 混凝土粉末​BLOCK OF THE MONTH: CONCRETE POWDER​粉末归于人民！</Paragraph>
 <Paragraph Style="{StaticResource H2}">Powder to the people!​</Paragraph>
 <Paragraph Style="{StaticResource H2}">我的世界中，大多数玩家建筑时总会选择一些近便的材料 —— 可能是泥土、地狱岩等等。我还见过一座粘土房，想必不久，里面的每个角落都会粘乎乎吧。</Paragraph>
-<Paragraph Style="{StaticResource H7}">Spoiler: 原文</Paragraph>
-<Paragraph Style="{StaticResource H5}">Many Minecraft players build out of whatever the nearest material to hand is. That might be dirt, cobblestone, netherrack, or something else. I’ve even seen a house made of clay, which is sure to result in a sticky situation before too long.</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">相比之下，另一些玩家会更加关心建筑的呈现效果，选用更加“上档次”的材料，如砖块、精细挑选的木头或木板、磨制石头、彩色混凝土。今天，我们将会探讨刚提到的最后一种方块，因为其原材料正是我们的本月方块 —— 混凝土粉末！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Many Minecraft players build out of whatever the nearest material to hand is. That might be dirt, cobblestone, netherrack, or something else. I’ve even seen a house made of clay, which is sure to result in a sticky situation before too long.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">相比之下，另一些玩家会更加关心建筑的呈现效果，选用更加“上档次”的材料，如砖块、精细挑选的木头或木板、磨制石头、彩色混凝土。今天，我们将会探讨刚提到的最后一种方块，因为其原材料正是我们的本月方块 —— 混凝土粉末！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">But other players like to take a little more care with their constructions – building out of bricks, carefully-selected woods or planks, polished stone, or colorful concrete. It’s this last choice that we’re looking at today – because our block of the month is the raw material you’ll need to make it. It’s concrete powder!</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">​</Paragraph>
 <BlockUIContainer>
@@ -144,16 +146,20 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 </BlockUIContainer>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">2017年的五彩世界更新中，混凝土粉末首次被添加至我的世界中，除此还有带釉陶瓦、幻术师以及胡萝卜。当你将四块沙子、四块砂砾和一种染料放在工作台中并点击合成，你就能得到八块混凝土粉末。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Concrete powder was added to Minecraft in the World of Color update in June 2017, which also added glazed terracotta, illusioners, and parrots. It’s made using four blocks of sand and four blocks of gravel, as well as a single type of dye.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">混凝土颜色各异的奥秘在于染料，我的世界一共有16种染料 —— 由亮橙到深蓝，其中还会和品红、红色、青色、灰色、白色和黑色混合，调出不同颜色。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">The dye is what gives concrete its color – so there are sixteen possibilities to choose. They go all the way from bright orange to dark blue, taking in magenta, red, cyan, gray, white and black along the way.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">混凝土粉末由沙子和砂砾制成，因此也会受重力影响 —— 当下方没有任何方块支撑时，混凝土粉末就会开始下坠。要想将他们固定在某一处，你就得把这些粉末制成混凝土 —— 而整个制作流程只有一步，即让粉末与水接触 —— 无论是直接放在水下，还是将水流导向混凝土的一旁。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Concrete powder, as it’s made of sand and gravel, is affected by gravity – it’ll fall if you place it in the world without a block below it. To keep it in place, you’ll need to turn it into concrete – which is done by bringing it into contact with water - either place it into the water, or allow water to flow next to it.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">不过得注意，混凝土接触的水源不是水方块可不行 —— 水瓶或雨水是没有用的。此外，仅仅将混凝土粉末以物品形式丢到水里就大错特错了 —— 你需要将粉末放置在水中才行。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Note that it’ll need to be a full block of water – water bottles or rain won’t have any effect. Oh, and you need to actually place the block into the world – throwing concrete powder into water in item form won’t do a thing.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
@@ -161,16 +167,20 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 </StackPanel> 
 </BlockUIContainer>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">想知道些混凝土现实中的妙用么？混凝土是地球上第二大常用资源，使用量仅次于水。每天使用的混凝土可是钢铁、木材、塑料和铝的总和的两倍。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Want to know something kinda mind-blowing? Concrete is the second-most-used substance on Earth after water. We use twice as much concrete every day than we use steel, wood, plastic and aluminum combined.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">你可能会问，这些混凝土都去哪儿了？它们大多数会用在建筑上。将水泥与沙子、砾石和水混合后，你就得到了一种超高强度的材料，它几乎可以被铸造成任何形状。世上还有许多材料，种类不同，性质各异，每种材料的性质取决于混合材料的成分 ——如用于道路的沥青混凝土、用微生物加固的混凝土，甚至是石墨烯等“科幻中才会出现的”材料。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Where does all that concrete go? Into construction, mostly. When you mix cement with sand, gravel and water you get a super-strong material that can be cast into almost any shape. There are many different kinds that come with very different properties, all based on what goes into the mix – from asphalt concrete for roads, to concrete reinforced with microbes, or even sci-fi materials like graphene.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">总有部分人不喜欢混凝土建筑，但大多数人还是十分欣赏它们的野兽派美感。如有必要，可以通过打磨来展现结构之美，从而更具吸引力。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some people don’t like the look of concrete buildings, but many others appreciate their brutalist aesthetic. It’s even possible to polish the concrete to expose its structure, making it more attractive to the eye.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">混凝土经久不衰的原因不足为提，而在《我的世界》中，这种建筑材料绝对值得一提 —— 这种材料造价低廉、饶有趣味、颜色各异，且不会被大火吞噬殆尽。这的确是令人愈发兴奋的一点，我已想不到比这更加兴奋的主意了。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Whatever the reason for concrete’s enduring popularity, it’s definitely worth a look as a building material in Minecraft – it’s cheap to make, fun to build with, comes in all kinds of colors, and we promise that it won’t burn down under any circumstances. If that’s not something to get excited about, I don’t know what is!</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">原文：https://www.minecraft.net/en-us/article/concrete-powder</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译：Glorydark</Paragraph>
@@ -197,7 +207,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

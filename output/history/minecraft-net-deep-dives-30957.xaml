@@ -131,30 +131,38 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H7}">世界基石：试炼密室</Paragraph>
 <Paragraph Style="{StaticResource H2}">以毅力之“韧”，赴试炼之“考”​</Paragraph>
 <Paragraph Style="{StaticResource H2}">在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。</Paragraph>
-<Paragraph Style="{StaticResource H7}">Spoiler: 原文</Paragraph>
-<Paragraph Style="{StaticResource H5}">Once you’ve got the basics set up in your Minecraft world – a place to live, a mine to gather resources, a farm for food, a huge statue of your face (y’know, just the essentials) – you’ll start looking for new challenges.</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">有些玩家喜欢全面翻新自己的小窝，将其改造成一座城堡或宫殿；有些玩家喜欢游遍主世界，寻觅罕见的生物群系，收集各种植物和花卉；还有些玩家会深入下界，顶着炙热，冒着危险，寻得一个个宝藏。现在，棘巧试炼更新提供了个新选择 —— 前往试炼密室，挑战主世界的劲敌，检验自己的战斗技巧。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Once you’ve got the basics set up in your Minecraft world – a place to live, a mine to gather resources, a farm for food, a huge statue of your face (y’know, just the essentials) – you’ll start looking for new challenges.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">有些玩家喜欢全面翻新自己的小窝，将其改造成一座城堡或宫殿；有些玩家喜欢游遍主世界，寻觅罕见的生物群系，收集各种植物和花卉；还有些玩家会深入下界，顶着炙热，冒着危险，寻得一个个宝藏。现在，棘巧试炼更新提供了个新选择 —— 前往试炼密室，挑战主世界的劲敌，检验自己的战斗技巧。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some players like to dramatically upgrade their living quarters, turning a hut into a castle or a palace. Some like to explore the Overworld, hunting out rare biomes and collecting plants and flowers. Some delve into the Nether, braving the heat for treasure. And now, courtesy of the Tricky Trials update, there’s a new option – hunting down a trial chamber and testing your combat skills against some of the toughest challenges that the Overworld has to offer.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">试炼密室位于主世界地下，但你无需一股脑挖来挖去。你可以到村庄找到一位制图师，与之交易，取得信任，便有几率交易获得试炼探险家地图，跟着地图指示，便能找到最近的试炼密室。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Trial chambers can be found underground, distributed roughly evenly throughout the Overworld. But you don’t need to go digging randomly to find one – there’s a smarter option. Track down a cartographer villager, and after earning their trust with a few early trades, there’s a good chance they’ll be persuaded to sell you a trial explorer map, which points the way to the nearest chamber.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">当你挖出一个由凝灰岩和铜块构成的未知结构，你便能确定，这就是试炼密室。进入密室，你会路过一个个房间。要当心，部分房间有试炼刷怪笼，没准备好战斗，就别贸然进入。带有不祥之兆效果，就要格外小心了，刷怪笼会在效果加持下升级，生成更难对付的敌对生物，而相应的，战利品也会更加丰厚。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’ll know you’ve found the chamber when you come across a structure made of tuff and copper. Make your way inside, and you’ll find a collection of rooms, some of which contain trial spawners and vaults. Be wary, and don’t approach until you’re ready for a fight. If you happen to have the Bad Omen effect on you, be extra careful, because it’ll upgrade the spawners to deliver a much harder challenge, albeit one that’ll deliver even better loot.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">试炼密室里有各种宝物，其中宝库里面的东西最为值钱，有稀有工具、武器和盔甲。每个房间还有零零散散的箱子，里面也有些资源，可以用于战后补给。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Speaking of loot, there are all kinds of goodies you’ll find in a trial chamber. The vaults are the main event, spawning rare tools, weapons, and armor. You’ll also come across a scattering of chests, barrels and pots containing resources to top you up between fights.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img2)s] ​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">现实中，比武审判并非虚构，曾一度存在于中世纪欧洲的法律，用来解决双方拒不认罪且无证人口供的争端。双方会进行比武，胜者将成为“正义的一方”。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Trial by combat is a real-world thing. It was used in law, mostly during the Middle Ages in Europe, to settle disputes in situations where neither side would confess and there was no witness available to establish the truth. The two sides would fight, and the winner of the fight was proclaimed to be correct.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">是不是觉得挺无厘头？你需要为指控赌上性命。然而，无论有理还是无理，只要拳头够硬，就能获胜，就能享有“正义”。到了16世纪，这种审判方式逐渐走下历史舞台，取而代之的是更加现代化的审判方式，即让中立法官和陪审团进行审判。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">If that doesn’t sound like a very good basis for law, you’d be right. The idea is that you need to be willing to stake your life in support of your accusation, but the reality is that the stronger person tends to win, whether they’re right or not. As such, it began to disappear in the 16th century in favour of more modern approaches like neutral judges and juries.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">因此，下次想弄清楚谁将苦力怕引到了你的小窝时，我们并不建议比武审判来决出“公平”，而是建议你原谅那些“熊孩子”，和他们一起挑战试炼密室。与危险的敌人战斗后，你们或许会成为挚友。而且，清空试炼密室的敌人后，你还可以把小窝搬到里面。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">So next time you’re trying to figure out which of your friends lured a creeper into your house while you were out mining, we can’t recommend you rely on trial by combat. Instead, forgive them both and go tackle a trial chamber together. With any luck, facing a collection of dangerous foes might just bring you all closer. Then once it’s cleared out, move your home into the trial chamber instead.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">译者：Glorydark</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译日期：2024年9月30日</Paragraph>
@@ -181,7 +189,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

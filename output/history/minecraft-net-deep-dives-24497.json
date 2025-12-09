@@ -132,14 +132,16 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H2}">你抬头望它，它俯首看你​</Paragraph>
 <Paragraph Style="{StaticResource H2}">告示牌确实是个不错的装饰方块。前些日子，我们在背包盘点一文中深入讨论了此方块。告示牌可以用于物品储存时做标记，亦或是写些备忘录，有着这些实用的功能，你定能记得起生活中的点点滴滴。</Paragraph>
 <Paragraph Style="{StaticResource H7}">当然，告示牌也不只是广告工具，有的时候我们也希望玩点新花样。因此，2023年9月足迹与故事更新中，我们提供了些更好的选择。没错！它便是我们的本月方块 —— 悬挂式告示牌。</Paragraph>
-<Paragraph Style="{StaticResource H5}">Spoiler: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Signs are great. As we discussed at length in our Taking Inventory article on signs a few years ago, they’re the perfect way to label your storage, leave yourself reminders, and to stop yourself getting lost.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">But sometimes you want something a bit fancier, something that’s more of an advertisement than a mere label. That’s why, in the Trails & Tales update in June 2023, we added a far more impressive alternative. Behold! Hanging signs! Our item of the month!</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">制作一个悬挂式告示牌并不费力，当然其制作成本的确比一个普通告示牌要贵一些。首先，你需要两根锁链 —— 通过金锭和银锭合成，以及四块去皮木头 —— 使用斧子为木头去皮。当然，木头的种类不限，如橡木、云杉木、白桦木、从林木、金合欢木、红树木、樱花木、深色橡木、绯红菌核、诡异菌核。打开合成界面，将六块木头分别置于最下方两行格子中，然后在首行将两根铁链分别放在两侧，你就能合成六个悬挂式告示牌了 —— 这么多告示牌足够你装饰整个村庄了。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">悬挂式告示牌的用途不多：放置在方块一侧时，告示牌会带着一个小支架向外延伸。而放在了一些方块下方时，告示牌会单独悬挂在链条上。放置好后，你就要开始填写告示牌的文本了 —— 当然，这种告示牌的书写空间小于传统的告示牌，记得提前做好规划。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">和普通的告示牌一样，悬挂式告示牌既可以通过颜料染色，也可利用荧光墨囊提高文本亮度，即便身处黑夜，也能看得清上面的文字。当然，这种告示牌也可当作熔炉的燃料，但老实说，这绝对是肆意挥霍资源。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Making a hanging sign is easy, though they’re more expensive than a regular sign. You’ll need two chains, made of iron ingots and nuggets, and six logs that have been stripped of their bark using an axe. You can use any kind of log you like – oak, spruce, birch, jungle, acacia, mangrove, cherry, dark oak, crimson, warped, or bamboo. Put the logs at the bottom of a crafting grid, and the chains in the top corners, and you’ll get six signs – enough to decorate a whole village!</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">You have a few options for using hanging signs. If you put one on the side of a block, it’ll come with a little bracket that holds it outward. If you put it underneath, it’ll hang down from its chains alone. Once placed, the use command will let you edit the text – though be aware that there’s a bit less space on a hanging sign than a regular sign.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Like with a regular sign, you can dye the text whatever color you want, or use a glow ink sac to make it glow in the dark. Waxing it with a honeycomb will prevent editing of the text. As you might expect, you can also use hanging signs in a furnace as fuel, though honestly that’s a pretty major waste of resources.</Paragraph>
@@ -153,7 +155,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">悬挂式告示牌源于现实中的招牌 —— 一般可以在商店外面看到。仔细想想，这些招牌意义十足，无论商店是否朝外，漫步在街上的人们从老远处就能看到在哪。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">然而，招牌并不是新发明 —— 早些时候，古埃及人、罗马人和希腊人都使用过它们 —— 通常是为了给店面或公共活动打广告。中国古代中也不乏招牌的存在。到了中世纪，在英国首都伦敦，这些悬挂牌深受青睐、遍布大街小巷，直到它们影响到交通，当局才断然通过法律，以规范招牌的设置。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">但在我的世界，无论放置了多少悬挂式告示牌，你也不会担心违法违章。自由发挥你的想象力吧，看看你一个房子究竟能用到多少个告示牌。但有个问题：你能使其中多少告示牌真正发挥用途呢？</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Minecraft developer Agnes created hanging signs with the help of her daughter, who drew the very first concepts for the item. The two of them spent a cozy day together drawing different options for what they could look like, which were then integrated into the game.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">They’re based, of course, on hanging signs that you’ll find in the real world – often outside of shops. These signs are quite clever if you think about it: they let people walking along a street see where a shop is from a distance, even though the shop is facing outwards.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">They’re not a new invention though – the Ancient Egyptians, Romans and Greeks all used signs – often to advertise shopfronts or public events. They were also used in Ancient China, and in medieval London they got so large and popular that they started to interfere with traffic and the authorities had to pass laws to keep them under control.</Paragraph>
@@ -182,7 +185,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

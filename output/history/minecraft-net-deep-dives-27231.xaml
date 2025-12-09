@@ -124,15 +124,16 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/shipwreck-ingame.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="Spoiler: 原文" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="折叠" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
 <Paragraph Style="{StaticResource H7}">世界基石：沉船​往日海难，已成过往​欢迎来到我的世界官网的最新版块 —— 世界基石！在此板块，我们将会一同探索主世界、下届和末地中的各种建筑，有的藏有宝藏，有的会有怪物出现，有的既有宝藏也有怪物！想要弄清楚只有一个办法，那就是跟着我们一起体验一番。</Paragraph>
 <Paragraph Style="{StaticResource H2}">首先，我们将会聚焦主世界海岸线边的一种罕见景观 —— 沉船。沉没的船只在2017年的“我的世界年度盛会：地球”（Minecon Earth）上首次出现。2018年7月，碧海新生更新加入了沉船，同时也加入了不少海洋景观，如乌龟、海豚及海泡菜。</Paragraph>
-<Paragraph Style="{StaticResource H2}">Spoiler: 原文</Paragraph>
-<Paragraph Style="{StaticResource H7}">Welcome to Minecraft.net’s newest series! In “Building Blocks” we’ll be taking a look at some of the structures that you’ll find as you’re exploring the Overworld, the Nether and the End. Some are filled with loot, some are filled with monsters, some are filled with loot and monsters! There’s only one way to find out which is which and that’s by following along.</Paragraph>
-<Paragraph Style="{StaticResource H5}">We’re kicking things off with an unusual sight along the coastlines of the Overworld – the shipwreck! These ruined vessels were first spotted at Minecon Earth in 2017, then added in Update Aquatic in July 2018 alongside all manner of other nautical delights, like turtles, dolphins, and the sea pickle.</Paragraph>
+<Paragraph Style="{StaticResource H2}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H7}">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">Welcome to Minecraft.net’s newest series! In “Building Blocks” we’ll be taking a look at some of the structures that you’ll find as you’re exploring the Overworld, the Nether and the End. Some are filled with loot, some are filled with monsters, some are filled with loot and monsters! There’s only one way to find out which is which and that’s by following along.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">We’re kicking things off with an unusual sight along the coastlines of the Overworld – the shipwreck! These ruined vessels were first spotted at Minecon Earth in 2017, then added in Update Aquatic in July 2018 alongside all manner of other nautical delights, like turtles, dolphins, and the sea pickle.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/shipwreck-ingame.jpg"/>
@@ -142,7 +143,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" Foreground="black">通常来说，发现沉船时，你一开始会认为他是一堆早已腐烂的木板、一根根根横梁和寥寥几个宝箱。沉船通常出现在海底，一半埋在地中，也有些少见的沿着海滩。一般来说，船只沉没后，损毁程度各不相同，有的前部或后部直接不见踪迹，也有的像是被翻了个底朝天。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">无论找到的沉船长什么样，一定要花点时间去探索，因为这些残骸中通常有着极具吸引力的宝藏。根据船的损毁状况，你最多可以发现三种箱子，即补给箱，宝藏箱和地图箱，当然沉船的木材也算是宝藏之一。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">补给箱里装满了实用物品，有食物、盔甲、燃料，偶尔还会有TNT。宝箱则有着价值不菲的稀有资源，有铁锭、金锭、青金石、绿宝石，甚至还有几颗钻石。其次，地图箱通常会有纸、羽毛和指南针之类的物品，如果你走了狗屎运，箱子里面的地图会直接告诉你地下宝藏到底在哪。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">You’ll generally recognise a shipwreck when you see one – it’s a pile of rotting planks, beams, and treasure chests, usually half-buried in the seabed, or more rarely along a beach. They’re found in various states of decay – often the front or the back of the ship will be missing, or it will sink with its bottom facing upward.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">However you find one, be sure to take the time to explore it because shipwrecks are full of tasty loot. Depending on which parts of the boat are still intact, you’ll find up to three chests – supply chests, treasure chests and map chests, as well as all the wood that makes up the shipwreck itself, of course.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Supply chests are full of useful items – food, armour, fuel, and the occasional block of TNT. Treasure chests contain valuables – rarer resources like iron, gold, lapis lazuli, emeralds, and even diamonds. Finally, map chests will often contain things like paper, feathers, compasses, and – best of all – maps that show the location of buried treasure.</Paragraph>
@@ -155,7 +157,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" Foreground="black">船只沉没有很多不同的原因，如遇上风暴，被海盗劫持、受战争牵连、受导航的误导，而且设计拉跨是最常见的，就像瓦萨博物馆的那些沉船。但要想将沉船保存很长时间，水下环境必须适宜，影响因素众多，包括潮流、水深、海水盐度、温度、海洋生物、沉船是否被沙子和淤泥覆盖。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">沉船远比我们想象的有价值多了。考古学家十分重视其历史价值。潜水员认为沉船十分值得探索。海洋保护主义者也很看重沉船，因为它们可以像人造礁石一样，成为海洋生物的乐园。打捞者将根据其中的货物和部件的价值进行评估。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">可以笃定，无论沉船原因为何，只要我们还有船，沉船事故将会层出不穷。下次沿着《我的世界》美丽的海岸航行时，如果发现了一艘沉船，不如花点时间停下来，收集那些战利品。之后，你可以将木材据为己有，用这些木材在沉船上建造新的东西，这正是那些木材的归处，也是昔日水手灵魂的归处。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">It’s thought that the coastlines of Earth are home to more than three million shipwrecks, which have accumulated over thousands of years. Some of the most well-known include the Titanic, the Lusitania, the Andrea Doria, and the Empress of Ireland. And if you ever come to Stockholm, you can see one with your own eyes: there's a whole museum dedicated a shipwreck.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Ships sink for all kinds of reasons – storms, piracy, warfare, poor navigation and bad design (like the Vasa ship, mentioned above) are among the most common. But for a shipwreck to be preserved for very long, you also need the right conditions underwater. Tidal currents, depth of water, the saltiness of the sea, its temperature, the presence of sealife, and whether the wreck is covered in sand and silt all play a role.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Shipwrecks are more valuable than you might think. Archaeologists value them for their historical interest. Divers value them as a place to explore. Marine conservationists value them because they can act like artificial reefs and be a home to sea life. Salvagers value them for the monetary value of their cargo and components.</Paragraph>
@@ -185,7 +188,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"

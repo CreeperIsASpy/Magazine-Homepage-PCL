@@ -131,8 +131,9 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Style="{StaticResource H7}">WORLDWIDE WORKS​方块世界展：幻境与现实交织的恢弘建筑作品​丛林之中，一座神庙拔地而起，如一座高山；蜿蜒的河流穿过了荒野的峭壁；一条巨大的龙正凝望着我们... Geet_Build的世界将会带你领略世界各处的风景，甚至你能看到一个奇幻的国度！</Paragraph>
 <Paragraph Style="{StaticResource H2}">Geet一开始在疫情期间把建筑当成一种兴趣，有一天他突然想到了建造这些极棒的建筑的想法。他说：“我发现我有太太多的时间可以去做这些了”。一开始，他想着去建造一个巨大的中世纪幻想世界，但是最终他决定还是将它们分开，并且给它们每座建筑一个独一无二的空间。</Paragraph>
 <Paragraph Style="{StaticResource H2}">尽管这些可能比整个幻想地图要小得多，但他们一点也不是“有手就行”的。每一座建筑都花费了他从五十到数百个小时来完成。尽管他成功将这些建筑浓缩到Youtube上的一个几分钟时间长度的视频中，如果你想要沉迷于每秒由数不胜数的方块所构成的极其迷人的外观。</Paragraph>
-<Paragraph Style="{StaticResource H7}">Spoiler: 原文</Paragraph>
-<Paragraph Style="{StaticResource H5}">A temple bursting out of the jungle like a mountain, a winding river through a desert valley, a giant dragon… Geet_Builds’s worlds will give you a trip around the globe and even into the realm of fantasy!</Paragraph>
+<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">A temple bursting out of the jungle like a mountain, a winding river through a desert valley, a giant dragon… Geet_Builds’s worlds will give you a trip around the globe and even into the realm of fantasy!</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Geet started creating these brilliant builds as a pandemic hobby. “I found myself with a ton of free time to fill up,” he says. At first, he was thinking about creating one huge medieval fantasy world, but decided that it was “way easier” to separate them out and give each one its own space.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Although these might be smaller than an entire fantasy map, they’re anything but simple. Each one can take him “anywhere from fifty to a couple hundred hours to complete.” Although he helpfully compresses this down into a few minutes’ timelapse on his YouTube channel, if you want to be mesmerized by the hypnotic appearance of dozens of blocks per second.</Paragraph>
 <BlockUIContainer>
@@ -151,7 +152,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 </StackPanel> 
 </BlockUIContainer>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">所有的细节都使得 Geet 的建筑变得更加真实，更能融入现实的世界。我已经迫不及待居住在这样的一个丛林中的神秘庙宇里面，如果是你，你的选择呢？</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">All the details go towards making Geet's builds feel like lived-in worlds. I wouldn't want to live in a mysterious temple located deep within a jungle?</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
@@ -170,9 +172,10 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 </BlockUIContainer>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">“在我看来，一个好的建筑不能没有一个相得益彰的风景而单独存在，所以在我开始建筑之前，我花了很多时间去为我的建筑创造这样的环境”，他说。就以丛林神庙为例。在这个视频中，你可以看到 Geet 建造起一个巨大的山脉地形并且在中间建造了一座湖泊，然后他加入些青葱的草木以使环境更充满生机与活力。在这些工作完成之后，这座神庙才出现于这座森林内。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">“自从我经常去建造大型建筑时，我尝试将这个项目分解成许多小部分”。当整个建筑的大致框架完成时，我就会回去慢慢打磨每一处细节”，他说。在为他所有的建筑反反复复执行这一道工序之后，他就有了将每一个建筑变得更加巨大的能力。“曾经为主体的部分现在也就变为整个项目中的沧海一粟”，他补充道。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">“In my opinion, a good build can't stand alone without a landscape that compliments it, so I spend a lot of time creating the environment before I ever start building on it,” he says. Take the jungle temple, for example. In the video, you can see Geet building up a mountainous terrain and dropping a lake in the middle, before adding in all the lovely greenery that makes the world feel alive. Only then can the temple emerge from within the forest.</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">“I try to break up the project into smaller sections since I usually create megabuilds. Once the rough bones of the whole build are in place, I go back through and finish everything with finer details,” he says. By repeating this process over and over in all of his builds, he’s been able to make each one bigger and better. “Things that use to be entire projects on their own are now just small components of much larger builds.”</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">“In my opinion, a good build can't stand alone without a landscape that compliments it, so I spend a lot of time creating the environment before I ever start building on it,” he says. Take the jungle temple, for example. In the video, you can see Geet building up a mountainous terrain and dropping a lake in the middle, before adding in all the lovely greenery that makes the world feel alive. Only then can the temple emerge from within the forest.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">“I try to break up the project into smaller sections since I usually create megabuilds. Once the rough bones of the whole build are in place, I go back through and finish everything with finer details,” he says. By repeating this process over and over in all of his builds, he’s been able to make each one bigger and better. “Things that use to be entire projects on their own are now just small components of much larger builds.”</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/geet-gothic2.jpg"/>
@@ -189,7 +192,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 </StackPanel> 
 </BlockUIContainer>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Geet 最喜欢的建筑是这个幽灵般的德古拉城堡，周边有着一块墓地,,, 睁大你的双眼，仔细观察，小心幽灵的出现！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Geet's favourite build is this spooky Dracula's castle, complete with a graveyard... keep your eyes peeled for ghosts!</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
@@ -214,7 +218,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">他说他最喜欢的是他去年做的万圣节特别建筑。那是一个阴森的哥特式城堡，甚至包括一个墓地，如幽灵般的恐怖。Geet 说他特意增加了树木、建筑和桥梁的层次，所以想要看得远还是需要一些技巧的，同时增加了恐怖感。“晚上，当你走在从村庄到城堡的路上时，你会感觉随时会有一个生物从树后跳出来。”</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">但是当他不打算吓唬你的时候，他就会去各处寻找灵感。“ 创作这些作品无疑改变了我看世界的方式。现在，每当我看到美丽的风景、看到一些很酷的概念艺术、看电影或者玩视频游戏时，我都会有这样的想法: '我自己该如何在我的世界里重现这一切。'”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">“几个月前，我在阅读一本书，书中提到一座建在悬崖边的城市，从那以后，我花了大约200个小时，建造出了属于自己的版本。” 这座悬崖边的城市还没有完全完工，但是 Geet 说他的目标是让它尽可能的充满生气。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">He says that his favorite is the Halloween special he put together last year. It’s a spooky Gothic castle that even includes a graveyard, for ghostly terror. Geet says that he paid attention to adding in the layers of trees, buildings, and bridges, so it’s tricky to see too far ahead, increasing the terror. “At night when you're walking down the road from the village to the castle, there's this feeling that at any moment a creature is gonna jump out from behind a tree.”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">But when he’s not setting out to scare you silly, he gets inspiration from all over the place. “Creating these builds has definitely changed the way I view the world. Now, every time I see a pretty landscape, come across</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">some cool concept art, watch a movie, or play a video game, a small part of me is thinking about how I would recreate that myself.”</Paragraph>
@@ -237,7 +242,8 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Geet使用分层的构造来使地图从上面看充满趣味，同时也让想在地图周围走动的人觉得很有趣。</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">“我添加了一些细节，如让水流出水车的导水管、可以将货物运送到悬崖顶部的升降系统以及一座正在建造船只、拥有大型吊车的造船厂。这里有两座古老的图书馆塔楼，一所大学在周围拔地而起，一所大型军事学院在城市对面的悬崖上拔地而起。这绝对是我迄今为止最大、最为严苛的项目。”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">也许这将会在被那座森林中的城堡吓傻了之后的一个好的地方去接受阳光的沐浴呢？</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Spoiler: 原文</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Geet uses layering to keep the maps interesting from above and for people who want to walk around them.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">“I added details like an aqueduct spilling water out over a waterwheel, a lift system that can take goods to the top of the cliff, and shipyards with huge cranes in the middle of constructing ships. There are these two ancient library towers that a university has sprung up around and a massive military academy climbing up the cliffside on the opposite side of the city. It's definitely my biggest and most ambitious project so far.”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Maybe it will be a good place to go and get some sun to relax after being scared silly in the castle forests at night?!</Paragraph>
@@ -267,7 +273,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-11-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
