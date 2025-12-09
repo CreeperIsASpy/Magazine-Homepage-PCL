@@ -59,7 +59,7 @@ jobs:
           
           # 防止没有更改时报错
           if [[ -n $(git status -s) ]]; then
-            git add output/ -all
+            git add output/ --all
             git commit -m "Update Custom output files with new Wiki content"
             git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/CreeperIsASpy/Magazine-Homepage-PCL.git HEAD:main
           else
