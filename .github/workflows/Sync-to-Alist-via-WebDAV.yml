@@ -1,42 +1,37 @@
 name: Sync to Alist via WebDAV
 
 on:
-    schedule:
-        - cron: 0 1 * * *
-    workflow_dispatch:
+  schedule:
+    - cron: 0 1 * * *
+  workflow_dispatch:
 
 jobs:
-    sync_to_alist:
-        runs-on: ubuntu-latest
-        steps:
-            # Checkout repository
-            - name: Checkout repository
-              uses: actions/checkout@v2
+  sync_to_alist:
+    runs-on: ubuntu-latest
+    steps:
+      # 签出仓库
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-            # Install rclone
-            - name: Install rclone
-              run: |
-                  curl https://rclone.org/install.sh | sudo bash
+      # 安装 rclone
+      - name: 🚀 Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
 
-            # Configure rclone for WebDAV
-            - name: Configure rclone for WebDAV
-              run: |
-                  rclone config create alist_webdav webdav \
-                    url http://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
-                    user ${{ secrets.ALIST_USERNAME }} \
-                    pass ${{ secrets.ALIST_PASSWORD }}
+      # 配置 rclone for WebDAV (Alist)
+      - name: ⚙️ Configure rclone for WebDAV (Alist)
+        run: |
+          rclone config create alist_webdav webdav \
+            url https://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
+            user ${{ secrets.ALIST_USERNAME }} \
+            pass ${{ secrets.ALIST_PASSWORD }}
 
-            # Check current working directory (debugging step)
-            - name: Print current working directory
-              run: |
-                  pwd
-                  ls -al
+      # 替换文件到目标目录
+      - name: 📤 Copy build files to Alist WebDAV
+        run: |
+          rclone copy ./output/ alist_webdav:/ --checksum --size-only --retries 3
 
-            # Sync all files to Alist WebDAV (sync the entire repo)
-            - name: Sync all files to Alist WebDAV
-              run: |
-                  rclone copy ./output alist_webdav:/ --checksum --size-only --retries 3
-
-            # Clean up the rclone configuration (for security)
-            - name: Clean up rclone config
-              run: rm -rf ~/.config/rclone
+      # 清理 rclone 配置
+      - name: 🧹 Clean up rclone config
+        if: always()
+        run: rm -rf ~/.config/rclone
