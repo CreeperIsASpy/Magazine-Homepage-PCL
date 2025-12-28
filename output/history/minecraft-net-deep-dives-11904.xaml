@@ -124,31 +124,32 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/kingbdogz.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="深板岩是一个相对较新的发现。Mojang的地质团队在2020年底首次遇到它，并在Minecraft Live 2020期间展示了它。它最初被命名为“grimstone”（译者注：网上流传最终译名为阴沉石，又可译为黯石、磐石），但过了一段时间，我们选择了一种不同的方法。游戏开发者布兰登·皮尔斯（Brandon Pearce）解释说：" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="ж·ұжқҝеІ©жҳҜдёҖдёӘзӣёеҜ№иҫғж–°зҡ„еҸ‘зҺ°гҖӮMojangзҡ„ең°иҙЁеӣўйҳҹеңЁ2020е№ҙеә•йҰ–ж¬ЎйҒҮеҲ°е®ғпјҢе№¶еңЁMinecraft Live 2020жңҹй—ҙеұ•зӨәдәҶе®ғгҖӮе®ғжңҖеҲқиў«е‘ҪеҗҚдёәвҖңgrimstoneвҖқпјҲиҜ‘иҖ…жіЁпјҡзҪ‘дёҠжөҒдј жңҖз»ҲиҜ‘еҗҚдёәйҳҙжІүзҹіпјҢеҸҲеҸҜиҜ‘дёәй»ҜзҹігҖҒзЈҗзҹіпјүпјҢдҪҶиҝҮдәҶдёҖж®өж—¶й—ҙпјҢжҲ‘д»¬йҖүжӢ©дәҶдёҖз§ҚдёҚеҗҢзҡ„ж–№жі•гҖӮжёёжҲҸејҖеҸ‘иҖ…еёғе…°зҷ»В·зҡ®е°”ж–ҜпјҲBrandon Pearceпјүи§ЈйҮҠиҜҙпјҡ" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">原文链接，译者：doupoa​本周区块：DEEPSLATE​深入到一个燥热区域！​</Paragraph>
-<Paragraph Style="{StaticResource H2}">当你来到主世界最深处，你会发现，蠹虫四处乱窜，呼吸一口就会呕吐的陈旧空气。在这里岩石的特性发生了变化。在这个地下深度上所施加在石头上的强烈热量和压力改变了它的结构，使它更坚韧，更有弹性。我们称这块岩石为“深邃板岩”（深板岩，下文译为深板岩），这是我们本周的方块！</Paragraph>
-<Paragraph Style="{StaticResource H2}">深板岩是一个相对较新的发现。Mojang的地质团队在2020年底首次遇到它，并在Minecraft Live 2020期间展示了它。它最初被命名为“grimstone”（译者注：网上流传最终译名为阴沉石，又可译为黯石、磐石），但过了一段时间，我们选择了一种不同的方法。游戏开发者布兰登·皮尔斯（Brandon Pearce）解释说：</Paragraph>
+<Paragraph Style="{StaticResource H7}">еҺҹж–Үй“ҫжҺҘпјҢиҜ‘иҖ…пјҡdoupoa​жң¬е‘ЁеҢәеқ—пјҡDEEPSLATE​ж·ұе…ҘеҲ°дёҖдёӘзҮҘзғӯеҢәеҹҹпјҒ​</Paragraph>
+<Paragraph Style="{StaticResource H2}">еҪ“дҪ жқҘеҲ°дё»дё–з•ҢжңҖж·ұеӨ„пјҢдҪ дјҡеҸ‘зҺ°пјҢи №иҷ«еӣӣеӨ„д№ұзӘңпјҢе‘јеҗёдёҖеҸЈе°ұдјҡе‘•еҗҗзҡ„йҷҲж—§з©әж°”гҖӮеңЁиҝҷйҮҢеІ©зҹізҡ„зү№жҖ§еҸ‘з”ҹдәҶеҸҳеҢ–гҖӮеңЁиҝҷдёӘең°дёӢж·ұеәҰдёҠжүҖж–ҪеҠ еңЁзҹіеӨҙдёҠзҡ„ејәзғҲзғӯйҮҸе’ҢеҺӢеҠӣж”№еҸҳдәҶе®ғзҡ„з»“жһ„пјҢдҪҝе®ғжӣҙеқҡйҹ§пјҢжӣҙжңүеј№жҖ§гҖӮжҲ‘д»¬з§°иҝҷеқ—еІ©зҹідёәвҖңж·ұйӮғжқҝеІ©вҖқпјҲж·ұжқҝеІ©пјҢдёӢж–ҮиҜ‘дёәж·ұжқҝеІ©пјүпјҢиҝҷжҳҜжҲ‘д»¬жң¬е‘Ёзҡ„ж–№еқ—пјҒ</Paragraph>
+<Paragraph Style="{StaticResource H2}">ж·ұжқҝеІ©жҳҜдёҖдёӘзӣёеҜ№иҫғж–°зҡ„еҸ‘зҺ°гҖӮMojangзҡ„ең°иҙЁеӣўйҳҹеңЁ2020е№ҙеә•йҰ–ж¬ЎйҒҮеҲ°е®ғпјҢе№¶еңЁMinecraft Live 2020жңҹй—ҙеұ•зӨәдәҶе®ғгҖӮе®ғжңҖеҲқиў«е‘ҪеҗҚдёәвҖңgrimstoneвҖқпјҲиҜ‘иҖ…жіЁпјҡзҪ‘дёҠжөҒдј жңҖз»ҲиҜ‘еҗҚдёәйҳҙжІүзҹіпјҢеҸҲеҸҜиҜ‘дёәй»ҜзҹігҖҒзЈҗзҹіпјүпјҢдҪҶиҝҮдәҶдёҖж®өж—¶й—ҙпјҢжҲ‘д»¬йҖүжӢ©дәҶдёҖз§ҚдёҚеҗҢзҡ„ж–№жі•гҖӮжёёжҲҸејҖеҸ‘иҖ…еёғе…°зҷ»В·зҡ®е°”ж–ҜпјҲBrandon Pearceпјүи§ЈйҮҠиҜҙпјҡ</Paragraph>
 <Paragraph Style="{StaticResource H7}">[%(img1)s]</Paragraph>
-<Paragraph Style="{StaticResource H5}">BRANDON PEARCE，游戏开发者</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">原因是我们觉得“严峻”这个名字对一种感觉有太多的内涵，而不是描述它是什么。一般来说，我们不会强制应用我们觉得的译名，因为它们应该取决于玩家的判断。因此，我们选择了一个名称来描述它生成所花费的时间，以及世界上所处的位置。它也更准确地表示它是一种石板。重要的是，我们要在游戏中遵循我们的设计原则，即使Grimstone听起来更酷。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">点击展开...</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">深板岩可以从y8开始生成，当你到达y0时，周围的方块几乎都替换成了它。用镐将其挖出，您将获得深板岩圆石，您可以在熔炉或高炉中熔炼深板岩圆石以变回深石板。</Paragraph>
+<Paragraph Style="{StaticResource H5}">BRANDON PEARCEпјҢжёёжҲҸејҖеҸ‘иҖ…</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">еҺҹеӣ жҳҜжҲ‘д»¬и§үеҫ—вҖңдёҘеі»вҖқиҝҷдёӘеҗҚеӯ—еҜ№дёҖз§Қж„ҹи§үжңүеӨӘеӨҡзҡ„еҶ…ж¶өпјҢиҖҢдёҚжҳҜжҸҸиҝ°е®ғжҳҜд»Җд№ҲгҖӮдёҖиҲ¬жқҘиҜҙпјҢжҲ‘д»¬дёҚдјҡејәеҲ¶еә”з”ЁжҲ‘д»¬и§үеҫ—зҡ„иҜ‘еҗҚпјҢеӣ дёәе®ғд»¬еә”иҜҘеҸ–еҶідәҺзҺ©е®¶зҡ„еҲӨж–ӯгҖӮеӣ жӯӨпјҢжҲ‘д»¬йҖүжӢ©дәҶдёҖдёӘеҗҚз§°жқҘжҸҸиҝ°е®ғз”ҹжҲҗжүҖиҠұиҙ№зҡ„ж—¶й—ҙпјҢд»ҘеҸҠдё–з•ҢдёҠжүҖеӨ„зҡ„дҪҚзҪ®гҖӮе®ғд№ҹжӣҙеҮҶзЎ®ең°иЎЁзӨәе®ғжҳҜдёҖз§ҚзҹіжқҝгҖӮйҮҚиҰҒзҡ„жҳҜпјҢжҲ‘д»¬иҰҒеңЁжёёжҲҸдёӯйҒөеҫӘжҲ‘д»¬зҡ„и®ҫи®ЎеҺҹеҲҷпјҢеҚідҪҝGrimstoneеҗ¬иө·жқҘжӣҙй…·гҖӮ</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">зӮ№еҮ»еұ•ејҖ...</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">ж·ұжқҝеІ©еҸҜд»Ҙд»Һy8ејҖе§Ӣз”ҹжҲҗпјҢеҪ“дҪ еҲ°иҫҫy0ж—¶пјҢе‘Ёеӣҙзҡ„ж–№еқ—еҮ д№ҺйғҪжӣҝжҚўжҲҗдәҶе®ғгҖӮз”Ёй•җе°Ҷе…¶жҢ–еҮәпјҢжӮЁе°ҶиҺ·еҫ—ж·ұжқҝеІ©еңҶзҹіпјҢжӮЁеҸҜд»ҘеңЁзҶ”зӮүжҲ–й«ҳзӮүдёӯзҶ”зӮјж·ұжқҝеІ©еңҶзҹід»ҘеҸҳеӣһж·ұзҹіжқҝгҖӮ</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/deepslate-minecraft.jpg"/>
 </StackPanel> 
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">当你在深板岩中挖掘时，你仍然可能会遇到你在y0以上发现的矿石 - 它们只是需要更长的时间来开采，因为矿物周围的岩石会更难挖掘。不过要小心——如果一块深石板在你的镐下迅速碎裂，它可能充满了蠹虫挖的洞，这些奇怪的生物可能会攻击你。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Mojang的地质团队仍在调查发现深板岩的区域，但其中几个团队最近失踪了。最终回来的幸存者，一直在喋喋不休地谈论着那些巨大的，古老的，如地下宫殿般的建筑，还有某种会发出尖叫的植物，以及只有保持完全沉默才能逃脱的可怕黑暗。这可能只是他们的想象，所以一旦他们冷静下来，我们就会再次把他们送回去进一步调查。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">еҪ“дҪ еңЁж·ұжқҝеІ©дёӯжҢ–жҺҳж—¶пјҢдҪ д»Қз„¶еҸҜиғҪдјҡйҒҮеҲ°дҪ еңЁy0д»ҘдёҠеҸ‘зҺ°зҡ„зҹҝзҹі - е®ғд»¬еҸӘжҳҜйңҖиҰҒжӣҙй•ҝзҡ„ж—¶й—ҙжқҘејҖйҮҮпјҢеӣ дёәзҹҝзү©е‘Ёеӣҙзҡ„еІ©зҹідјҡжӣҙйҡҫжҢ–жҺҳгҖӮдёҚиҝҮиҰҒе°ҸеҝғвҖ”вҖ”еҰӮжһңдёҖеқ—ж·ұзҹіжқҝеңЁдҪ зҡ„й•җдёӢиҝ…йҖҹзўҺиЈӮпјҢе®ғеҸҜиғҪе……ж»ЎдәҶи №иҷ«жҢ–зҡ„жҙһпјҢиҝҷдәӣеҘҮжҖӘзҡ„з”ҹзү©еҸҜиғҪдјҡж”»еҮ»дҪ гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Mojangзҡ„ең°иҙЁеӣўйҳҹд»ҚеңЁи°ғжҹҘеҸ‘зҺ°ж·ұжқҝеІ©зҡ„еҢәеҹҹпјҢдҪҶе…¶дёӯеҮ дёӘеӣўйҳҹжңҖиҝ‘еӨұиёӘдәҶгҖӮжңҖз»ҲеӣһжқҘзҡ„е№ёеӯҳиҖ…пјҢдёҖзӣҙеңЁе–Ӣе–ӢдёҚдј‘ең°и°Ҳи®әзқҖйӮЈдәӣе·ЁеӨ§зҡ„пјҢеҸӨиҖҒзҡ„пјҢеҰӮең°дёӢе®«ж®ҝиҲ¬зҡ„е»әзӯ‘пјҢиҝҳжңүжҹҗз§ҚдјҡеҸ‘еҮәе°–еҸ«зҡ„жӨҚзү©пјҢд»ҘеҸҠеҸӘжңүдҝқжҢҒе®Ңе…ЁжІүй»ҳжүҚиғҪйҖғи„ұзҡ„еҸҜжҖ•й»‘жҡ—гҖӮиҝҷеҸҜиғҪеҸӘжҳҜд»–д»¬зҡ„жғіиұЎпјҢжүҖд»ҘдёҖж—Ұд»–д»¬еҶ·йқҷдёӢжқҘпјҢжҲ‘д»¬е°ұдјҡеҶҚж¬ЎжҠҠд»–д»¬йҖҒеӣһеҺ»иҝӣдёҖжӯҘи°ғжҹҘгҖӮ</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
-<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/franchise/photography/places/deepslate-realworld.jpg"/><TextBlock Text="图片来源：Zureks / CC BY-SA 3.0​在现实世界中，深板岩被称为“slate”(译者注：石板)，其形成方式与Minecraft中大致相同 - 在极端高温和压力的条件下，远远低于地面。然而，在一些地方，通过板块构造过程，这些板岩已经向上堆积，所以你会在一些国家——西班牙、威尔士、巴西、中国和澳大利亚——的表面发现它。" Style="{StaticResource imgTitle}" />
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/franchise/photography/places/deepslate-realworld.jpg"/>
 </StackPanel> 
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">深板岩的晶体结构使其形成可以使用特殊工具分离的片材。这些板材的光滑度和平整度，加上它们不易潮湿的性质，使得它们在用于屋顶和地砖中非常有用。板岩也用于许多早期的电气设备，因为它不导电并且是防火的。​在Minecraft中，深板岩主要是用于装饰性的。但这并不能阻止你用它来制作屋顶和地砖，给人一种质朴的乡村豪宅的感觉。唯一的限制是你的想象力！</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">еӣҫзүҮжқҘжәҗпјҡZureks // CC BY-SA 3.0​еңЁзҺ°е®һдё–з•ҢдёӯпјҢж·ұжқҝеІ©иў«з§°дёәвҖңslateвҖқ(иҜ‘иҖ…жіЁпјҡзҹіжқҝ)пјҢе…¶еҪўжҲҗж–№ејҸдёҺMinecraftдёӯеӨ§иҮҙзӣёеҗҢ - еңЁжһҒз«Ҝй«ҳжё©е’ҢеҺӢеҠӣзҡ„жқЎд»¶дёӢпјҢиҝңиҝңдҪҺдәҺең°йқўгҖӮз„¶иҖҢпјҢеңЁдёҖдәӣең°ж–№пјҢйҖҡиҝҮжқҝеқ—жһ„йҖ иҝҮзЁӢпјҢиҝҷдәӣжқҝеІ©е·Із»Ҹеҗ‘дёҠе Ҷз§ҜпјҢжүҖд»ҘдҪ дјҡеңЁдёҖдәӣеӣҪе®¶вҖ”вҖ”иҘҝзҸӯзүҷгҖҒеЁҒе°”еЈ«гҖҒе·ҙиҘҝгҖҒдёӯеӣҪе’ҢжҫіеӨ§еҲ©дәҡвҖ”вҖ”зҡ„иЎЁйқўеҸ‘зҺ°е®ғгҖӮ</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">ж·ұжқҝеІ©зҡ„жҷ¶дҪ“з»“жһ„дҪҝе…¶еҪўжҲҗеҸҜд»ҘдҪҝз”Ёзү№ж®Ҡе·Ҙе…·еҲҶзҰ»зҡ„зүҮжқҗгҖӮиҝҷдәӣжқҝжқҗзҡ„е…үж»‘еәҰе’Ңе№іж•ҙеәҰпјҢеҠ дёҠе®ғд»¬дёҚжҳ“жҪ®ж№ҝзҡ„жҖ§иҙЁпјҢдҪҝеҫ—е®ғд»¬еңЁз”ЁдәҺеұӢйЎ¶е’Ңең°з –дёӯйқһеёёжңүз”ЁгҖӮжқҝеІ©д№ҹз”ЁдәҺи®ёеӨҡж—©жңҹзҡ„з”өж°”и®ҫеӨҮпјҢеӣ дёәе®ғдёҚеҜјз”өе№¶дё”жҳҜйҳІзҒ«зҡ„гҖӮ​еңЁMinecraftдёӯпјҢж·ұжқҝеІ©дё»иҰҒжҳҜз”ЁдәҺиЈ…йҘ°жҖ§зҡ„гҖӮдҪҶиҝҷе№¶дёҚиғҪйҳ»жӯўдҪ з”Ёе®ғжқҘеҲ¶дҪңеұӢйЎ¶е’Ңең°з –пјҢз»ҷдәәдёҖз§ҚиҙЁжңҙзҡ„д№Ўжқ‘иұӘе®…зҡ„ж„ҹи§үгҖӮе”ҜдёҖзҡ„йҷҗеҲ¶жҳҜдҪ зҡ„жғіиұЎеҠӣпјҒ</Paragraph>
 </FlowDocument>
             </FlowDocumentScrollViewer>
             <StackPanel Margin="0,0,0,20">
@@ -171,11 +172,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-27" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-28" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/当你来到主世界最深处，你会发现，蠹虫四处乱窜，呼吸一口就会呕吐的陈旧空气。在这里岩石的特性发生了变化。在这个地下深度上所施加在石头上的强烈热量和压力改变了它的结构，使它更坚韧，更有弹性。我们称这块岩石为“深邃板岩”（深板岩，下文译为深板岩），这是我们本周的方块！" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/еҫ“дҫ жқҙеҳ°дё»дё–з•ңжңҗж·ұеө„пјңдҫ дјҡеҹ‘зһ°пјңи №иҷ«еӣӣеө„д№ұзәңпјңе‘јеҗёдёҗеҹје°ұдјҡе‘•еҗҗзҡ„йҷҳж—§з©әж°”гҗӯеңёиҝҷйүңеі©зҹізҡ„зү№жҗ§еҹ‘з”ҹдәҷеҹҳең–гҗӯеңёиҝҷдёәең°дёӣж·ұеәұдёҡжүҗж–ҫеҡ еңёзҹіеөҙдёҡзҡ„ејәзғҳзғӯйүҹе’ңеһӣеҡӣж”№еҹҳдәҷе®ғзҡ„з»“жһ„пјңдҫҝе®ғжӣҙеқҡйҹ§пјңжӣҙжңүеј№жҗ§гҗӯжҳ‘д»¬з§°иҝҷеқ—еі©зҹідёәвҗңж·ұйӯғжқҝеі©вҗқпјҳж·ұжқҝеі©пјңдёӣж–үиҝ‘дёәж·ұжқҝеі©пјүпјңиҝҷжҳҝжҳ‘д»¬жң¬е‘ёзҡ„ж–№еқ—пјғ" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>
