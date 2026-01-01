@@ -124,43 +124,43 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/flowerpot-ingame.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="Every Minecraft home needs a garden. Relaxing in a calm, green space, surrounded by wildlife, is just the ticket after a long day down the mine. But because every player is different, every garden is different too –⁠ some are wild and untamed, some are simple and neat, some are grandiose and impressive. But in every garden there’s a place for our item of the week –⁠ the humble flower pot." />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="Every Minecraft home needs a garden. Relaxing in a calm, green space, surrounded by wildlife, is just the ticket after a long day down the mine. But because every player is different, every garden is different too вҖ“вҒ  some are wild and untamed, some are simple and neat, some are grandiose and impressive. But in every garden thereвҖҷs a place for our item of the week вҖ“вҒ  the humble flower pot." />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">背包盘点: 花盆​TAKING INVENTORY FLOWER POT | MINECRAFT​每一个“我的世界”的家都需要一个花园。当你惬意地享受在宁静且到处长满绿色植物的的环境中，就恰是在一天挖矿的辛劳后取得的成果。由于每一个玩家都有不同的想法，每一个玩家的花园也是不同的 - 有些花园是缺乏打理的，有些花园是简朴且有条理的，也有些花园是十分令人震撼和吸引人眼球的。但在每一个花园内，有一样物品常出现，这正是我们今天要谈论的物品 - 花盆！</Paragraph>
-<Paragraph Style="{StaticResource H2}">折叠</Paragraph>
-<Paragraph Style="{StaticResource H2}">Every Minecraft home needs a garden. Relaxing in a calm, green space, surrounded by wildlife, is just the ticket after a long day down the mine. But because every player is different, every garden is different too –⁠ some are wild and untamed, some are simple and neat, some are grandiose and impressive. But in every garden there’s a place for our item of the week –⁠ the humble flower pot.</Paragraph>
-<Paragraph Style="{StaticResource H7}">花盆是在2012年10月的骇人更新中被加入的，当然随之加入的也包括一些更加骇人的内容 - 如女巫和蝙蝠。这些内容原本是由Reddit社区的玩家rapidpenguin建议的，他也与此同时建议加入物品展示框。这真是些十分巧妙的建议！</Paragraph>
-<Paragraph Style="{StaticResource H5}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H7}">иғҢеҢ…зӣҳзӮ№: иҠұзӣҶ​TAKING INVENTORY FLOWER POT | MINECRAFT​жҜҸдёҖдёӘвҖңжҲ‘зҡ„дё–з•ҢвҖқзҡ„е®¶йғҪйңҖиҰҒдёҖдёӘиҠұеӣӯгҖӮеҪ“дҪ жғ¬ж„Ҹең°дә«еҸ—еңЁе®Ғйқҷдё”еҲ°еӨ„й•ҝж»Ўз»ҝиүІжӨҚзү©зҡ„зҡ„зҺҜеўғдёӯпјҢе°ұжҒ°жҳҜеңЁдёҖеӨ©жҢ–зҹҝзҡ„иҫӣеҠіеҗҺеҸ–еҫ—зҡ„жҲҗжһңгҖӮз”ұдәҺжҜҸдёҖдёӘзҺ©е®¶йғҪжңүдёҚеҗҢзҡ„жғіжі•пјҢжҜҸдёҖдёӘзҺ©е®¶зҡ„иҠұеӣӯд№ҹжҳҜдёҚеҗҢзҡ„ - жңүдәӣиҠұеӣӯжҳҜзјәд№Ҹжү“зҗҶзҡ„пјҢжңүдәӣиҠұеӣӯжҳҜз®Җжңҙдё”жңүжқЎзҗҶзҡ„пјҢд№ҹжңүдәӣиҠұеӣӯжҳҜеҚҒеҲҶд»ӨдәәйңҮж’је’Ңеҗёеј•дәәзңјзҗғзҡ„гҖӮдҪҶеңЁжҜҸдёҖдёӘиҠұеӣӯеҶ…пјҢжңүдёҖж ·зү©е“ҒеёёеҮәзҺ°пјҢиҝҷжӯЈжҳҜжҲ‘д»¬д»ҠеӨ©иҰҒи°Ҳи®әзҡ„зү©е“Ғ - иҠұзӣҶпјҒ</Paragraph>
+<Paragraph Style="{StaticResource H2}">жҠҳеҸ</Paragraph>
+<Paragraph Style="{StaticResource H2}">Every Minecraft home needs a garden. Relaxing in a calm, green space, surrounded by wildlife, is just the ticket after a long day down the mine. But because every player is different, every garden is different too вҖ“вҒ  some are wild and untamed, some are simple and neat, some are grandiose and impressive. But in every garden thereвҖҷs a place for our item of the week вҖ“вҒ  the humble flower pot.</Paragraph>
+<Paragraph Style="{StaticResource H7}">иҠұзӣҶжҳҜеңЁ2012е№ҙ10жңҲзҡ„йӘҮдәәжӣҙж–°дёӯиў«еҠ е…Ҙзҡ„пјҢеҪ“з„¶йҡҸд№ӢеҠ е…Ҙзҡ„д№ҹеҢ…жӢ¬дёҖдәӣжӣҙеҠ йӘҮдәәзҡ„еҶ…е®№ - еҰӮеҘіе·«е’Ңиқҷиқ гҖӮиҝҷдәӣеҶ…е®№еҺҹжң¬жҳҜз”ұRedditзӨҫеҢәзҡ„зҺ©е®¶rapidpenguinе»әи®®зҡ„пјҢд»–д№ҹдёҺжӯӨеҗҢж—¶е»әи®®еҠ е…Ҙзү©е“Ғеұ•зӨәжЎҶгҖӮиҝҷзңҹжҳҜдәӣеҚҒеҲҶе·§еҰҷзҡ„е»әи®®пјҒ</Paragraph>
+<Paragraph Style="{StaticResource H5}">жҠҳеҸ</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Flower pots became a part of Minecraft in the Pretty Scary Update in October 2012, which also added some much scarier things, like witches and bats. They were originally suggested by Reddit user rapidpenguin, who also suggested item frames at the same time. A pretty good hit rate!</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/flowerpot-ingame.jpg"/>
 </StackPanel> 
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">他们是很容易制作的。就像你正在制作一个桶，只是将需要的铁锭替换成砖块而已。如果这对你来说还是太复杂了，你也可以去女巫的小屋去偷一个，或者去林地府邸、平原上的房子内、热带草原、沙漠村庄也是可以的。当花盆被挖掘时，花盆会立刻破碎 - 只会掉落其分开的组成物。</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">They’re easy to make. Pretend you’re making a bucket, but use bricks instead of iron ingots. If that’s too complicated for you, then you can also steal one from a witches’ hut, a woodland mansion, or houses in plains, savanna and desert villages. When hit, they’ll break instantly –⁠ dropping their contents separately.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">你可能认为花盆唯一的功能就是插花，但如果你这样想的话就错了！你也可以把树苗，蘑菇，蕨类植物，仙人掌，竹子，杜鹃花灌木丛和诡异菌索放在那里。如果你想用花盆装的死灌木，那么花盆也可以满足你。当然，十分有趣的时仙人掌或枯萎的玫瑰装在花盆中并不会伤害你，所以你可以将很多你想要的放置在你的周围，且不必担心受伤。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You might think that the only thing you can do with a flower pot is to put flowers in it, but you’d be wrong. You can also put saplings, mushrooms, ferns, cacti, bamboo, azalea bushes, and nether roots in there. And guess what? If “dead bush in a flower pot” is your aesthetic then you can make that happen too. Oh and fun fact –⁠ cacti or wither roses in a pot won’t hurt you, so you can have as many around as you want without fear of damage.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">现实世界的花盆已经存在至少一万年了 - 我们知道古希腊人和埃及人创造了它们，并且它们的出现可能也还远早于此。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Real world flower pots have been around for at least 10,000 years –⁠ we know that the Ancient Greeks and Egyptians made them, and it’s possible they were around earlier than that too.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">他们最初的用途是让植物更容易从一个地方运到另一个地方 - 例如，在寒冷的天气里，⁠移动对温度敏感的植物，这是也我们所知道的罗马人做的事情。18世纪和19世纪时，欧洲人还利用花盆在大陆之间运输农作物，用于农业目的，而没有意识到或并不关心他们所做的事情在这一过程中对当地生态系统造成的损害。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Their original use was to make it easier to move a plant from one place to another –⁠ moving temperature-sensitive plants inside during cold weather, for example, which is something that we know the Romans did. Europeans in the 18th and 19th centuries also used flower pots to transport crops between continents for agricultural purposes, not realising (or not caring about) the damage they were doing in the process to local ecosystems.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">今天，你会发现许多不同种类的花盆，由许多不同的材料制成-从石头，到陶瓷，然后到塑料，再到硬纸板和纸⁠。有些有边框，有些有着花哨的颜色，有些底部有洞，还有些是布满装饰的。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, you’ll find many different kinds of pot, made out of many different kinds of material –⁠ from stone, to ceramics, to plastic, to cardboard and paper. Some have a rim. Some come in fancy colours. Some have holes in the bottom. Some are decorated.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但“我的世界“只有一种花盆。因为我们相信你装入的东西才是最重要的。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But Minecraft? Minecraft just has one type of flower pot. Because we believe it’s what you put in it that counts.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">原文链接: https://www.minecraft.net/en-us/article/taking-inventory-flower-pot</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">原文出自:Duncan Geere</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">发布日期: 2021年8月5日</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译者: Glorydark</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">д»–д»¬жҳҜеҫҲе®№жҳ“еҲ¶дҪңзҡ„гҖӮе°ұеғҸдҪ жӯЈеңЁеҲ¶дҪңдёҖдёӘжЎ¶пјҢеҸӘжҳҜе°ҶйңҖиҰҒзҡ„й“Ғй”ӯжӣҝжҚўжҲҗз –еқ—иҖҢе·ІгҖӮеҰӮжһңиҝҷеҜ№дҪ жқҘиҜҙиҝҳжҳҜеӨӘеӨҚжқӮдәҶпјҢдҪ д№ҹеҸҜд»ҘеҺ»еҘіе·«зҡ„е°ҸеұӢеҺ»еҒ·дёҖдёӘпјҢжҲ–иҖ…еҺ»жһ—ең°еәңйӮёгҖҒе№іеҺҹдёҠзҡ„жҲҝеӯҗеҶ…гҖҒзғӯеёҰиҚүеҺҹгҖҒжІҷжј жқ‘еә„д№ҹжҳҜеҸҜд»Ҙзҡ„гҖӮеҪ“иҠұзӣҶиў«жҢ–жҺҳж—¶пјҢиҠұзӣҶдјҡз«ӢеҲ»з ҙзўҺ - еҸӘдјҡжҺүиҗҪе…¶еҲҶејҖзҡ„з»„жҲҗзү©гҖӮ</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">TheyвҖҷre easy to make. Pretend youвҖҷre making a bucket, but use bricks instead of iron ingots. If thatвҖҷs too complicated for you, then you can also steal one from a witchesвҖҷ hut, a woodland mansion, or houses in plains, savanna and desert villages. When hit, theyвҖҷll break instantly вҖ“вҒ  dropping their contents separately.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">дҪ еҸҜиғҪи®ӨдёәиҠұзӣҶе”ҜдёҖзҡ„еҠҹиғҪе°ұжҳҜжҸ’иҠұпјҢдҪҶеҰӮжһңдҪ иҝҷж ·жғізҡ„иҜқе°ұй”ҷдәҶпјҒдҪ д№ҹеҸҜд»ҘжҠҠж ‘иӢ—пјҢиҳ‘иҸҮпјҢи•Ёзұ»жӨҚзү©пјҢд»ҷдәәжҺҢпјҢз«№еӯҗпјҢжқңй№ғиҠұзҒҢжңЁдёӣе’ҢиҜЎејӮиҸҢзҙўж”ҫеңЁйӮЈйҮҢгҖӮеҰӮжһңдҪ жғіз”ЁиҠұзӣҶиЈ…зҡ„жӯ»зҒҢжңЁпјҢйӮЈд№ҲиҠұзӣҶд№ҹеҸҜд»Ҙж»Ўи¶ідҪ гҖӮеҪ“з„¶пјҢеҚҒеҲҶжңүи¶Јзҡ„ж—¶д»ҷдәәжҺҢжҲ–жһҜиҗҺзҡ„зҺ«з‘°иЈ…еңЁиҠұзӣҶдёӯе№¶дёҚдјҡдјӨе®ідҪ пјҢжүҖд»ҘдҪ еҸҜд»Ҙе°ҶеҫҲеӨҡдҪ жғіиҰҒзҡ„ж”ҫзҪ®еңЁдҪ зҡ„е‘ЁеӣҙпјҢдё”дёҚеҝ…жӢ…еҝғеҸ—дјӨгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">You might think that the only thing you can do with a flower pot is to put flowers in it, but youвҖҷd be wrong. You can also put saplings, mushrooms, ferns, cacti, bamboo, azalea bushes, and nether roots in there. And guess what? If вҖңdead bush in a flower potвҖқ is your aesthetic then you can make that happen too. Oh and fun fact вҖ“вҒ  cacti or wither roses in a pot wonвҖҷt hurt you, so you can have as many around as you want without fear of damage.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">зҺ°е®һдё–з•Ңзҡ„иҠұзӣҶе·Із»ҸеӯҳеңЁиҮіе°‘дёҖдёҮе№ҙдәҶ - жҲ‘д»¬зҹҘйҒ“еҸӨеёҢи…Ҡдәәе’ҢеҹғеҸҠдәәеҲӣйҖ дәҶе®ғд»¬пјҢе№¶дё”е®ғд»¬зҡ„еҮәзҺ°еҸҜиғҪд№ҹиҝҳиҝңж—©дәҺжӯӨгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Real world flower pots have been around for at least 10,000 years вҖ“вҒ  we know that the Ancient Greeks and Egyptians made them, and itвҖҷs possible they were around earlier than that too.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">д»–д»¬жңҖеҲқзҡ„з”ЁйҖ”жҳҜи®©жӨҚзү©жӣҙе®№жҳ“д»ҺдёҖдёӘең°ж–№иҝҗеҲ°еҸҰдёҖдёӘең°ж–№ - дҫӢеҰӮпјҢеңЁеҜ’еҶ·зҡ„еӨ©ж°”йҮҢпјҢвҒ з§»еҠЁеҜ№жё©еәҰж•Ҹж„ҹзҡ„жӨҚзү©пјҢиҝҷжҳҜд№ҹжҲ‘д»¬жүҖзҹҘйҒ“зҡ„зҪ—й©¬дәәеҒҡзҡ„дәӢжғ…гҖӮ18дё–зәӘе’Ң19дё–зәӘж—¶пјҢж¬§жҙІдәәиҝҳеҲ©з”ЁиҠұзӣҶеңЁеӨ§йҷҶд№Ӣй—ҙиҝҗиҫ“еҶңдҪңзү©пјҢз”ЁдәҺеҶңдёҡзӣ®зҡ„пјҢиҖҢжІЎжңүж„ҸиҜҶеҲ°жҲ–е№¶дёҚе…іеҝғд»–д»¬жүҖеҒҡзҡ„дәӢжғ…еңЁиҝҷдёҖиҝҮзЁӢдёӯеҜ№еҪ“ең°з”ҹжҖҒзі»з»ҹйҖ жҲҗзҡ„жҚҹе®ігҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Their original use was to make it easier to move a plant from one place to another вҖ“вҒ  moving temperature-sensitive plants inside during cold weather, for example, which is something that we know the Romans did. Europeans in the 18th and 19th centuries also used flower pots to transport crops between continents for agricultural purposes, not realising (or not caring about) the damage they were doing in the process to local ecosystems.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">д»ҠеӨ©пјҢдҪ дјҡеҸ‘зҺ°и®ёеӨҡдёҚеҗҢз§Қзұ»зҡ„иҠұзӣҶпјҢз”ұи®ёеӨҡдёҚеҗҢзҡ„жқҗж–ҷеҲ¶жҲҗ-д»ҺзҹіеӨҙпјҢеҲ°йҷ¶з“·пјҢз„¶еҗҺеҲ°еЎ‘ж–ҷпјҢеҶҚеҲ°зЎ¬зәёжқҝе’ҢзәёвҒ гҖӮжңүдәӣжңүиҫ№жЎҶпјҢжңүдәӣжңүзқҖиҠұе“Ёзҡ„йўңиүІпјҢжңүдәӣеә•йғЁжңүжҙһпјҢиҝҳжңүдәӣжҳҜеёғж»ЎиЈ…йҘ°зҡ„гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, youвҖҷll find many different kinds of pot, made out of many different kinds of material вҖ“вҒ  from stone, to ceramics, to plastic, to cardboard and paper. Some have a rim. Some come in fancy colours. Some have holes in the bottom. Some are decorated.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">дҪҶвҖңжҲ‘зҡ„дё–з•ҢвҖңеҸӘжңүдёҖз§ҚиҠұзӣҶгҖӮеӣ дёәжҲ‘д»¬зӣёдҝЎдҪ иЈ…е…Ҙзҡ„дёңиҘҝжүҚжҳҜжңҖйҮҚиҰҒзҡ„гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">жҠҳеҸ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But Minecraft? Minecraft just has one type of flower pot. Because we believe itвҖҷs what you put in it that counts.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еҺҹж–Үй“ҫжҺҘ: https://www.minecraft.net/en-us/article/taking-inventory-flower-pot</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">еҺҹж–ҮеҮәиҮӘ:Duncan Geere</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еҸ‘еёғж—Ҙжңҹ: 2021е№ҙ8жңҲ5ж—Ҙ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">зҝ»иҜ‘иҖ…: Glorydark</Paragraph>
 </FlowDocument>
             </FlowDocumentScrollViewer>
             <StackPanel Margin="0,0,0,20">
@@ -183,11 +183,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2025-12-31" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-01" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/折叠" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/жҡҳеҹ" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>
