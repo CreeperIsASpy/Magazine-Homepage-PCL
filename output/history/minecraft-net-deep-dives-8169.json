@@ -124,44 +124,44 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/tuff-ingame.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="因火山碎屑物而诞生​在靠近基岩世界的地方，你会发现该处的热量和压力塑造出了一些极其罕见并且十分特殊的东西。" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="еӣ зҒ«еұұзўҺеұ‘зү©иҖҢиҜһз”ҹ​еңЁйқ иҝ‘еҹәеІ©дё–з•Ңзҡ„ең°ж–№пјҢдҪ дјҡеҸ‘зҺ°иҜҘеӨ„зҡ„зғӯйҮҸе’ҢеҺӢеҠӣеЎ‘йҖ еҮәдәҶдёҖдәӣжһҒе…¶зҪ•и§Ғе№¶дё”еҚҒеҲҶзү№ж®Ҡзҡ„дёңиҘҝгҖӮ" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">BLOCK OF THE WEEK: TUFF​本周方块: 凝灰岩</Paragraph>
+<Paragraph Style="{StaticResource H7}">BLOCK OF THE WEEK: TUFF​жң¬е‘Ёж–№еқ—: еҮқзҒ°еІ©</Paragraph>
 <Paragraph Style="{StaticResource H2}">An ash-ionable choice</Paragraph>
-<Paragraph Style="{StaticResource H2}">因火山碎屑物而诞生​在靠近基岩世界的地方，你会发现该处的热量和压力塑造出了一些极其罕见并且十分特殊的东西。</Paragraph>
-<Paragraph Style="{StaticResource H7}">At the bottom of the world, close to the bedrock, you’ll find that the heat and pressure at these depths produce some pretty rare and special things.</Paragraph>
-<Paragraph Style="{StaticResource H5}">钻石一直是大多数人的挚爱，但这并非全部。在岩浆湖和深板岩的堆积之中，你还会发现一些青金石、红石矿，以及我们本周的方块 - 凝灰岩。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Diamonds are what most people go looking for, but that’s not all. Amongst the lakes of lava, and deposits of deepslate, you’ll also find veins of lapis lazuli, redstone, and our block of the week – tuff.</Paragraph>
+<Paragraph Style="{StaticResource H2}">еӣ зҒ«еұұзўҺеұ‘зү©иҖҢиҜһз”ҹ​еңЁйқ иҝ‘еҹәеІ©дё–з•Ңзҡ„ең°ж–№пјҢдҪ дјҡеҸ‘зҺ°иҜҘеӨ„зҡ„зғӯйҮҸе’ҢеҺӢеҠӣеЎ‘йҖ еҮәдәҶдёҖдәӣжһҒе…¶зҪ•и§Ғе№¶дё”еҚҒеҲҶзү№ж®Ҡзҡ„дёңиҘҝгҖӮ</Paragraph>
+<Paragraph Style="{StaticResource H7}">At the bottom of the world, close to the bedrock, youвҖҷll find that the heat and pressure at these depths produce some pretty rare and special things.</Paragraph>
+<Paragraph Style="{StaticResource H5}">й’»зҹідёҖзӣҙжҳҜеӨ§еӨҡж•°дәәзҡ„жҢҡзҲұпјҢдҪҶиҝҷе№¶йқһе…ЁйғЁгҖӮеңЁеІ©жөҶж№–е’Ңж·ұжқҝеІ©зҡ„е Ҷз§Ҝд№ӢдёӯпјҢдҪ иҝҳдјҡеҸ‘зҺ°дёҖдәӣйқ’йҮ‘зҹігҖҒзәўзҹізҹҝпјҢд»ҘеҸҠжҲ‘д»¬жң¬е‘Ёзҡ„ж–№еқ— - еҮқзҒ°еІ©гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Diamonds are what most people go looking for, but thatвҖҷs not all. Amongst the lakes of lava, and deposits of deepslate, youвҖҷll also find veins of lapis lazuli, redstone, and our block of the week вҖ“ tuff.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/tuff-ingame.jpg"/>
 </StackPanel> 
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">2021年6月《洞穴与峭壁》的第一部分更新中，凝灰岩与其他新的岩石方块一并被添加到《我的世界》，如方解石、深板岩和钟乳石。它因火山灰被压缩成地下深处的一种石头而得名。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Tuff was added to Minecraft alongside a bunch of other new rocks like calcite, deepslate, and dripstone, in the first part of the Caves & Cliffs update in June 2021. It’s the name given to volcanic ash which has been compressed into stone deep underground.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在《我的世界》中，凝灰岩看起来有点像鹅卵石，但 稍带绿色，且很容易用任何镐子来开采。用铁镐、石镐，甚至木镐来开采都效果不错 - 尽管现在仍是老样子: 镐的等级越高，开采速度越快。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In Minecraft, tuff looks a little like cobblestone, but tinted slightly greener, and is pretty easy to mine with any kind of pickaxe. Iron, stone, and even wood pickaxes will give good results – though as usual, the higher-tier pickaxe you use, the faster the mining will go.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在我提笔写这篇文章时，它仅仅是一个装饰方块。但在以亚美尼亚主题的建筑中，它看起来格外的美丽。这种石头在亚美尼亚的建筑中被广泛使用，比如该国首都埃里温(耶烈万)的建筑几乎完全是用这种材料建造的。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">It’s solely a decorative block at the time of writing – but it would look particularly good in an Armenian-themed build. The stone is used widely in Armenian architecture, and the country’s capital, Yerevan, is constructed almost entirely out of this substance.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">2021е№ҙ6жңҲгҖҠжҙһз©ҙдёҺеіӯеЈҒгҖӢзҡ„з¬¬дёҖйғЁеҲҶжӣҙж–°дёӯпјҢеҮқзҒ°еІ©дёҺе…¶д»–ж–°зҡ„еІ©зҹіж–№еқ—дёҖе№¶иў«ж·»еҠ еҲ°гҖҠжҲ‘зҡ„дё–з•ҢгҖӢпјҢеҰӮж–№и§ЈзҹігҖҒж·ұжқҝеІ©е’Ңй’ҹд№ізҹігҖӮе®ғеӣ зҒ«еұұзҒ°иў«еҺӢзј©жҲҗең°дёӢж·ұеӨ„зҡ„дёҖз§ҚзҹіеӨҙиҖҢеҫ—еҗҚгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Tuff was added to Minecraft alongside a bunch of other new rocks like calcite, deepslate, and dripstone, in the first part of the Caves & Cliffs update in June 2021. ItвҖҷs the name given to volcanic ash which has been compressed into stone deep underground.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еңЁгҖҠжҲ‘зҡ„дё–з•ҢгҖӢдёӯпјҢеҮқзҒ°еІ©зңӢиө·жқҘжңүзӮ№еғҸй№…еҚөзҹіпјҢдҪҶ зЁҚеёҰз»ҝиүІпјҢдё”еҫҲе®№жҳ“з”Ёд»»дҪ•й•җеӯҗжқҘејҖйҮҮгҖӮз”Ёй“Ғй•җгҖҒзҹій•җпјҢз”ҡиҮіжңЁй•җжқҘејҖйҮҮйғҪж•ҲжһңдёҚй”ҷ - е°Ҫз®ЎзҺ°еңЁд»ҚжҳҜиҖҒж ·еӯҗ: й•җзҡ„зӯүзә§и¶Ҡй«ҳпјҢејҖйҮҮйҖҹеәҰи¶Ҡеҝ«гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In Minecraft, tuff looks a little like cobblestone, but tinted slightly greener, and is pretty easy to mine with any kind of pickaxe. Iron, stone, and even wood pickaxes will give good results вҖ“ though as usual, the higher-tier pickaxe you use, the faster the mining will go.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еңЁжҲ‘жҸҗз¬”еҶҷиҝҷзҜҮж–Үз« ж—¶пјҢе®ғд»…д»…жҳҜдёҖдёӘиЈ…йҘ°ж–№еқ—гҖӮдҪҶеңЁд»ҘдәҡзҫҺе°јдәҡдё»йўҳзҡ„е»әзӯ‘дёӯпјҢе®ғзңӢиө·жқҘж јеӨ–зҡ„зҫҺдёҪгҖӮиҝҷз§ҚзҹіеӨҙеңЁдәҡзҫҺе°јдәҡзҡ„е»әзӯ‘дёӯиў«е№ҝжіӣдҪҝз”ЁпјҢжҜ”еҰӮиҜҘеӣҪйҰ–йғҪеҹғйҮҢжё©(иҖ¶зғҲдёҮ)зҡ„е»әзӯ‘еҮ д№Һе®Ңе…ЁжҳҜз”Ёиҝҷз§Қжқҗж–ҷе»әйҖ зҡ„гҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">ItвҖҷs solely a decorative block at the time of writing вҖ“ but it would look particularly good in an Armenian-themed build. The stone is used widely in Armenian architecture, and the countryвҖҷs capital, Yerevan, is constructed almost entirely out of this substance.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/franchise/photography/places/tuff-realworld.jpg"/>
 </StackPanel> 
 </BlockUIContainer>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Salvatore Falco // CC SA 1.0​当然，这不仅是亚美尼亚人对凝灰岩情有独钟。事实上，这是一种相对较软的岩石，因此这意味着凝灰岩自古以来就被用于建造。例如，拉帕努伊人用它来制作复活节岛上的大部分雕像；在意大利，这种岩石的使用也十分普遍。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But it’s not only the Armenians who are wild about tuff. The fact that it’s a relatively soft rock means that tuff has been used for construction since ancient times. The Rapa Nui used it to make most of the statues on Easter Island, for example, and it’s also very common in Italy.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">其次，凝灰岩有一个独特的功能 - 记录时间。火山爆发时，凝灰岩很快就会覆盖在一大片区域上，因此地质学家可以利用它(借助碳测年法)快速计算出一块特定的岩石有多古老。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Salvatore Falco // CC SA 1.0​еҪ“з„¶пјҢиҝҷдёҚд»…жҳҜдәҡзҫҺе°јдәҡдәәеҜ№еҮқзҒ°еІ©жғ…жңүзӢ¬й’ҹгҖӮдәӢе®һдёҠпјҢиҝҷжҳҜдёҖз§ҚзӣёеҜ№иҫғиҪҜзҡ„еІ©зҹіпјҢеӣ жӯӨиҝҷж„Ҹе‘ізқҖеҮқзҒ°еІ©иҮӘеҸӨд»ҘжқҘе°ұиў«з”ЁдәҺе»әйҖ гҖӮдҫӢеҰӮпјҢжӢүеё•еҠӘдјҠдәәз”Ёе®ғжқҘеҲ¶дҪңеӨҚжҙ»иҠӮеІӣдёҠзҡ„еӨ§йғЁеҲҶйӣ•еғҸпјӣеңЁж„ҸеӨ§еҲ©пјҢиҝҷз§ҚеІ©зҹізҡ„дҪҝз”Ёд№ҹеҚҒеҲҶжҷ®йҒҚгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But itвҖҷs not only the Armenians who are wild about tuff. The fact that itвҖҷs a relatively soft rock means that tuff has been used for construction since ancient times. The Rapa Nui used it to make most of the statues on Easter Island, for example, and itвҖҷs also very common in Italy.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">е…¶ж¬ЎпјҢеҮқзҒ°еІ©жңүдёҖдёӘзӢ¬зү№зҡ„еҠҹиғҪ - и®°еҪ•ж—¶й—ҙгҖӮзҒ«еұұзҲҶеҸ‘ж—¶пјҢеҮқзҒ°еІ©еҫҲеҝ«е°ұдјҡиҰҶзӣ–еңЁдёҖеӨ§зүҮеҢәеҹҹдёҠпјҢеӣ жӯӨең°иҙЁеӯҰе®¶еҸҜд»ҘеҲ©з”Ёе®ғ(еҖҹеҠ©зўіжөӢе№ҙжі•)еҝ«йҖҹи®Ўз®—еҮәдёҖеқ—зү№е®ҡзҡ„еІ©зҹіжңүеӨҡеҸӨиҖҒгҖӮ</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">The other thing that tuff is very useful for is marking time. Because tuff is laid down over a large area very quickly when a volcano erupts, geologists can use it (with the help of carbon dating) to quickly figure out how old a particular bit of rock is.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">但我喜欢的原因是，古罗马人把它雕刻成块用于建筑中 - 就像在《我的世界》一样！罗马著名的“塞维安墙”也几乎完全是在公元前4世纪早期用凝灰岩砌成的，以保护这座城市免受入侵。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But my favourite tuff fact is that the ancient Romans carved it into blocks for construction purposes – just like in Minecraft! Rome’s famous “Servian Walls” were built almost entirely out of tuff blocks in the early 4th century BC to protect the city from invasion.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">所以下一次当你在我的世界面临僵尸入侵的时候，可以效仿古罗马人那样，建一堵凝灰岩墙来阻挡成群的僵尸 - 这已经足够应付他们了。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">So next time you’re facing an invasion of zombies in Minecraft, take a tip from the Ancient Romans and hold off the hordes with a wall of tuff. It should be tuff enuff.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">原文链接: https://www.minecraft.net/en-us/article/block-week--tuff</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">原文出自: Duncan Geere</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">发布日期: 2021年9月10日</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">翻译者: Glorydark</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">дҪҶжҲ‘е–ңж¬ўзҡ„еҺҹеӣ жҳҜпјҢеҸӨзҪ—й©¬дәәжҠҠе®ғйӣ•еҲ»жҲҗеқ—з”ЁдәҺе»әзӯ‘дёӯ - е°ұеғҸеңЁгҖҠжҲ‘зҡ„дё–з•ҢгҖӢдёҖж ·пјҒзҪ—й©¬и‘—еҗҚзҡ„вҖңеЎһз»ҙе®үеўҷвҖқд№ҹеҮ д№Һе®Ңе…ЁжҳҜеңЁе…¬е…ғеүҚ4дё–зәӘж—©жңҹз”ЁеҮқзҒ°еІ©з ҢжҲҗзҡ„пјҢд»ҘдҝқжҠӨиҝҷеә§еҹҺеёӮе…ҚеҸ—е…ҘдҫөгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">But my favourite tuff fact is that the ancient Romans carved it into blocks for construction purposes вҖ“ just like in Minecraft! RomeвҖҷs famous вҖңServian WallsвҖқ were built almost entirely out of tuff blocks in the early 4th century BC to protect the city from invasion.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">жүҖд»ҘдёӢдёҖж¬ЎеҪ“дҪ еңЁжҲ‘зҡ„дё–з•Ңйқўдёҙеғөе°ёе…Ҙдҫөзҡ„ж—¶еҖҷпјҢеҸҜд»Ҙж•Ҳд»ҝеҸӨзҪ—й©¬дәәйӮЈж ·пјҢе»әдёҖе өеҮқзҒ°еІ©еўҷжқҘйҳ»жҢЎжҲҗзҫӨзҡ„еғөе°ё - иҝҷе·Із»Ҹи¶іеӨҹеә”д»ҳд»–д»¬дәҶгҖӮ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">So next time youвҖҷre facing an invasion of zombies in Minecraft, take a tip from the Ancient Romans and hold off the hordes with a wall of tuff. It should be tuff enuff.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еҺҹж–Үй“ҫжҺҘ: https://www.minecraft.net/en-us/article/block-week--tuff</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">еҺҹж–ҮеҮәиҮӘ: Duncan Geere</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">еҸ‘еёғж—Ҙжңҹ: 2021е№ҙ9жңҲ10ж—Ҙ</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">зҝ»иҜ‘иҖ…: Glorydark</Paragraph>
 </FlowDocument>
             </FlowDocumentScrollViewer>
             <StackPanel Margin="0,0,0,20">
@@ -184,7 +184,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-01" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-02" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
