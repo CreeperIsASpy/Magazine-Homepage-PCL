@@ -124,19 +124,18 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minebbs.com/data/attachments/83/83354-df5c793622c94ec368184dbec86dd208.jpg?hash=31x5NiLJTs" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="折叠" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">世界基石：试炼密室</Paragraph>
-<Paragraph Style="{StaticResource H2}">以毅力之“韧”，赴试炼之“考”​</Paragraph>
+<Paragraph Style="{StaticResource H7}">世界基石：试炼密室以毅力之“韧”，赴试炼之“考”​</Paragraph>
 <Paragraph Style="{StaticResource H2}">在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。</Paragraph>
-<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
-<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Once you’ve got the basics set up in your Minecraft world – a place to live, a mine to gather resources, a farm for food, a huge statue of your face (y’know, just the essentials) – you’ll start looking for new challenges.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">有些玩家喜欢全面翻新自己的小窝，将其改造成一座城堡或宫殿；有些玩家喜欢游遍主世界，寻觅罕见的生物群系，收集各种植物和花卉；还有些玩家会深入下界，顶着炙热，冒着危险，寻得一个个宝藏。现在，棘巧试炼更新提供了个新选择 —— 前往试炼密室，挑战主世界的劲敌，检验自己的战斗技巧。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H2}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H7}">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">Once you’ve got the basics set up in your Minecraft world – a place to live, a mine to gather resources, a farm for food, a huge statue of your face (y’know, just the essentials) – you’ll start looking for new challenges.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">有些玩家喜欢全面翻新自己的小窝，将其改造成一座城堡或宫殿；有些玩家喜欢游遍主世界，寻觅罕见的生物群系，收集各种植物和花卉；还有些玩家会深入下界，顶着炙热，冒着危险，寻得一个个宝藏。现在，棘巧试炼更新提供了个新选择 —— 前往试炼密室，挑战主世界的劲敌，检验自己的战斗技巧。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Some players like to dramatically upgrade their living quarters, turning a hut into a castle or a palace. Some like to explore the Overworld, hunting out rare biomes and collecting plants and flowers. Some delve into the Nether, braving the heat for treasure. And now, courtesy of the Tricky Trials update, there’s a new option – hunting down a trial chamber and testing your combat skills against some of the toughest challenges that the Overworld has to offer.</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">试炼密室位于主世界地下，但你无需一股脑挖来挖去。你可以到村庄找到一位制图师，与之交易，取得信任，便有几率交易获得试炼探险家地图，跟着地图指示，便能找到最近的试炼密室。</Paragraph>
@@ -189,11 +188,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-08" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/以毅力之“韧”，赴试炼之“考”​" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/在我的世界中，玩家先会建好一些基本建筑，如生活的小窝、下矿的隧道、维持温饱的农场、或是一座自己的巨大雕像，诸如此类（这些都是“基本需求”，你说对吧？），在此之后，便会开始尝试新的挑战。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>

@@ -1,10 +1,13 @@
 """AI 写的博文提取脚本"""
 
 from datetime import datetime
+import random
+import time
 
 import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
@@ -13,40 +16,61 @@ HEADERS = {
     "Referer": "https://minebbs.com/",
 }
 
+
 def request_with_header_origin(url, **kwargs) -> requests.Response:
-    """发送带有浏览器请求头的请求 (Playwright内核，返回 requests.Response 以兼容接口)"""
+    """
+    发送带有浏览器请求头的请求 (Playwright内核，返回 requests.Response 以兼容接口)
+    内置了针对 429 Too Many Requests 和 JS 挑战的智能重试逻辑。
+    """
+    max_retries = 3  # 减少重试次数，避免长时间卡死
+    base_wait_time = 15
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        
-        # 移除 Accept-Encoding 让浏览器自己处理压缩，避免乱码
-        headers_copy = HEADERS.copy()
-        if "Accept-Encoding" in headers_copy:
-            del headers_copy["Accept-Encoding"]
-
         context = browser.new_context(
-            user_agent=headers_copy.pop("User-Agent"),
-            extra_http_headers=headers_copy
+            user_agent=HEADERS["User-Agent"], extra_http_headers=HEADERS
         )
-        
         page = context.new_page()
-        
-        try:
-            # 简单的 kwargs 映射，防止报错
-            timeout = kwargs.get('timeout', 30000)
-            if isinstance(timeout, (int, float)) and timeout < 1000:
-                timeout *= 1000  # requests 是秒，playwright 是毫秒
 
-            pw_response = page.goto(url, wait_until="domcontentloaded", timeout=float(timeout))
-            
-            # 手动构造 requests.Response 对象
-            response = requests.Response()
-            if pw_response:
-                response.status_code = pw_response.status
-                response._content = pw_response.body() # 填充 content，requests 会自动处理 text
-                response.headers.update(pw_response.all_headers())
-                response.url = pw_response.url
-            
-            return response
+        try:
+            timeout = kwargs.get("timeout", 30000)
+            if isinstance(timeout, (int, float)) and timeout < 1000:
+                timeout *= 1000
+
+            for attempt in range(max_retries):
+                try:
+                    # 步骤1: 导航到页面，快速返回，不等待页面完全加载
+                    page.goto(url, wait_until="commit", timeout=float(timeout))
+
+                    # 步骤2: 等待关键内容 "div.structItem" 出现。
+                    # 这是博文列表的核心元素，它的出现意味着JS挑战已通过且内容已加载。
+                    page.wait_for_selector("div.structItem", timeout=float(timeout))
+
+                    # 如果成功等到，说明页面加载成功，可以构造一个成功的响应
+                    response = requests.Response()
+                    response.status_code = 200  # 假定成功
+                    response._content = page.content().encode("utf-8")
+                    response.url = page.url
+                    response.headers[
+                        "Content-Type"
+                    ] = "text/html; charset=utf-8"
+                    return response
+
+                except PlaywrightTimeoutError:
+                    print(
+                        f"页面加载超时 (尝试 {attempt + 1}/{max_retries})，正在重试..."
+                    )
+                    # 等待一小段时间再重试
+                    time.sleep(5 + random.uniform(0, 1))
+                    continue  # 继续下一次重试
+
+            # 所有重试都失败后
+            print(f"已达到最大重试次数 ({max_retries})，放弃请求 {url}")
+            error_response = requests.Response()
+            error_response.status_code = 408  # Request Timeout
+            error_response.reason = f"Failed to load page after {max_retries} retries"
+            return error_response
+
         finally:
             browser.close()
 
@@ -54,10 +78,10 @@ def request_with_header_origin(url, **kwargs) -> requests.Response:
 def request_with_header(url) -> str:
     """发送带有浏览器请求头的请求，返回文本"""
     response = request_with_header_origin(url)
-    
+
     # 补丁：手动调用自动编码识别，确保 .text 能正确解码中文
     response.encoding = response.apparent_encoding
-    
+
     return response.text
 
 
@@ -65,6 +89,8 @@ def extract_blog_posts(html_content):
     """
     从HTML内容中提取博文信息并按时间排序
     """
+    if not html_content:
+        return []
     soup = BeautifulSoup(html_content, "html.parser")
 
     # 查找所有博文条目
@@ -230,6 +256,10 @@ def grab_post_lists(NEWS_LIST_URL: str) -> tuple[list, bool]:
 def get_last_page_number():
     url = "https://www.minebbs.com/forums/news/page-9999999999"  # 请求更大的页码，会被重定向到最后一页。
     r = request_with_header_origin(url)
+    if r.status_code != 200:
+        print("获取最大页码失败，将默认使用 30 页。")
+        return 30
+
     final_url = r.url
     print(f"当前最大 URL：{final_url}")
     # 提取页码
@@ -244,15 +274,22 @@ def grab_all():
 
     last_page = get_last_page_number()
     for count in range(1, last_page + 1):
-        print(f"current page: {count}")
-        print(f"current_posts: {sort_posts_by_time(all_posts)}")
+        print(f"正在抓取页面: {count}/{last_page}")
         filtered_posts, should_continue = grab_post_lists(
             f"https://www.minebbs.com/forums/news/{f'page-{count}' if count > 1 else ''}"
         )
+
+        if not should_continue:
+            print(f"抓取页面 {count} 失败，已跳过。")
+            continue  # 跳过失败的页面，继续下一个
+
         if filtered_posts:
             all_posts.extend(filtered_posts)
-        if not should_continue:
-            raise Exception("意外获取到非 200 返回请求")
 
-    print(f"all_posts: {sort_posts_by_time(all_posts)}")
+        print(f"页面 {count} 抓取完成，目前总计 {len(all_posts)} 篇博文。")
+        # 在两次请求之间加入一个小的随机延时，模仿人类行为
+        time.sleep(random.uniform(1, 3))
+
+
+    print(f"所有页面抓取完毕，总共找到 {len(all_posts)} 篇博文。")
     return sort_posts_by_time(all_posts)

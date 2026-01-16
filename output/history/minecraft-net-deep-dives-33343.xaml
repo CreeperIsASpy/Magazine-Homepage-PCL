@@ -124,19 +124,18 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/igloo-ingame.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="主世界最冷的那片地方，雪花无止无休地漫天飞舞，整片大地犹如银装素裹，一片雪白。有时，雪原上也会涌现一些突兀的小疙瘩，那便是雪屋。当你踏入其中，或许会惊讶于其宾至如归的温暖。然而，这份如家般的温暖或许仅是为了掩盖可怕的真相。" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="折叠" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">块筑天工：雪屋​Building Blocks: Igloo​冰色之穹，宝藏尽在</Paragraph>
-<Paragraph Style="{StaticResource H2}">An icy dome filled with treasure!​</Paragraph>
+<Paragraph Style="{StaticResource H7}">块筑天工：雪屋​Building Blocks: Igloo​冰色之穹，宝藏尽在An icy dome filled with treasure!​</Paragraph>
 <Paragraph Style="{StaticResource H2}">主世界最冷的那片地方，雪花无止无休地漫天飞舞，整片大地犹如银装素裹，一片雪白。有时，雪原上也会涌现一些突兀的小疙瘩，那便是雪屋。当你踏入其中，或许会惊讶于其宾至如归的温暖。然而，这份如家般的温暖或许仅是为了掩盖可怕的真相。</Paragraph>
-<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
-<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the coldest parts of the Overworld, where snowflakes fall endlessly from the sky, covering the ground with a thick carpet of white, you’ll occasionally see a little bump in the landscape – an igloo. Investigate a little further, and you’ll find a remarkably homely interior. But sometimes that homely interior hides a terrible secret...</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">自2016年2月的战斗更新以来，雪屋便出现在雪原上。那次更新不只重新设计了游戏的战斗系统（如更新名称所描述的一样），更添加了一系列物品，如鞘翅、药水箭、末影城和紫颂果。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H2}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H7}">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">In the coldest parts of the Overworld, where snowflakes fall endlessly from the sky, covering the ground with a thick carpet of white, you’ll occasionally see a little bump in the landscape – an igloo. Investigate a little further, and you’ll find a remarkably homely interior. But sometimes that homely interior hides a terrible secret...</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">自2016年2月的战斗更新以来，雪屋便出现在雪原上。那次更新不只重新设计了游戏的战斗系统（如更新名称所描述的一样），更添加了一系列物品，如鞘翅、药水箭、末影城和紫颂果。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Igloos have been spotted in snow-covered biomes ever since the Combat Update, released in February 2016. As well as revamping the game’s combat system (hence the name), this update also added elytras, tipped arrows, end cities, and chorus fruit.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
@@ -201,11 +200,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-08" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/an-icy-dome-filled-with-treasure!​" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/主世界最冷的那片地方，雪花无止无休地漫天飞舞，整片大地犹如银装素裹，一片雪白。有时，雪原上也会涌现一些突兀的小疙瘩，那便是雪屋。当你踏入其中，或许会惊讶于其宾至如归的温暖。然而，这份如家般的温暖或许仅是为了掩盖可怕的真相。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>

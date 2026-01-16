@@ -124,16 +124,15 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minebbs.com/data/attachments/32/32299-2bb97861e5576e9234c58ca5bda37244.jpg?hash=K7l4YeVXbp" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="将一门语言、一种文化和许多方块联系在一起" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="Connecting language, culture, and blocks!​从数字责任到环境可持续发展，再到目睹许多能教会你关于全球公民权利的由方块建造的社会影响人物，全世界中有很多人都在使用《我的世界：教育版》来学习一些东西。但你可曾想过在《我的世界:教育版》中去探索各种各样的文化，甚至是学会一门语言呢?" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">玩乐之余，学习语言</Paragraph>
-<Paragraph Style="{StaticResource H2}">LEARNING LANGUAGES THROUGH PLAY</Paragraph>
+<Paragraph Style="{StaticResource H7}">玩乐之余，学习语言LEARNING LANGUAGES THROUGH PLAY</Paragraph>
 <Paragraph Style="{StaticResource H2}">将一门语言、一种文化和许多方块联系在一起</Paragraph>
-<Paragraph Style="{StaticResource H7}">Connecting language, culture, and blocks!​从数字责任到环境可持续发展，再到目睹许多能教会你关于全球公民权利的由方块建造的社会影响人物，全世界中有很多人都在使用《我的世界：教育版》来学习一些东西。但你可曾想过在《我的世界:教育版》中去探索各种各样的文化，甚至是学会一门语言呢?</Paragraph>
-<Paragraph Style="{StaticResource H5}">Many people around the world use Minecraft: Education Edition to learn things, from lessons in digital responsibility, to environmental sustainability, to meeting blocky versions of social impact leaders that can teach you about global citizenship. But did you know that you can use Minecraft: Education Edition to explore different cultures and even learn languages, too?</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">鉴于5月是美国亚太裔传统日，我们决定去带大家探索新普利茅斯市，并且去学习一些当地的语言,文化以及当地的风土人情。Whetu Paitai是新毛里求斯市部分的建造者以及Piki Studio的创始人。他说他的灵感来自他对于传递那些他所熟知且体验过的文化知识给他自己的孩子们的渴望。“我发现了创建一个沉浸式的世界的方法 - 尽管这一次不是我的世界中的内容，而是毛利文化的所在。”</Paragraph>
+<Paragraph Style="{StaticResource H2}">Connecting language, culture, and blocks!​从数字责任到环境可持续发展，再到目睹许多能教会你关于全球公民权利的由方块建造的社会影响人物，全世界中有很多人都在使用《我的世界：教育版》来学习一些东西。但你可曾想过在《我的世界:教育版》中去探索各种各样的文化，甚至是学会一门语言呢?</Paragraph>
+<Paragraph Style="{StaticResource H7}">Many people around the world use Minecraft: Education Edition to learn things, from lessons in digital responsibility, to environmental sustainability, to meeting blocky versions of social impact leaders that can teach you about global citizenship. But did you know that you can use Minecraft: Education Edition to explore different cultures and even learn languages, too?</Paragraph>
+<Paragraph Style="{StaticResource H5}">鉴于5月是美国亚太裔传统日，我们决定去带大家探索新普利茅斯市，并且去学习一些当地的语言,文化以及当地的风土人情。Whetu Paitai是新毛里求斯市部分的建造者以及Piki Studio的创始人。他说他的灵感来自他对于传递那些他所熟知且体验过的文化知识给他自己的孩子们的渴望。“我发现了创建一个沉浸式的世界的方法 - 尽管这一次不是我的世界中的内容，而是毛利文化的所在。”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Seeing as May is AAPIHM: Asian American and Pacific Islander Heritage Month, we thought we’d explore Ngā Motu (The Islands) and learn about the indigenous language, culture, and people of Aotearoa (New Zealand). Whetu Paitai, the creator of the Ngā Motu module and founder of Piki Studios, says the idea came from his desire to pass on the cultural knowledge he’d grown up with to his own children. “I saw the opportunity to create an immersive world – although this time it wasn’t the Minecraft universe, it was the Māori universe.”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​到达了两个并不遥远且临近新西兰的小岛屿后，你可以去探索一个传统的叫做a Pā的毛利人聚居地，并且去发现他们是如何打扮的、他们长的是怎样以及在典型的一天种所发生的一些活动是怎样。慢慢地你发现那儿的食物是如何长出来的、被储存的并且被烹饪的，同时了解所有关于早期毛利人的生活，从通过他们曾横跨大西洋的各种各样的轮船，再到探索他们为何有分开的睡觉和就餐的区域。你甚至可以在模块中开始学习毛利语。“所有的土著文化都包含众多方面”，Whetu Paitai说，“所有这些东西合在一起就是土著文化的本质。毛利语是新西兰的三种国语之一，这通常是很多人学习【毛利文化】的起点。”</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">Arriving at two small islands not far off the mainland of Aotearoa, you get to explore a traditional Māori settlement called a Pā, and discover how they were arranged, what they looked like, and what kinds of activities happened on a typical day. Find out how food was grown, stored, and cooked and learn all about the lives of the early Māori, from the types of water vessels they used to traverse the Pacific Ocean, to why they had separate structures for sleeping and eating. You can even begin to learn Te Reo Māori in the module, the Māori language! “All indigenous cultures are wrapped up with many facets,” says Whetu Paitai, “and all of those things together are what make that indigenous culture what it is. Te Reo Māori is [one of three] national languages of New Zealand and it’s usually the starting point for a lot of people for learning about [Māori culture].”</Paragraph>
@@ -173,11 +172,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/learning-languages-through-play" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/将一门语言、一种文化和许多方块联系在一起" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>

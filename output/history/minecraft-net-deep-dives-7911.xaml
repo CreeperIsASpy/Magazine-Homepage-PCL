@@ -124,16 +124,15 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minebbs.com/data/attachments/21/21656-fb59f5d40880c9c2eba09ea33bf82af9.jpg?hash=gV_RirYriw" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="Do you know which of Minecraft’s biomes is the hardest to find? Hint: it’s not the flower forest. Or the badlands. Or the deep cold ocean. None of those, in fact. It’s actually our biome of the week – Mushroom Fields." />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="蘑菇岛(Mushroom Fields)最初被称为"Mushroom islands"，2011年11月，它第一次作为Java版本1.0.0更新内容的一部分，成为了“我的世界”主世界维度中的一部分。同时，这个生物群系也只有不到10年的历史。" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">Not mushroom to build here</Paragraph>
-<Paragraph Style="{StaticResource H2}">不是因蘑菇的存在而存在！​你知道《我的世界》哪一个生物群系最难找到吗？给你一个小提示：这不是繁华密布的森林，也不是一望无际的恶地，更不会是冰冷的深海。其实，这是我们的本周想要讨论的生物群系--蘑菇岛。</Paragraph>
+<Paragraph Style="{StaticResource H7}">不是因蘑菇的存在而存在！​你知道《我的世界》哪一个生物群系最难找到吗？给你一个小提示：这不是繁华密布的森林，也不是一望无际的恶地，更不会是冰冷的深海。其实，这是我们的本周想要讨论的生物群系--蘑菇岛。</Paragraph>
 <Paragraph Style="{StaticResource H2}">Do you know which of Minecraft’s biomes is the hardest to find? Hint: it’s not the flower forest. Or the badlands. Or the deep cold ocean. None of those, in fact. It’s actually our biome of the week – Mushroom Fields.</Paragraph>
-<Paragraph Style="{StaticResource H7}">蘑菇岛(Mushroom Fields)最初被称为"Mushroom islands"，2011年11月，它第一次作为Java版本1.0.0更新内容的一部分，成为了“我的世界”主世界维度中的一部分。同时，这个生物群系也只有不到10年的历史。</Paragraph>
-<Paragraph Style="{StaticResource H5}">The Mushroom Fields biome was originally called Mushroom islands, and it became a part of the Minecraft universe in November 2011 as part of Java Edition 1. .0.0 – making the biome just under ten years old.</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">这是十分罕见的，原因有两个。首先，它的形成几率相当的低。其次是因为它通常是作为一个完全被海洋包围的单一岛屿生成的 - 而且大多数玩家不会在海洋中漫游花费太多时间，所以玩家们并不会经常遇到它。</Paragraph>
+<Paragraph Style="{StaticResource H2}">蘑菇岛(Mushroom Fields)最初被称为"Mushroom islands"，2011年11月，它第一次作为Java版本1.0.0更新内容的一部分，成为了“我的世界”主世界维度中的一部分。同时，这个生物群系也只有不到10年的历史。</Paragraph>
+<Paragraph Style="{StaticResource H7}">The Mushroom Fields biome was originally called Mushroom islands, and it became a part of the Minecraft universe in November 2011 as part of Java Edition 1. .0.0 – making the biome just under ten years old.</Paragraph>
+<Paragraph Style="{StaticResource H5}">这是十分罕见的，原因有两个。首先，它的形成几率相当的低。其次是因为它通常是作为一个完全被海洋包围的单一岛屿生成的 - 而且大多数玩家不会在海洋中漫游花费太多时间，所以玩家们并不会经常遇到它。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">It’s rare for two reasons. First because the chances of it forming are pretty low. But also because it usually generates as a single island totally surrounded by ocean – and most players don’t spend a lot of time in the ocean, so they don’t come across it very often.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
@@ -195,11 +194,11 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     Stretch="Uniform" HorizontalAlignment="Right"
                     Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
                     <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
-                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-01-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/不是因蘑菇的存在而存在！​你知道《我的世界》哪一个生物群系最难找到吗？给你一个小提示：这不是繁华密布的森林，也不是一望无际的恶地，更不会是冰冷的深海。其实，这是我们的本周想要讨论的生物群系--蘑菇岛。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/do-you-know-which-of-minecraft’s-biomes-is-the-hardest-to-find?-hint-it’s-not-the-flower-forest.-or-the-badlands.-or-the-deep-cold-ocean.-none-of-those,-in-fact.-it’s-actually-our-biome-of-the-week-–-mushroom-fields." LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>
