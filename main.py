@@ -37,7 +37,7 @@ if __name__ == "__main__":
         with open(
             HistoryOutput / (filename + ".json"), "w", encoding="utf-8"
         ) as jsonFile:
-            jsonFile.write("{\"title\": \"官方博文\"}")
+            jsonFile.write("{\"Title\": \"官方博文\"}")
 
         # 制作主页入口点
         template = get_template("deepdives_link.fstring.xaml")

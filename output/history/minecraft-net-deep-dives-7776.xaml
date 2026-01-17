@@ -124,17 +124,16 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minebbs.com/data/attachments/21/21255-5e04a05e13a5135d40f7c4987edae4bc.jpg?hash=RD0lmCO4cW" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="官方原文点我" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="(可能翻译的不太好，欢迎各位下方回复并反馈！)​Seasoned Minecraft players will be well aware of soul sand – the screaming brown block that lives in the fiery caverns of the Nether. Not sounding familiar? Have a read of the Block of the Week column on the subject that my erstwhile colleague Marsh wrote a couple of years back." />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">BLOCK OF THE WEEK: SOUL SOIL</Paragraph>
-<Paragraph Style="{StaticResource H2}">You’ll nether grow plants in that 你会在它上面种上植物</Paragraph>
+<Paragraph Style="{StaticResource H7}">BLOCK OF THE WEEK: SOUL SOILYou’ll nether grow plants in that 你会在它上面种上植物</Paragraph>
 <Paragraph Style="{StaticResource H2}">官方原文点我</Paragraph>
-<Paragraph Style="{StaticResource H7}">(可能翻译的不太好，欢迎各位下方回复并反馈！)​Seasoned Minecraft players will be well aware of soul sand – the screaming brown block that lives in the fiery caverns of the Nether. Not sounding familiar? Have a read of the Block of the Week column on the subject that my erstwhile colleague Marsh wrote a couple of years back.</Paragraph>
-<Paragraph Style="{StaticResource H5}">我的世界老玩家们会清楚地意识到下界炽热的洞穴中十分引人注目的棕色方块 --- 灵魂沙 的存在。如果你仍感觉不熟悉的话，请读一读几年前我曾经的同事Marsh在Block of the Week专栏中所写的相关文章。</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">In the Nether update, released in June 2020, we totally rebooted Minecraft’s warmest dimension to add a bunch of new biomes. The new biomes include the Warped Forest and Basalt Delta, but it also includes the Soul Sand Valley where you can find oodles of soul sand, obviously, but also a new block – soul soil, which also happens to be our block of the week.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">在去年6月发布的下界更新版本中，我们重新改造了我的世界中最炽热的一个维度，并且往其中添加了大量的新群落。新的群落包含绯红森林,扭曲森林,当然也包括存在大量灵魂沙、灵魂土的灵魂沙峡谷！而新的灵魂土方块正好是这次的本周方块！</Paragraph>
+<Paragraph Style="{StaticResource H2}">(可能翻译的不太好，欢迎各位下方回复并反馈！)​Seasoned Minecraft players will be well aware of soul sand – the screaming brown block that lives in the fiery caverns of the Nether. Not sounding familiar? Have a read of the Block of the Week column on the subject that my erstwhile colleague Marsh wrote a couple of years back.</Paragraph>
+<Paragraph Style="{StaticResource H7}">我的世界老玩家们会清楚地意识到下界炽热的洞穴中十分引人注目的棕色方块 --- 灵魂沙 的存在。如果你仍感觉不熟悉的话，请读一读几年前我曾经的同事Marsh在Block of the Week专栏中所写的相关文章。</Paragraph>
+<Paragraph Style="{StaticResource H5}">In the Nether update, released in June 2020, we totally rebooted Minecraft’s warmest dimension to add a bunch of new biomes. The new biomes include the Warped Forest and Basalt Delta, but it also includes the Soul Sand Valley where you can find oodles of soul sand, obviously, but also a new block – soul soil, which also happens to be our block of the week.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">在去年6月发布的下界更新版本中，我们重新改造了我的世界中最炽热的一个维度，并且往其中添加了大量的新群落。新的群落包含绯红森林,扭曲森林,当然也包括存在大量灵魂沙、灵魂土的灵魂沙峡谷！而新的灵魂土方块正好是这次的本周方块！</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">[%(img1)s] ​Soul soil and soul sand have some similarities and differences. They’re both brown, for starters. They’re both found in the Nether. They both create soul fire when they catch alight, and can be used to craft soul torches and soul campfires. They can also both be used to summon a Wither, which is a terrible idea. Under no circumstances should you place four soul soil blocks in a t-shape and then put three wither skulls on top.</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">灵魂土和灵魂沙存在一些相似之处，同时也有着不同。对于新手玩家来说，他们可能只知道这两个方块都是棕色的。它们都可以在下界找到。它们也都可以在遇到阳光的时候出现灵魂火、都可以用来制作灵魂火把和灵魂营火。它们还可以用来生成凋零，当然这无非是一个糟糕的决定哈。无论在任何的情况下，你都需要以字母T的形状放置四个灵魂土，然后再在最上方的三个方块上放置三个凋零头颅。</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">But! There are differences too. Soul soil has a bit more internal structure, making it easier to walk across. You won’t slow down when you’re on top of it. It also doesn’t create bubble columns underwater like soul sand does. So what does it do? Well, it’s a key component of basalt – when lava flows on top of soul soil and is cooled by blue ice, it’ll turn into basalt. Nifty! Especially if you need a lot of basalt in a hurry.</Paragraph>
@@ -175,7 +174,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/you’ll-nether-grow-plants-in-that-你会在它上面种上植物" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/官方原文点我" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>

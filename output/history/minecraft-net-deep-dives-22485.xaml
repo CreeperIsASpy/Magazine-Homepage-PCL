@@ -124,19 +124,18 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/concretepowder-recipe.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="我的世界中，大多数玩家建筑时总会选择一些近便的材料 —— 可能是泥土、地狱岩等等。我还见过一座粘土房，想必不久，里面的每个角落都会粘乎乎吧。" />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="折叠" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">本月方块: 混凝土粉末​BLOCK OF THE MONTH: CONCRETE POWDER​粉末归于人民！</Paragraph>
-<Paragraph Style="{StaticResource H2}">Powder to the people!​</Paragraph>
+<Paragraph Style="{StaticResource H7}">本月方块: 混凝土粉末​BLOCK OF THE MONTH: CONCRETE POWDER​粉末归于人民！Powder to the people!​</Paragraph>
 <Paragraph Style="{StaticResource H2}">我的世界中，大多数玩家建筑时总会选择一些近便的材料 —— 可能是泥土、地狱岩等等。我还见过一座粘土房，想必不久，里面的每个角落都会粘乎乎吧。</Paragraph>
-<Paragraph Style="{StaticResource H7}">折叠</Paragraph>
-<Paragraph Style="{StaticResource H5}">: 原文</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Many Minecraft players build out of whatever the nearest material to hand is. That might be dirt, cobblestone, netherrack, or something else. I’ve even seen a house made of clay, which is sure to result in a sticky situation before too long.</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">相比之下，另一些玩家会更加关心建筑的呈现效果，选用更加“上档次”的材料，如砖块、精细挑选的木头或木板、磨制石头、彩色混凝土。今天，我们将会探讨刚提到的最后一种方块，因为其原材料正是我们的本月方块 —— 混凝土粉末！</Paragraph>
-<Paragraph Margin="0,0" FontSize="12" Foreground="silver">折叠</Paragraph>
-<Paragraph Margin="0,0" Foreground="black">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H2}">折叠</Paragraph>
+<Paragraph Style="{StaticResource H7}">: 原文</Paragraph>
+<Paragraph Style="{StaticResource H5}">Many Minecraft players build out of whatever the nearest material to hand is. That might be dirt, cobblestone, netherrack, or something else. I’ve even seen a house made of clay, which is sure to result in a sticky situation before too long.</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">相比之下，另一些玩家会更加关心建筑的呈现效果，选用更加“上档次”的材料，如砖块、精细挑选的木头或木板、磨制石头、彩色混凝土。今天，我们将会探讨刚提到的最后一种方块，因为其原材料正是我们的本月方块 —— 混凝土粉末！</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">折叠</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">: 原文</Paragraph>
 <Paragraph Margin="0,0" FontSize="12" Foreground="silver">But other players like to take a little more care with their constructions – building out of bricks, carefully-selected woods or planks, polished stone, or colorful concrete. It’s this last choice that we’re looking at today – because our block of the month is the raw material you’ll need to make it. It’s concrete powder!</Paragraph>
 <Paragraph Margin="0,0" Foreground="black">​</Paragraph>
 <BlockUIContainer>
@@ -211,7 +210,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/powder-to-the-people!​" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/我的世界中，大多数玩家建筑时总会选择一些近便的材料-——-可能是泥土、地狱岩等等。我还见过一座粘土房，想必不久，里面的每个角落都会粘乎乎吧。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>

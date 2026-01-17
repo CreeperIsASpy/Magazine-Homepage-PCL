@@ -124,15 +124,16 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                 <Image Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/azalea-ingame.jpg" Opacity="0" Stretch="Fill"/>
             </Border>
             <Border Style="{StaticResource TitleBorder}">
-                <TextBlock Style="{StaticResource TitleBlock}" Text="As you’re exploring the new landscapes of part two of the Caves and Cliffs update, you might want to locate one of the fancy new lush caves biomes. From the surface, it’s usually impossible to tell what’s going on underneath. But there’s a secret giveaway that indicates the presence of one of these fantastic, verdant cave biomes below. And it also happens to be our item of the week. It’s the azalea." />
+                <TextBlock Style="{StaticResource TitleBlock}" Text="那是片灌木丛，还是一棵树吗？​当你探索洞穴和峭壁第二部分更新后的景色时，你可能想去找到一个新加入的繁茂的洞穴群落。在地面上，通常我们不可能知道下面发生了什么事情，但这种植物就已表明了下面有一个超棒而葱绿的洞穴生物群落。这也恰好是我们本周的盘点物品 - 杜鹃花。" />
             </Border>
             <FlowDocumentScrollViewer>
                 <FlowDocument>
-<Paragraph Style="{StaticResource H7}">TAKING INVENTORY: AZALEA​背包盘点:杜鹃花Is it a bush? Is it a tree?</Paragraph>
+<Paragraph Style="{StaticResource H7}">TAKING INVENTORY: AZALEA​背包盘点:杜鹃花</Paragraph>
+<Paragraph Style="{StaticResource H2}">Is it a bush? Is it a tree?</Paragraph>
 <Paragraph Style="{StaticResource H2}">那是片灌木丛，还是一棵树吗？​当你探索洞穴和峭壁第二部分更新后的景色时，你可能想去找到一个新加入的繁茂的洞穴群落。在地面上，通常我们不可能知道下面发生了什么事情，但这种植物就已表明了下面有一个超棒而葱绿的洞穴生物群落。这也恰好是我们本周的盘点物品 - 杜鹃花。</Paragraph>
-<Paragraph Style="{StaticResource H2}">As you’re exploring the new landscapes of part two of the Caves and Cliffs update, you might want to locate one of the fancy new lush caves biomes. From the surface, it’s usually impossible to tell what’s going on underneath. But there’s a secret giveaway that indicates the presence of one of these fantastic, verdant cave biomes below. And it also happens to be our item of the week. It’s the azalea.</Paragraph>
-<Paragraph Style="{StaticResource H7}">在2021年6月发布的洞穴和峭壁更新的第一部分中，杜鹃花被添加到我的世界中。它们是一朵花和一棵树苗的新奇混合体。它们看起来很漂亮，同时也为蜜蜂提供花粉。而且你还可以让它们可以长成一棵更高的树。</Paragraph>
-<Paragraph Style="{StaticResource H5}">Azalea were added to Minecraft in the first part of the Caves & Cliffs update, in June 2021. They’re a curious mix between a flower and a sapling, in that they look pretty and provide pollen for bees while still being able to be grown into a much larger tree if you desire.</Paragraph>
+<Paragraph Style="{StaticResource H7}">As you’re exploring the new landscapes of part two of the Caves and Cliffs update, you might want to locate one of the fancy new lush caves biomes. From the surface, it’s usually impossible to tell what’s going on underneath. But there’s a secret giveaway that indicates the presence of one of these fantastic, verdant cave biomes below. And it also happens to be our item of the week. It’s the azalea.</Paragraph>
+<Paragraph Style="{StaticResource H5}">在2021年6月发布的洞穴和峭壁更新的第一部分中，杜鹃花被添加到我的世界中。它们是一朵花和一棵树苗的新奇混合体。它们看起来很漂亮，同时也为蜜蜂提供花粉。而且你还可以让它们可以长成一棵更高的树。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Azalea were added to Minecraft in the first part of the Caves & Cliffs update, in June 2021. They’re a curious mix between a flower and a sapling, in that they look pretty and provide pollen for bees while still being able to be grown into a much larger tree if you desire.</Paragraph>
 <BlockUIContainer>
 <StackPanel Margin="0,4,0,4">
 <Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/games/minecraft/screenshots/azalea-ingame.jpg"/>
@@ -187,7 +188,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
                     <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                 </Grid>
                 <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
-    EventData="https://www.minecraft.net/zh-hans/article/那是片灌木丛，还是一棵树吗？​当你探索洞穴和峭壁第二部分更新后的景色时，你可能想去找到一个新加入的繁茂的洞穴群落。在地面上，通常我们不可能知道下面发生了什么事情，但这种植物就已表明了下面有一个超棒而葱绿的洞穴生物群落。这也恰好是我们本周的盘点物品---杜鹃花。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/zh-hans/article/is-it-a-bush?-is-it-a-tree?" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
             </StackPanel>
         </StackPanel>
     </local:MyCard>
