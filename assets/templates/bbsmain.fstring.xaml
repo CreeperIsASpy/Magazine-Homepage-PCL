@@ -115,6 +115,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
     </StackPanel.Resources>
     <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
     <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyHint Margin="0,0,0,6" Theme="Red" Text="如果主页作者没有使用 SPXXMB 排版工具，那么排版会发生错误，此时请不要向主页作者反馈！" />
     <local:MyCard>
         <StackPanel Style="{{StaticResource ContentStack}}">
             <Border Style="{{StaticResource HeadImageBorder}}">

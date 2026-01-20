@@ -115,9 +115,7 @@ def clean_extracted_text(text):
                 content_started = True
 
         # 跳过结尾的非正文内容
-        if "【本文排版借助了：SPXXMB 用户脚本 v3.2.5】" in line:
-            break
-        if "Powered by SPXXMB 3.2.5 with love" in line:
+        if "SPXXMB" in line:
             break
 
         # 处理翻译信息行，提取所需信息
