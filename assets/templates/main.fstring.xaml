@@ -327,6 +327,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                 <!-- NewsCard -->
 {NewsCard}
                 <!-- end_NewsCard -->
+{HistoryToday}
             </StackPanel>
         </TabItem>
     </TabControl>

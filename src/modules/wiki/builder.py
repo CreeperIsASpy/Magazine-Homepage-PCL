@@ -9,7 +9,8 @@ from typing import Optional, Dict, Tuple, List
 import requests
 from bs4 import BeautifulSoup, Tag
 
-from ...utils.get_template import get_template
+from src.utils.get_template import get_template
+from src.modules.today_in_history.grabber import run as _history_today
 
 
 class WikiXamlGenerator:
@@ -308,6 +309,7 @@ class WikiXamlGenerator:
                 body = "\n".join(parsed_items[2:]) if len(parsed_items) > 2 else "",
                 datetime = f'最后更新：{now.strftime("%Y-%m-%d")}',
                 NewsCard = self._fetch_news_card(),
+                HistoryToday = _history_today(),
                 Latest_DeepDives = latest_deepdives,
                 Previous_DeepDives = previous_deepdives,
             )

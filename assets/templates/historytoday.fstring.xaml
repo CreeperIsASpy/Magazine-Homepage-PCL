@@ -1,0 +1,1 @@
+<local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="{cover}" Title="{title}" Info="{info}" EventType="打开网页" EventData="{link}" Type="Clickable" />
