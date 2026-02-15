@@ -229,7 +229,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 凌云                                            @ Github(MoYuan-CN) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
         <sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%BE%99%E9%A6%96</sys:String>
-        <sys:String x:Key="VersionID">260214:a232e3e</sys:String>
+        <sys:String x:Key="VersionID">260215:c11b6d1</sys:String>
         <BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Zombie_holding_dragon_heads.png/350px-Zombie_holding_dragon_heads.png?2c029"/>
         <sys:String x:Key="Topic">龙首</sys:String>
         <Style TargetType="Border" x:Key="HeadImageBorder" >
@@ -309,7 +309,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
                         <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
                     </Grid>
-                    <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新：2026-02-14" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新：2026-02-15" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
                 </StackPanel>
@@ -318,10 +318,96 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
         <TabItem Header="Minecraft官方博文 - 识海漫谈" Style="{StaticResource TabItemStyle}">
             <local:MyCard Title="最新博文" CanSwap="False" IsSwaped="False" >
                 <StackPanel Margin="8,38,8,15">
-                    
+                    <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="[Minecraft.NET | DEEP DIVES] 本月方块：龙蛋（最新博文）" Info="更新于 2025/10/15，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-41586.json" Type="Clickable" />
                     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
-                    
+                    <local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 背包盘点: 蕨（历史博文）" Info="更新于 2025/09/06，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-40629.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本月方块：陷阱箱（历史博文）" Info="更新于 2025/08/29，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-40420.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES]盘点：打火石（历史博文）" Info="更新于 2025/05/25，由 6281x块Judoge 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-36765.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 生物圈栏：末影人（历史博文）" Info="更新于 2025/04/08，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-35605.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 块筑天工：雪屋（历史博文）" Info="更新于 2025/01/19，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-33343.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 世界基石：试炼密室（历史博文）" Info="更新于 2024/09/30，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-30957.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 世界基石：沉船（历史博文）" Info="更新于 2024/06/16，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-27231.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 生物圈栏：监守者（历史博文）" Info="更新于 2024/04/10，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-25257.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 群系漫游:虚空（历史博文）" Info="更新于 2024/04/05，由 Cinder 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-25106.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 背包盘点：悬挂式告示牌（历史博文）" Info="更新于 2024/03/17，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-24497.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本月方块：樱花树叶（历史博文）" Info="更新于 2024/03/11，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-24186.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本月方块：饰纹陶罐（历史博文）" Info="更新于 2024/02/22，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-23447.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 生物圈栏：鹦鹉（历史博文）" Info="更新于 2024/02/07，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-22932.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本月方块: 混凝土粉末（历史博文）" Info="更新于 2024/01/14，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-22485.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 背包盘点：纸（历史博文）" Info="更新于 2023/08/06，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-20177.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 群系漫游：樱花树林（历史博文）" Info="更新于 2023/07/17，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-19416.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES ] 方块周围：古老生长针叶林（历史博文）" Info="更新于 2022/07/29，由 shwx52 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-13350.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 玩乐之余，学习语言（历史博文）" Info="更新于 2022/05/24，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-11986.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net|DEEP DIVES]本周方块：深板岩（历史博文）" Info="更新于 2022/05/22，由 doupoa 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-11904.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 方块世界展：幻境与现实交织的恢弘建筑作品（历史博文）" Info="更新于 2022/04/30，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-11499.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 背包盘点：望远镜（历史博文）" Info="更新于 2022/03/29，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-10731.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本周方块：珊瑚（历史博文）" Info="更新于 2022/02/05，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-9858.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES]背包盘点：土豆（历史博文）" Info="更新于 2021/12/18，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-9003.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 背包盘点: 花盆（历史博文）" Info="更新于 2021/10/30，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-8557.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本周方块: 凝灰岩（历史博文）" Info="更新于 2021/09/11，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-8169.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES]背包盘点:杜鹃花（历史博文）" Info="更新于 2021/08/28，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-8051.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 群系漫游: 蘑菇岛（历史博文）" Info="更新于 2021/08/20，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-7911.json" Type="Clickable" />
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新博文，点击即可查看。"
+    Logo="pack://application:,,,/images/Blocks/RedstoneLampOff.png" Title="[Minecraft.net | DEEP DIVES] 本周方块:灵魂土（历史博文）" Info="更新于 2021/08/13，由 glorydark 翻译。"
+    EventType="打开帮助" EventData="https://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/history/minecraft-net-deep-dives-7776.json" Type="Clickable" />
+
                 </StackPanel>
             </local:MyCard>
         </TabItem>
@@ -344,7 +430,7 @@ EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionArchiveLis
 </StackPanel>
 </local:MyCard>
                 <!-- end_NewsCard -->
-<local:MyCard Title="历史上的今天" IsSwapped="True"><StackPanel Margin="8,38,8,15"><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="瓦伦丁被处死，此日被定为情人节" Info="270年2月14日罗马圣教徒瓦伦丁被处死，此日被后人定为“情人节”瓦伦丁节，又称情人节，是欧美和大洋洲的一些国家的民族节日。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%93%A6%E4%BC%A6%E4%B8%81/5248133" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="唐朝申文献公高士廉去世" Info="高士廉（575年－647年），名俭，字士廉，以字行，渤海蓨县（今河北景县）人，唐初宰相，北齐清河王高岳之孙，唐太宗文德皇后舅" EventType="打开网页" EventData="https://baike.baidu.com/item/%E9%AB%98%E5%A3%AB%E5%BB%89" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="英格兰国王理查二世逝世" Info="英格兰国王(1377～1399)。黑太子爱德华之子。1377年继承祖父爱德华三世的王位。因年幼，由其叔父冈特的约翰执掌朝政。他曾表现" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E4%BA%8C%E4%B8%96/15200" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="中国戏剧家孔尚任逝世" Info="孔尚任（1648~1718年），字聘之，又字季重，号东塘，别号岸堂，自称云亭山人。山东曲阜人，孔子六十四代孙，清初诗人、戏曲作家" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%AD%94%E5%B0%9A%E4%BB%BB" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="英国经济学家托马斯·马尔萨斯出生" Info="托马斯·马尔萨斯（Thomas Robert Malthus，1766—1834）1798年，一位从前默默无闻的英国教区牧师托马斯·罗伯特·马尔萨斯出版了" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%89%98%E9%A9%AC%E6%96%AF%C2%B7%E9%A9%AC%E5%B0%94%E8%90%A8%E6%96%AF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="英国航海家詹姆斯·库克逝世" Info="詹姆斯·库克，FRS，RN（Captain James Cook，1728年11月7日－1779年2月14日），人称库克船长（Captain Cook），是英国皇家海" EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%A9%B9%E5%A7%86%E6%96%AF%C2%B7%E5%BA%93%E5%85%8B" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="亚历山大·贝尔获得电话的专利" Info="亚历山大·贝尔是一位美国发明家和企业家。他获得了世界上第一台可用的电话机的专利权（发明者为意大利人安东尼奥·梅乌奇），创" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%C2%B7%E8%B4%9D%E5%B0%94" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="智利同玻利维亚、秘鲁两国爆发太平洋战争" Info="太平洋战争（1879-1884），War of the Pacific in Southern America智利同玻利维亚、秘鲁争夺南太平洋沿岸阿塔卡马荒漠硝石产地" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%88%98%E4%BA%89/3938592" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="瑞士天文学家弗里兹·扎维奇出生" Info="弗里茨·扎维奇Fritz Zwicky（1898年2月14日- 1974年2月8日）是瑞士 天文学家。他工作了一生中大部分时间在美国加州理工学院，他" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%BC%97%E9%87%8C%E5%85%B9%C2%B7%E6%89%8E%E7%BB%B4%E5%A5%87" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="德国数学家大卫·希尔伯特逝世" Info="希尔伯特，D.(Hilbert,David，1862～1943)德国著名数学家。 他于1900年8月8日在巴黎第二届国际数学家大会上，提出了新世纪数学" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%88%B4%E7%BB%B4%C2%B7%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="http://baike.bdimg.com/cms/rc/r/image/2014-08-25/109a3910624e1f9846baba56971e5741_80_80.jpg" Title="世界上第一台电子多用途计算机诞生" Info="ENIAC是电子数字积分计算机的简称，它占地面积约170平方米，重达30吨，造价48万美元，每秒可执行5000次加法或400次乘法，大大提高了运算速度。研发总工程师在当时仅24岁。" EventType="打开网页" EventData="https://baike.baidu.com/item/ENIAC" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="台湾男演员马景涛出生" Info="马景涛，1962年2月14日生于中国台湾省台中市，祖籍辽宁省，中国台湾男演员。父亲做过高级警官、台中市警察局局长。中学在台中二" EventType="打开网页" EventData="https://baike.baidu.com/item/%E9%A9%AC%E6%99%AF%E6%B6%9B" Type="Clickable" /></StackPanel></local:MyCard>
+<local:MyCard Title="历史上的今天" IsSwapped="True"><StackPanel Margin="8,38,8,15"><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="宇文觉建立北周" Info="北周（557年—581年）是中国历史上南北朝的北朝之一。又称后周（唐宋以后鲜用），宇文周。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%8C%97%E5%91%A8" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="意大利数学家、物理学家、天文学家伽利略出生" Info="伽利略（Galilei Galileo ，1564-02-15—1642-01-08）。意大利数学家、物理学家、天文学家，科学革命的先驱。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%BC%BD%E5%88%A9%E7%95%A5%C2%B7%E4%BC%BD%E5%88%A9%E9%9B%B7/6028466" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="明末清初思想家顾炎武逝世" Info="顾炎武（1613年—1682年），明末清初思想家、学者，南直隶昆山人。初名继绅、绛，字忠清，后改名炎武，字宁人，因避人陷害，曾化名蒋山佣。居亭林镇，学者尊称亭林先生。与黄宗羲、王夫之合称清初三先生，加上唐甄合称明末清初“四大启蒙思想家”。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E9%A1%BE%E7%82%8E%E6%AD%A6" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="法国国王路易十五出生" Info="路易十五（法语：Louis XV，1710年2月15日—1774年5月10日），波旁王朝第四位国王。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%B7%AF%E6%98%93%E5%8D%81%E4%BA%94" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="美国城市圣路易斯建立" Info="圣路易斯是美国密苏里州东部大城市。曾于1904年举办过第三届夏季奥林匹克运动会。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%9C%A3%E8%B7%AF%E6%98%93%E6%96%AF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="剧作家戈特霍尔德·埃弗赖姆·莱辛逝世" Info="戈特霍尔德·埃夫莱姆·莱辛（Gotthold Ephraim Lessing，1729年1月22日—1781年2月15日），德国启蒙运动时期作家、文艺理论家。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%88%88%E7%89%B9%E9%9C%8D%E5%B0%94%E5%BE%B7%C2%B7%E5%9F%83%E5%A4%AB%E8%8E%B1%E5%A7%86%C2%B7%E8%8E%B1%E8%BE%9B" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="http://baike.bdimg.com/cms/rc/r/image/2014-08-26/07cbdb08352c6ef6d1ff35d84a12ddef_80_80.jpg" Title="中国清朝末期重臣、同光中兴主要缔造者李鸿章出生" Info="李鸿章本名章桐，晚年自号仪叟，谥文忠，世人多尊称李中堂。他是淮军创始人、洋务运动的主要倡导者之一，日本首相伊藤博文称其为“大清帝国中唯一有能耐和世界列强一争长短之人”。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%9D%8E%E9%B8%BF%E7%AB%A0/28575" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="英国南极探险家欧内斯特·沙克尔顿出生" Info="欧内斯特·沙克尔顿（Ernest Shackleton，1874年2月15日—1922年1月5日），又译薛克顿，英国南极探险家，出生于爱尔兰的基尔代尔郡，在10个孩子中排行第二。他以带领“猎人号”船1907—1909年向南极进发和1914—1916年带领“坚韧号”船的南极探险的经历而闻名于世。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%AC%A7%E5%86%85%E6%96%AF%E7%89%B9%C2%B7%E6%B2%99%E5%85%8B%E5%B0%94%E9%A1%BF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="许世英辞北洋政府国务总理职" Info="许世英(1873～1964)，字俊人，一作静仁，安徽省秋浦县（今东至县）人。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%AE%B8%E4%B8%96%E8%8B%B1" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="资产阶级军事理论家朱里奥·杜黑逝世" Info="朱里奥·杜黑（1869～1930），意大利将军、军事理论家。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%9C%B1%E5%88%A9%E5%A5%A5%C2%B7%E6%9D%9C%E9%BB%91?fromModule=lemma_search-box" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="香港电影导演徐克出生" Info="徐克（Tsui Hark），本名徐文光，1950年2月15日出生于越南西贡市，祖籍广东省海丰县，中国香港电影导演、编剧、监制、演员。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%BE%90%E5%85%8B/7391" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="美国物理学家理查德·费曼逝世" Info="理查德·费曼Richard Feynman（1918年5月11日－1988年2月15日）美国著名的物理学家。1965年诺贝尔物理奖得主。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E8%B4%B9%E6%9B%BC" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="米哈尔·科瓦奇当选斯洛伐克第一任总统" Info="米哈尔·科瓦奇（Michal Kováč，1930- ）1930年8月5日生于斯洛伐克东部胡门内县的利比什村，斯洛伐克共和国第一任总统。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%B1%B3%E5%93%88%E5%B0%94%C2%B7%E7%A7%91%E7%93%A6%E5%A5%87" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title=" YouTube 正式注册使用" Info="YouTube是世界上最大的视频网站，早期公司总部位于加利福尼亚州的圣布鲁诺。" EventType="打开网页" EventData="https://baike.baidu.com/item/YouTube" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="中国著名书法家刘炳森逝世" Info="刘炳森（1937年8月-2005年2月15日），男，字树庵，号海村，幼年自号刘五先生，出生于上海市，祖籍天津武清，书画家。曾任北京故宫博物院研究员，第三届中国书法家协会副主席。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%88%98%E7%82%B3%E6%A3%AE" Type="Clickable" /></StackPanel></local:MyCard>
             </StackPanel>
         </TabItem>
     </TabControl>
