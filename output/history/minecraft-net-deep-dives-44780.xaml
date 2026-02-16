@@ -1,0 +1,182 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyHint Margin="0,0,0,6" Theme="Red" Text="如果主页作者没有使用 SPXXMB 排版工具，那么排版会发生错误，此时请不要向主页作者反馈！" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minebbs.com/data/attachments/130/130773-00c6488226324b80a6e783a01a444bb9.jpg?hash=wS_BcCj1y6" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minebbs.com/data/attachments/130/130773-00c6488226324b80a6e783a01a444bb9.jpg?hash=wS_BcCj1y6" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="青金石矿石虽然可能不像钻石那样的令人兴奋，但它仍然非常有用。它是少数几种得到青金石方式之一，正如我们之前所讨论过的，青金石用来装饰和附魔。开采一个方块会掉落4至9个青金石，但是这可以通过时运附魔的提升使得单个方块有机会得到高达36个青金石。" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">灰暗中的一抹蓝</Paragraph>
+<Paragraph Style="{StaticResource H2}">我们都有过这种经历——深入采矿探险，背包里塞满了圆石，饱食度却迅速下降。你挖了一个方块——后面啥都没有。你又挖了一个方块——后面还是啥都没有。你考虑回到地面补给。不——再挖一个方块。你挖了它。等等——我的老天，那是钻石矿石吗？哦。不。这是我们本周的方块——青金石矿石。</Paragraph>
+<Paragraph Style="{StaticResource H2}">青金石矿石虽然可能不像钻石那样的令人兴奋，但它仍然非常有用。它是少数几种得到青金石方式之一，正如我们之前所讨论过的，青金石用来装饰和附魔。开采一个方块会掉落4至9个青金石，但是这可以通过时运附魔的提升使得单个方块有机会得到高达36个青金石。</Paragraph>
+<Paragraph Style="{StaticResource H7}">[%(img2)s]</Paragraph>
+<Paragraph Style="{StaticResource H5}">寻找青金石矿石并不一直那么简单，但今天比它在2011年1月的Beta 1.2版本中首次与蛋糕、发射器和骨头一起发布时要容易多了。当时，每个矿石只掉落一个物品。在一位名叫elt的玩家说建造一座实心钻石屋子比建一座青金石屋子更加现实后，这一点很快就被改变了。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">为了去优化你的青金石采集工作，你需要去前往石头与深板岩的交界处。我不知道为什么，但在那里你找到这东西的概率最高。也许这与石头与深板岩相遇处的地质过程有关？无论如何，在那个区域，每10,000个其他方块（包括石头和深板岩）中应该大约有14个青金石矿石方块。当然，几率不算很大，但是这是你能够得到的最好的结果了。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">一旦你找到，你就可以直接用镐子来挖掘矿石获取青金石。但如果你想获得矿石方块本身，也可以使用带有精准采集附魔的镐子。如果你不小心把它挖成了矿石方块，但你还是想要物品，那也很容易解决——可以把它放在世界里再挖一次，也可以把它扔进熔炉里。</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minebbs.com/data/attachments/130/130775-cbdbd6de6cfbca399e3397f663f9fa5e.jpg?hash=gmsKGUtQ5A"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">图片来源: Rob Lavinsky, iRocks.com // CC BY-SA 3.0</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现实世界中有一堆名字差不多的矿，它们可能都有资格被称为我的世界青金石矿石的官方对应物。它们包括青金石、蓝铜矿、天蓝石和蓝方石——所有这些矿在过去都被称为“蓝色晶石”。这些矿物中的蓝色主要来自硫离子——如果你想知道为什么黄色的硫会在岩石中产生蓝色，我敢肯定你的化学老师会非常兴奋地为你解释。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">青金石的那种蓝色使得这种矿石自从史前时代起就具有价值。它们最初是在现在的阿富汗东北部开采的，但用青金石制成的珠子却传播到了世界各地——从高加索山脉到西非的毛里塔尼亚。它甚至被用来制作图坦卡蒙的殡葬面具，他大约死于公元前1323年。后来，中世纪欧洲人用它来制作蓝色颜料——包括维米尔，他用它画了他的作品《戴珍珠耳环的少女》。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">阿富汗的矿山仍然是今天青金石的主要来源，但在俄罗斯贝加尔湖周围、智利的安第斯山脉，以及巴基斯坦、意大利、蒙古、美国和加拿大也偶尔能找到。我打赌你也会在你的我的世界里找到它——只要你挖得够久。再挖一个方块……</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">官网  2026 年 2 月 13 日 Lapis Lazuli Ore</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">【本文排版借助了：SPXX Userscript v3.0.1】</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">=== Powered by SPXX 3.0.1 with love ===</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">=== Converted at 2026-02-16 15:06 +0800 ===</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-02-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: " FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/我们都有过这种经历——深入采矿探险，背包里塞满了圆石，饱食度却迅速下降。你挖了一个方块——后面啥都没有。你又挖了一个方块——后面还是啥都没有。你考虑回到地面补给。不——再挖一个方块。你挖了它。等等——我的老天，那是钻石矿石吗？哦。不。这是我们本周的方块——青金石矿石。" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>
