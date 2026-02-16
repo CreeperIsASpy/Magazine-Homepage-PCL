@@ -44,12 +44,15 @@ def grab_data(lang="zh-CN"):
 
     return data
 
+def wash(s: str):
+    return s.replace('"', "&quot;").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("'", "&apos;")
+
 def gen_list_item(day: dict):
     icon = day["pic_calendar"] if day['cover'] else "pack://application:,,,/images/Blocks/RedstoneLampOn.png"
     template = get_template("historytoday.fstring.xaml")
     output = template.format(
-        title=day["title"],
-        info=day["desc"],
+        title=wash(day["title"]),
+        info=wash(day["desc"]),
         link=day['link'],
         cover=icon,
     )

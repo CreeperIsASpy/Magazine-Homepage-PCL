@@ -4,7 +4,19 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "beautifulsoup4==4.14.2",
+    "certifi==2025.10.5",
+    "charset-normalizer==3.4.4",
+    "playwright",
+    "idna==3.11",
+    "pyparsing==3.2.5",
+    "requests==2.32.5",
+    "requests-toolbelt==1.0.0",
+    "soupsieve==2.8",
+    "typing-extensions==4.15.0",
+    "urllib3==2.5.0"
+]
 
 [[tool.uv.index]]
 name = "tuna"
