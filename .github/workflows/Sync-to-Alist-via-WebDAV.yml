@@ -22,7 +22,7 @@ jobs:
       - name: ⚙️ Configure rclone for WebDAV (Alist)
         run: |
           rclone config create alist_webdav webdav \
-            url https://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
+            url http://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
             user ${{ secrets.ALIST_USERNAME }} \
             pass ${{ secrets.ALIST_PASSWORD }}
 
