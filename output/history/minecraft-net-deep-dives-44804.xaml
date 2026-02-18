@@ -1,0 +1,195 @@
+<StackPanel Margin="0,-10,0,0"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
+    <StackPanel.Resources>
+        <Style TargetType="FlowDocumentScrollViewer">
+            <Setter Property="IsSelectionEnabled" Value="False"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        <Style TargetType="FlowDocument" >
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="ContentStack" >
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+        <Style TargetType="local:MyCard" x:Key="Card" >
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style TargetType="Image" x:Key="InnerImage" >
+            <Setter Property="MaxHeight" Value="500"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" >
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="List" >
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="MarkerStyle" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="ListItem" >
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="LineHeight" Value="22"/>
+        </Style
+>
+        <Style TargetType="Paragraph" x:Key="H1" >
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H2" >
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H3" >
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H5" >
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="0,3,0,5"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Paragraph" x:Key="H7" >
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,2,0,2"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush4}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Quote" >
+            <Setter Property="BorderThickness" Value="5,0,0,0"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush4}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5"/>
+        </Style>
+        <Style x:Key="imgTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#FF777777" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,0,0,15" />
+        </Style>
+        <sys:String x:Key="TranslateIcon">
+M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z
+</sys:String>
+        <sys:String x:Key="CreeperIcon">
+M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.333333 85.333333 0 0 0 85.333333 85.333333h597.333334a85.333333 85.333333 0 0 0 85.333333-85.333333V213.333333a85.333333 85.333333 0 0 0-85.333333-85.333333H213.333333z m0 64h597.333334c11.754667 0 21.333333 9.578667 21.333333 21.333333v597.333334c0 11.754667-9.578667 21.333333-21.333333 21.333333H213.333333c-11.754667 0-21.333333-9.578667-21.333333-21.333333V213.333333c0-11.754667 9.578667-21.333333 21.333333-21.333333z m64 106.666667a21.333333 21.333333 0 0 0-21.333333 21.333333v128a21.333333 21.333333 0 0 0 21.333333 21.333333h149.333334v-149.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-128z m149.333334 170.666666v85.333334h-64a21.333333 21.333333 0 0 0-21.333334 21.333333v160a32 32 0 1 0 64 0V704h213.333334v32a32 32 0 1 0 64 0V576a21.333333 21.333333 0 0 0-21.333334-21.333333h-64v-85.333334h-170.666666z m170.666666 0h149.333334a21.333333 21.333333 0 0 0 21.333333-21.333333v-128a21.333333 21.333333 0 0 0-21.333333-21.333333h-128a21.333333 21.333333 0 0 0-21.333334 21.333333v149.333333z
+</sys:String>
+        <Style TargetType="Border" x:Key="HeadImageBorder" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="MaxHeight" Value="140"/>
+        </Style>
+        <Style TargetType="Border" x:Key="TitleBorder" >
+            <Setter Property="Margin" Value="0,-20,-1,10"/>
+            <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TitleBlock" >
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush7}"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </StackPanel.Resources>
+    <local:MyHint Margin="0,0,0,6" Theme="Blue" Text="🖼️ 欢迎使用杂志主页" />
+    <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ 此为杂志主页博文板块的历史留档文件，使用请遵循 CC-BY-NC-SA 4.0 !" />
+    <local:MyHint Margin="0,0,0,6" Theme="Red" Text="如果主页作者没有使用 SPXXMB 排版工具，那么排版会发生错误，此时请不要向主页作者反馈！" />
+    <local:MyCard>
+        <StackPanel Style="{StaticResource ContentStack}">
+            <Border Style="{StaticResource HeadImageBorder}">
+                <Border.Background>
+                    <ImageBrush ImageSource="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/fishingrod-header2.jpg" Stretch="UniformToFill" />
+                </Border.Background>
+                <Image Source="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/fishingrod-header2.jpg" Opacity="0" Stretch="Fill"/>
+            </Border>
+            <Border Style="{StaticResource TitleBorder}">
+                <TextBlock Style="{StaticResource TitleBlock}" Text="背包盘点：钓鱼竿" />
+            </Border>
+            <FlowDocumentScrollViewer>
+                <FlowDocument>
+<Paragraph Style="{StaticResource H7}">DEEP DIVES</Paragraph>
+<Paragraph Style="{StaticResource H2}">Taking Inventory: Fishing Rod</Paragraph>
+<Paragraph Style="{StaticResource H2}">背包盘点：钓鱼竿</Paragraph>
+<Paragraph Style="{StaticResource H7}">You’ll be hooked</Paragraph>
+<Paragraph Style="{StaticResource H5}">愿者上钩，乐在其中！​</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Once upon a time, Minecraft’s lakes and rivers were more or less empty of life. In the earliest versions of the game, water was basically just an obstacle and a danger. That all changed in the tenth and final of the game’s seecret updates – in September 2010 – when our item of the month, the fishing rod, was released.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">曾几何时，《我的世界》的河流湖泊暮气沉沉。早期版本中，水的功能大致有两点：一是阻碍玩家前行，二是对玩家构成威胁。然而，2010年9月，游戏发布了第十次也是最后一次的秘密更新（又称“秘密周六更新”），加入了我们的本月物品 —— 钓鱼竿，于是，水便有了它的用处。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Fishing rods are easy to make and easy to use. You’ll need three sticks and two string, both of which should be straightforward to obtain, even in the very early game. Arrange the sticks in a crafting grid in a diagonal from bottom left to top right, and then position the string along the right hand side in the two remaining spaces. Voilà – a fishing rod is yours.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">钓鱼竿制作方便，操作便捷。即便是远古版本，合成钓鱼竿也依然轻轻松松，只需要3根木棍和2根线。打开工作台后，玩家只需从左下角到右上角，沿对角线依次放置三根木棍，再将两根线放在第三列的剩下两格，这样，一支钓鱼竿便制作而成。</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/fishingrod-recipe.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Next, head over to your nearest body of water – it doesn’t matter much how big or small that water is, you’ll catch things in even the tiniest puddle. Hold the fishing rod in your hand, and press your use button to cast the line outward. If it hits the water, then you’ll see a bobber appear.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">接下来，你只需要走到最近的水域即可，无需考虑水域大小，因为即便在非常小的水域钓鱼，你也能收获物品。因此，你所要做的，便是拿起钓鱼竿，点击按钮甩竿（手机版操作，电脑版为右键）。当浮漂接触到水面，便会浮在水面上。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Now, you need to play the waiting game. After anything from five to 30 seconds, you’ll see a fish begin to approach. Once it reaches the bait, and the bobber sinks below the surface, hit use again quickly to reel in your catch. If you miss it, don’t worry – there’ll be another fish along afterward.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">现在，你只需要等着鱼儿上钩。等待5-30秒，鱼儿便会靠近浮漂。鱼咬钩后，浮漂会突然下沉，此时再点击一下按钮（手机版操作，电脑版为右键），便可收竿，收获物品。若错失良机，玩家仍可等待下一次上钩。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Fishing can net you fish, of course. But sometimes you’ll catch treasure or junk instead. Exactly what you’ll catch depends on the biome you’re in, but the Luck of the Sea enchantment boosts your chance of treasure, and reduces your chance of junk, while the Lure enchantment reduces the time you need to wait before each catch. You’ll also generally wait less time if it’s raining, and/or if the bobber is directly exposed to sunlight or moonlight.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">除了鱼，玩家偶尔也会钓到宝藏或垃圾，而可获得的物品类型，便取决于你所位于的群系。当然，海之眷顾也能提升得到宝藏的概率，降低钓出垃圾的概率；钓饵附魔也能减少等待时间。此外，只要下雨时，浮漂暴露在阳光和月光下，等待时间也会缩短。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">There are some other things you can do with fishing rods in addition to fishing. They can be used to hook mobs and even items (in Java Edition) towards you when they’re out of reach. In Bedrock edition you can also use fishing rods to dismount players or mobs that are riding in minecarts, boats or other mobs. Finally, fishing rods can be used to craft a couple of other items – the carrot on a stick and the warped fungus on a stick .</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">钓鱼竿除了捕鱼，还有其他用处。使用钓鱼竿，可以将伸手够不到的生物或物品（在Java版中）拉向使用者。基岩版中，如果被浮漂钩中的实体正在骑乘其他实体（如矿车、船或其他实体），收竿会使其脱离坐骑。此外，钓鱼竿还可用于合成胡萝卜钓竿和诡异菌钓竿。</Paragraph>
+<BlockUIContainer>
+<StackPanel Margin="0,4,0,4">
+<Image Style="{StaticResource InnerImage}" Source="https://www.minecraft.net/content/dam/minecraftnet/franchise/photography/people/fishingrod-realworld.jpg"/>
+</StackPanel> 
+</BlockUIContainer>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">While people in the real world have been fishing since long before recorded history, the first evidence of fishing rods seem to date back to ancient Egypt and China, more than 4,000 years ago. These early rods would have been made of cane or wood, so they don’t survive today, but we can see them in stone inscriptions. We can also find hooks – sharpened pieces of bone, pointed at both ends and tied with a line in the middle.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">人类钓鱼的历史，可以追溯到遥远的史前时期。据史料记载，钓鱼出现于4000多年前，最早起源于埃及和中国。早期的鱼竿由竹木制成，随着时间流逝而逐渐损毁，因此未能保存至今，但在古代石刻上，依然可以窥见它们的身影。人们还发明了鱼钩，最初由骨头制成，经两端削尖，再用线从中间穿过并系紧。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Originally people would fish to catch food to eat, but recreational fishing started to become popular in the 15th century. The industrial revolution brought mass production, making it quicker and cheaper to make fishing lines and rods, and synthetic materials began to be used in the 20th century.</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">最初，钓鱼是为了获取食物。自15世纪起，钓鱼摇身一变，成为一种热门的消遣方式。后来，工业革命加速推进，工厂量产逐渐兴起，鱼竿与鱼线不仅更易生产，成本也得以下降。20世纪起，合成材料开始用于制造鱼竿。</Paragraph>
+<Paragraph Margin="0,0" FontSize="12" Foreground="silver">Today, there are a whole range of different kinds of fishing rod – fly rods, tenkara rods, baitcasting rods, ultralight rods, spinning rods, spincasting rods, ice rods, sea rods, surf rods, trolling rods, travelling rods, telescopic rods, and many more. In Minecraft, though, there’s just one type – and you’ll be able to catch anything with it. Happy fishing!</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">如今，不同种类的鱼竿琳琅满目，如飞蝇竿、天展竿、水滴轮竿、超轻钓竿、纺车竿、路亚竿、冰钓竿、海竿、远投竿、拖钓竿、旅行竿、伸缩竿。然而，在《我的世界》中，鱼竿仅有一种，什么都能钓。祝你尽情享受钓鱼时光！</Paragraph>
+</FlowDocument>
+            </FlowDocumentScrollViewer>
+            <StackPanel Margin="0,0,0,20">
+                <Grid VerticalAlignment="Center" Margin="0,10,20,0" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="64"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Path Grid.Column="0" Margin="0,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+                    <TextBlock Grid.Column="1" Text="(MineBBS)Glorydark" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <Path Grid.Column="2" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform" HorizontalAlignment="Right"
+                    Data="M14 21v-3.075l5.525-5.5q.225-.225.5-.325t.55-.1q.3 0 .575.113t.5.337l.925.925q.2.225.313.5t.112.55t-.1.563t-.325.512l-5.5 5.5zM4 20v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q.925 0 1.825.113t1.8.362L12 17.1V20zm16.575-4.6l.925-.975l-.925-.925l-.95.95zM12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12"/>
+                    <TextBlock HorizontalAlignment="Right" Grid.Column="3" Text="Duncan Geere" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="最后更新: 2026-02-18" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="源日期: 2026-02-09" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                </Grid>
+                <local:MyIconTextButton Text="访问原址" ToolTip="在 Minecraft 官网上查看该页面原文" EventType="打开网页" Margin="8"
+    EventData="https://www.minecraft.net/zh-hans/article/taking-inventory-fishing-rod" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </StackPanel>
+    </local:MyCard>
+</StackPanel>
