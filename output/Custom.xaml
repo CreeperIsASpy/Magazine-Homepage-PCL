@@ -13,7 +13,6 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="#FFACACAC"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TabControl}">
@@ -68,7 +67,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
             </Setter>
         </Style>
         <Style x:Key="TabItemStyle" TargetType="{x:Type TabItem}">
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush1}"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="#fff"/>
             <Setter Property="Margin" Value="0,0,0,8"/>
@@ -81,7 +80,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Border x:Name="ContentPanel" BorderBrush="{DynamicResource ColorBrush2}" BorderThickness="0,0,0,2" Background="White" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained"
+                            <Border x:Name="ContentPanel" BorderBrush="{DynamicResource ColorBrush2}" BorderThickness="0,0,0,2" Background="{DynamicResource ColorBrushTransparentBackground}" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained"
                         Grid.Row="0" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" CornerRadius="7" Height="30" Margin="2,0,2,0"/>
                             <TextBlock x:Name="txt" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center"
                     Text="{TemplateBinding Header}" ToolTip="{TemplateBinding Header}" Foreground="{TemplateBinding Foreground}" TextTrimming="CharacterEllipsis"/>
@@ -92,7 +91,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
                                     <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
                                     <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Top"/>
                                 </MultiDataTrigger.Conditions>
-                                <Setter Property="Foreground" TargetName="txt" Value="Blue"/>
+                                <Setter Property="Foreground" TargetName="txt" Value="{DynamicResource ColorBrush3}"/>
                             </MultiDataTrigger>
                             <MultiDataTrigger>
                                 <MultiDataTrigger.Conditions>
@@ -128,7 +127,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
                                     <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Top"/>
                                 </MultiDataTrigger.Conditions>
                                 <Setter Property="Panel.ZIndex" Value="1"/>
-                                <Setter Property="Foreground" TargetName="txt" Value="Green"/>
+                                <Setter Property="Foreground" TargetName="txt" Value="{DynamicResource ColorBrush2}"/>
                             </MultiDataTrigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -156,10 +155,10 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="TextBlock" >
-            <Setter Property="TextWrapping" Value="Wrap"/>
+            <!-- <Setter Property="TextWrapping" Value="Wrap"/> -->
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush1}"/>
         </Style>
         <Style TargetType="List" >
             <Setter Property="Foreground" Value="{DynamicResource ColorBrush3}"/>
@@ -168,7 +167,7 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
             <Setter Property="Padding" Value="0"/>
         </Style>
         <Style TargetType="ListItem" >
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="{DynamicResource ColorBrush1}"/>
             <Setter Property="LineHeight" Value="22"/>
         </Style>
         <Style TargetType="Paragraph" x:Key="H1" >
@@ -229,7 +228,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 凌云                                            @ Github(MoYuan-CN) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
         <sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E8%9C%98%E8%9B%9B%E7%BD%91</sys:String>
-        <sys:String x:Key="VersionID">260805:2f0e6b0</sys:String>
+        <sys:String x:Key="VersionID">260807:772d477</sys:String>
         <BitmapImage x:Key="Img" UriSource="https://zh.minecraft.wiki/images/thumb/Igloobasement_BE.png/350px-Igloobasement_BE.png?902de"/>
         <sys:String x:Key="Topic">蜘蛛网</sys:String>
         <Style TargetType="Border" x:Key="HeadImageBorder" >
@@ -309,7 +308,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
                         <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
                     </Grid>
-                    <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新：2026-08-05" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+                    <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新：2026-08-07" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
                     <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
                 </StackPanel>
@@ -329,9 +328,22 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
             <StackPanel>
                 <local:MyHint Margin="0,0,0,6" Theme="Yellow" Text="⚠️ &quot;最新版本&quot; 板块为每周更新时同步，并不一定为最新！" />
                 <!-- NewsCard -->
-
+<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
+<StackPanel Margin="8,38,8,15">
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 26.2" Info="正式版"
+	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=26.2" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新快照版 - 26.3-snapshot-7" Info="快照版"
+	EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionDetail.json?ver=26.3-snapshot-7" Type="Clickable" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
+     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
+<local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
+Logo="https://image.bugjump.net/news/lectern.png" Title="历史版本更新日志" Info="点击查看更多更新日志"
+EventType="打开帮助" EventData="https://mcnews.meloong.com/VersionArchiveList.json" Type="Clickable" />
+</StackPanel>
+</local:MyCard>
                 <!-- end_NewsCard -->
-<local:MyCard Title="历史上的今天" IsSwapped="True"><StackPanel Margin="8,38,8,15"><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="法兰克国王路易三世逝世" Info="路易三世（Louis III，863年—882年8月5日）是西法兰克王国加洛林王朝国王路易二世与王后勃艮第的安斯加尔德的长子，879年其父王死后他与弟卡洛曼(Carloman)平分王国，二王共治，他获得西法兰克和纽斯特里亚(Neustria)，直到路易三世先于卡洛曼二世去世。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%B7%AF%E6%98%93%E4%B8%89%E4%B8%96/67177" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="俄罗斯画家伊利亚·列宾出生" Info="伊利亚·叶菲莫维奇·列宾（1884年8月5日—1930年9月29日)是俄罗斯伟大的画家，巡回展览画派的主要代表人物。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%BC%8A%E5%88%A9%E4%BA%9A%C2%B7%E5%88%97%E5%AE%BE" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="法国作家莫泊桑诞生" Info="居伊·德·莫泊桑（1850.8.5~1893.7.6），19世纪后半叶法国优秀的批判现实主义作家。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%B1%85%E4%BC%8A%C2%B7%E5%BE%B7%C2%B7%E8%8E%AB%E6%B3%8A%E6%A1%91" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="奥地利指挥家埃里希·克莱伯出生" Info="埃里希·克莱伯（Erich·Kleiber，1890年8月5日—1956年1月27日），20世纪伟大的指挥之一，卡洛斯·克莱伯之父。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%9F%83%E9%87%8C%E5%B8%8C%C2%B7%E5%85%8B%E8%8E%B1%E4%BC%AF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="恩格斯逝世" Info="弗里德里希·冯·恩格斯（Friedrich Von Engels，1820－1895）德国思想家、哲学家、革命家，全世界无产阶级和劳动人民的伟大导师和领袖、马克思主义创始人之一。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%BC%97%E9%87%8C%E5%BE%B7%E9%87%8C%E5%B8%8C%C2%B7%E6%81%A9%E6%A0%BC%E6%96%AF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="凯末尔领导的土耳其民族主义运动爆发" Info="土耳其共和国（土耳其语：Türkiye Cumhuriyeti；英语：Republic of Türkiye），简称土耳其，是一个横跨亚欧大陆两洲的国家，北临黑海，南临地中海，东南与叙利亚、伊拉克接壤，西临爱琴海，与希腊以及保加利亚接壤，东部与格鲁吉亚、亚美尼亚、阿塞拜疆和伊朗接壤。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%9C%9F%E8%80%B3%E5%85%B6" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="首辆无人驾驶无线电操纵汽车在美国试验成功" Info="美利坚合众国（The United States of America），简称“美国”。是世界第一大经济体，首都华盛顿哥伦比亚特区。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD/125486" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="首个登月的宇航员尼尔·奥尔登·阿姆斯特朗出生" Info="尼尔·奥尔登·阿姆斯特朗（Neil Alden Armstrong，1930年8月5日-2012年8月25日），美国宇航员、试飞员、海军飞行员以及大学教授。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%B0%BC%E5%B0%94%C2%B7%E5%A5%A5%E5%B0%94%E7%99%BB%C2%B7%E9%98%BF%E5%A7%86%E6%96%AF%E7%89%B9%E6%9C%97" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="厄瓜多尔发生里氏6.8级地震，约6000人死亡" Info="厄瓜多尔共和国（西班牙语：República del Ecuador），简称厄瓜多尔。位于南美洲西北部的国家，北与哥伦比亚相邻，南接秘鲁，西滨太平洋，首都是基多。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%8E%84%E7%93%9C%E5%A4%9A%E5%B0%94" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="NBA著名球星帕特里克·尤因出生" Info="帕特里克·尤因（Patrick Ewing 1962年8月5日-），绰号“大猩猩”、“铁塔”、“铁汉”和“金刚”。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%B8%95%E7%89%B9%E9%87%8C%E5%85%8B%C2%B7%E5%B0%A4%E5%9B%A0" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="http://baike.bdimg.com/cms/rc/r/image/2014-09-07/adda7d17e1b655de51aa1743e21ae371_80_80.jpg" Title="玛丽莲·梦露神秘死亡" Info="梦露去世时年仅36岁，死因是过量服用安眠药。人们对她最深的印象就是那张穿着白色裙子在纽约大街上，裙子被地下热气吹得张开了喇叭的黑白照。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%8E%9B%E4%B8%BD%E8%8E%B2%C2%B7%E6%A2%A6%E9%9C%B2/52769" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="苏美英签署《部分禁止核试验条约》" Info="《部分禁止核试验条约》（英语：Partial Test Ban Treaty, PTBT），全称《禁止在大气层、外层空间和水下进行核武器试验条约》，是一个限制核武器试验的国际条约，英文简称PTBT。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%A6%81%E6%AD%A2%E5%9C%A8%E5%A4%A7%E6%B0%94%E5%B1%82%E3%80%81%E5%A4%96%E5%B1%82%E7%A9%BA%E9%97%B4%E5%92%8C%E6%B0%B4%E4%B8%8B%E8%BF%9B%E8%A1%8C%E6%A0%B8%E6%AD%A6%E5%99%A8%E8%AF%95%E9%AA%8C%E6%9D%A1%E7%BA%A6" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="我国第一次为国外提供卫星搭载服务" Info="人造卫星（Artificial Satellite）:环绕地球在空间轨道上运行（至少一圈）的无人航天器。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%BA%BA%E9%80%A0%E5%8D%AB%E6%98%9F/21439" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="日本本田公司创始人本田宗一郎逝世" Info="本田宗一郎（ほんだ そういちろう），1906年11月17日出生于日本静冈县磐田郡光明村（后改为天龙市，现为滨松市天龙地区）。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%9C%AC%E7%94%B0%E5%AE%97%E4%B8%80%E9%83%8E" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="津巴布韦第一副总统约瑟夫·姆西卡去世" Info="津巴布韦共和国，是非洲南部的内陆国家，1980年4月18日独立建国。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%B4%A5%E5%B7%B4%E5%B8%83%E9%9F%A6" Type="Clickable" /></StackPanel></local:MyCard>
+<local:MyCard Title="历史上的今天" IsSwapped="True"><StackPanel Margin="8,38,8,15"><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="雅典和马其顿之间的科罗尼亚战役发生" Info="马其顿共和国（Република Македониа），位于欧洲东南部巴尔干半岛。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E9%A9%AC%E5%85%B6%E9%A1%BF" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="神圣罗马帝国皇帝亨利四世逝世" Info="亨利四世，法兰克尼亚王朝（也叫萨利安王朝）的第三位罗马人民的国王（1056年—1105年在位）和神圣罗马帝国皇帝（1084年加冕）。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%BA%A8%E5%88%A9%E5%9B%9B%E4%B8%96/14205" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="清初小说戏剧评论家金圣叹逝世" Info="金采（1608年4月17日—1661年8月7日），明亡后改名人瑞，字圣叹，别号鲲鹏散士。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E9%87%91%E5%9C%A3%E5%8F%B9" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="美国紫心勋章诞生" Info="紫心勋章是世界上仍在颁发的历史最悠久的军事荣誉，而且是第一种向普通士兵颁发的勋章。它于1782年8月7日由乔治·华盛顿将军设立，当时叫军功章，专门授予作战中负伤的军人，也可授予阵亡者的最近亲属。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E7%B4%AB%E5%BF%83%E5%8B%8B%E7%AB%A0" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="孙中山辞去政务总裁一职" Info="孙中山 （1866年—1925年），名文，字载之，号日新，又号逸仙，幼名帝象，化名中山。伟大的民族英雄、伟大的爱国主义者、中国民主革命的伟大先驱，中华民国和中国国民党的缔造者，三民主义的倡导者，创立了《五权宪法》。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%AD%99%E4%B8%AD%E5%B1%B1/128084" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="印度诗人泰戈尔逝世" Info="拉宾德拉纳特 · 泰戈尔（1861年—1941年），印度著名诗人、文学家、社会活动家、哲学家和印度民族主义者。1861年5月7日，拉宾德拉纳特·泰戈尔出生于印度加尔各答一个富有的贵族家庭。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%8B%89%E5%AE%BE%E5%BE%B7%E6%8B%89%E7%BA%B3%E7%89%B9%C2%B7%E6%B3%B0%E6%88%88%E5%B0%94" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="香港企业家林建岳出生" Info="林建岳，广东潮阳人，香港商人，主力投资娱乐事业。1957年生于香港。香港著名企业家林百欣次子。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%9E%97%E5%BB%BA%E5%B2%B3" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="美国好莱坞著名演员大卫·杜考夫尼出生" Info="大卫·杜考夫尼（全名David William Duchovny)；1960年8月7日－，生于纽约市）是一位美国电视与电影演员，曾经获得金球奖。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%A4%A7%E5%8D%AB%C2%B7%E6%9D%9C%E6%A5%9A%E5%B0%BC" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="维基百科创始人吉米·多纳尔·威尔士出生" Info="吉米·多纳尔·威尔士（Jimmy Donal Wales，1966年8月7日~）维基百科（Wikipedia）的创始人之一。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%90%89%E7%B1%B3%C2%B7%E5%A4%9A%E7%BA%B3%E5%B0%94%C2%B7%E5%A8%81%E5%B0%94%E5%A3%AB" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="美国好莱坞著名女演员查理兹·赛隆出生" Info="查理兹·塞隆（Charlize Theron），1975年8月7日出生于南非豪登省伯诺尼，美国影视演员，奥斯卡影后。1995年，查理兹·塞隆出演了她的电影处女作《芝加哥打鬼3》。2003年，她出演了《偷天换日》。2004年，查理兹·塞隆凭借在《女魔头》中的演出而获得第76届奥斯卡最佳女主角。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E6%9F%A5%E7%90%86%E5%85%B9%C2%B7%E5%A1%9E%E9%9A%86" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="台湾演员吴建豪出生" Info="吴建豪，英文名VanNess Wu，1978年8月7日生于美国加利福尼亚州圣塔莫尼卡市。美籍华裔歌手、演员，偶像组合F4中的一员。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%90%B4%E5%BB%BA%E8%B1%AA" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="http://baike.bdimg.com/cms/rc/r/image/2014-09-07/c5e4efac808b464a51477ced8270ada7_80_80.jpg" Title="中国国家女子排球队在洛杉矶奥运会上获得冠军" Info="这是中国第一个奥运会团体项目金牌。此役前后，女排姑娘们在1981、1982、1984、1985、1986五次世界大赛上拿下世界第一个“五连冠”，这支以郎平、张蓉芳领衔的中国女排也一度成为国人骄傲。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%A5%B3%E5%AD%90%E6%8E%92%E7%90%83%E9%98%9F" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="国画艺术大师刘海粟逝世" Info="刘海粟（1896-1994），名槃，字季芳，号海翁。汉族，江苏常州人。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E5%88%98%E6%B5%B7%E7%B2%9F" Type="Clickable" /><local:MyListItem Margin="0,10,0,10" ToolTip="最新博文，点击即可查看。" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png" Title="中国甘肃省舟曲县发生特大泥石流灾害" Info="舟曲县，隶属于甘肃省甘南藏族自治州，位于甘肃省南部，甘南藏族自治州东南部，东邻武都区，北接宕昌县，西、南与迭部县、文县、九寨沟县接壤，总面积3009.98平方千米。" EventType="打开网页" EventData="https://baike.baidu.com/item/%E8%88%9F%E6%9B%B2%E5%8E%BF" Type="Clickable" /></StackPanel></local:MyCard>
             </StackPanel>
         </TabItem>
     </TabControl>

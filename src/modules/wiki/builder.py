@@ -268,7 +268,7 @@ class WikiXamlGenerator:
             return first_item[0], first_item[1]
         return "未知主题", self.BASE_WIKI_URL
 
-    def run(self, latest_deepdives: str, previous_deepdives: str):
+    def run(self):
         """
         执行整个流程：获取数据，解析，并生成最终的XAML文件。
         """
@@ -310,8 +310,6 @@ class WikiXamlGenerator:
                 datetime = f'最后更新：{now.strftime("%Y-%m-%d")}',
                 NewsCard = self._fetch_news_card(),
                 HistoryToday = _history_today(),
-                Latest_DeepDives = latest_deepdives,
-                Previous_DeepDives = previous_deepdives,
             )
 
             # 步骤 4: 将结果写入输出文件

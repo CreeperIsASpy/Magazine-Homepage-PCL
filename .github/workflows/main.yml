@@ -1,4 +1,4 @@
-name: Update Custom.xaml Daily
+name: Generate Custom
 
 on:
   schedule:
@@ -10,46 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 检出代码
       - name: Check out the repository
         uses: actions/checkout@v3
 
-      # 2. 设置 Python 环境
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
-          python-version: 3.11
+          version: "0.9.7"
 
-      # 3. 安装 Python 依赖 (包括 Playwright 库本身)
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          uv sync
 
-      # 4. 获取 Playwright 版本 (这一步很关键，用于生成唯一的缓存 Key)
-      - name: Get installed Playwright version
-        id: playwright-version
-        run: echo "VERSION=$(playwright --version | awk '{print $2}')" >> $GITHUB_OUTPUT
-
-      # 5. 配置缓存
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4 # 推荐使用 v4
-        id: playwright-cache
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.VERSION }}
-
-      # 6. 安装浏览器 (仅当缓存未命中时运行)
-      - name: Install Playwright browsers
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: playwright install
-
-      # 7. 运行 Python 脚本
       - name: Run Python script
         run: |
-          python main.py
+          uv run main.py
 
-      # 8. 提交并推送更改
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
